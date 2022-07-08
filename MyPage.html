@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasted Test</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      header {
+        width: 100vw;
+        height: 200px;
+        background-color: beige;
+        color: black;
+        text-align: center;
+      }
+      .nav-flex-container {
+        display: flex;
+        background-color: white;
+        width: 500px;
+        align-content: center;
+        position: fixed;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        top: 0px;
+        right: 0px;
+        border-radius: 50px;
+      }
+      .nav-flex-item {
+        padding: 20px;
+        list-style: none;
+      }
+      .nav-flex-item:hover {
+        font-size: larger;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      main {
+        box-sizing: border-box;
+        border: 1px solid black;
+        position: relative;
+        width: 100vw;
+        height: 1000px;
+        padding-top: 50px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-shrink: 1;
+        background-color: aliceblue;
+      }
+      .main-flex-container {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 100px;
+      }
+      .main-flex-item {
+        width: 100px;
+        height: 100px;
+        flex: auto;
+        position: relative;
+        background-color: azure;
+      }
+      .main-image {
+        width: 10vw;
+        height: 10vh;
+      }
+      .site-title {
+        transform: translateY(80px);
+      }
+      footer {
+        width: 100vw;
+        height: 200px;
+        background-color: cadetblue;
+      }
+      .contact-title {
+        padding-top: 20px;
+        margin-left: 20px;
+      }
+      .contact-address {
+        width: 300px;
+        height: 50px;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: relative;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="site-title">
+        <img src="../디자인/노션 등록용.png" alt="" />
+        <h1 id="home">My Docu Docu</h1>
+        <br />
+        <h4>이 곳은 준수가 만든 공간입니다.</h4>
+      </div>
+    </header>
+    <nav>
+      <ul class="nav-flex-container">
+        <li class="nav-flex-item"><a href="#home">HOME</a></li>
+        <li class="nav-flex-item"><a href="#">MyPage</a></li>
+        <li class="nav-flex-item"><a href="#">MyDocuDocu</a></li>
+        <li class="nav-flex-item"><a href="#contact">ABOUT</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <div class="main-flex-container">
+          뭐 넣지
+          <article class="main-flex-item">
+            <img class="main-image" src="./CSS 요소.PNG" />
+          </article>
+        </div>
+        <div class="main-flex-container">
+          뭐 넣지
+          <article class="main-flex-item">
+            <img class="main-image" src="./CSS 요소.PNG" />
+          </article>
+        </div>
+        <div class="main-flex-container">
+          뭐 넣지
+          <article class="main-flex-item">
+            <img class="main-image" src="./CSS 요소.PNG" />
+          </article>
+        </div>
+        <div class="main-flex-container">
+          뭘 넣어야 할깡
+          <article class="main-flex-item">
+            <img class="main-image" src="./CSS 요소.PNG" />
+          </article>
+        </div>
+        <div class="main-flex-container">
+          뭘 넣어야 할깡
+          <article class="main-flex-item">
+            <img class="main-image" src="./CSS 요소.PNG" />
+          </article>
+        </div>
+        <div class="main-flex-container">
+          뭘 넣어야 할깡
+          <article class="main-flex-item">
+            <img class="main-image" src="./CSS 요소.PNG" />
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2 id="contact" class="contact-title">contact</h2>
+      <div class="contact-address">
+        <ul style="list-style: none">
+          <li>Phone : 010-9694-3994</li>
+          <br />
+          <li>E-mail : kia54682@gmail.com</li>
+          <br />
+          <li>Instagram : <a href="www.instagram.com">www.instagram.com</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
