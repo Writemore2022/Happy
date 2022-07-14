@@ -1,3 +1,7 @@
+<!-- 연습용 my page 만들기! -->
+<!-- 이것마저도 UI 디자인과 주요 기능 고민을 해야 한당... -->
+<!-- 빠른 시일 내로 프로토타입을 만들어서 다시 작업하기!!! -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +11,7 @@
     <title>Tasted Test</title>
     <style>
       * {
-        margin: 0px;
+        margin: 0px auto;
         padding: 0px;
         font-family: Georgia, 'Times New Roman', Times, serif;
       }
@@ -27,9 +31,9 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
-        top: 0px;
-        right: 0px;
-        border-radius: 50px;
+        top: 10px;
+        right: 10px;
+        border-radius: 100px;
       }
       .nav-flex-item {
         padding: 20px;
@@ -42,17 +46,16 @@
         text-decoration: none;
         color: black;
       }
+      a[href='www.instagram.com'] {
+        color: white;
+      }
       main {
         box-sizing: border-box;
-        border: 1px solid black;
-        position: relative;
+        /* border: 1px solid black; */
         width: 100vw;
-        height: 1000px;
+        height: 100vh;
         padding-top: 50px;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        display: flex;
-        flex-wrap: wrap;
+        padding-bottom: 50px;
         flex-direction: column;
         align-content: center;
         justify-content: center;
@@ -60,10 +63,9 @@
         background-color: aliceblue;
       }
       .main-flex-container {
-        width: 300px;
-        height: 300px;
+        width: 90%;
+        height: 100%;
         display: flex;
-        position: relative;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
@@ -88,31 +90,59 @@
         transform: translateY(80px);
       }
       footer {
-        width: 100vw;
+        width: 350px;
+        float: left;
         height: 200px;
-        background-color: cadetblue;
+        background-color: slategray;
       }
       .contact-title {
-        padding-top: 20px;
-        margin-left: 20px;
+        padding-top: 30px;
+        padding-left: 30px;
+        text-align: left;
+        color: white;
+        font-size: 28px;
       }
       .contact-address {
-        width: 300px;
-        height: 50px;
         /* border: 1px solid black; */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-around;
+        width: 250px;
+        height: 50px;
+        display: inline-block;
         position: relative;
-        padding: 50px;
+        text-align: right;
+        padding: 35px;
+        padding-left: 60px;
+        font-size: 14px;
+        color: white;
+      }
+      .contact-address > ul {
+        list-style: none;
+      }
+      .just-text-title {
+        text-align: right;
+        padding-top: 25px;
+        padding-right: 30px;
+      }
+      .just-text {
+        display: inline-block;
+        /* border: 1px solid black; */
+        margin-left: 30px;
+      }
+      .just-texts {
+        display: inline-block;
+        /* border: 1px solid black; */
+        margin-right: 30px;
+        width: 550px;
+        height: auto;
+        font-size: 12px;
+        text-align: right;
+        line-height: 1.5;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="site-title">
-        <img src="../디자인/노션 등록용.png" alt="" />
+        <img src="" alt="" />
         <h1 id="home">My Docu Docu</h1>
         <br />
         <h4>이 곳은 준수가 만든 공간입니다.</h4>
@@ -127,49 +157,16 @@
       </ul>
     </nav>
     <main>
-      <section>
-        <div class="main-flex-container">
-          뭐 넣지
-          <article class="main-flex-item">
-            <img class="main-image" src="./CSS 요소.PNG" />
-          </article>
-        </div>
-        <div class="main-flex-container">
-          뭐 넣지
-          <article class="main-flex-item">
-            <img class="main-image" src="./CSS 요소.PNG" />
-          </article>
-        </div>
-        <div class="main-flex-container">
-          뭐 넣지
-          <article class="main-flex-item">
-            <img class="main-image" src="./CSS 요소.PNG" />
-          </article>
-        </div>
-        <div class="main-flex-container">
-          뭘 넣어야 할깡
-          <article class="main-flex-item">
-            <img class="main-image" src="./CSS 요소.PNG" />
-          </article>
-        </div>
-        <div class="main-flex-container">
-          뭘 넣어야 할깡
-          <article class="main-flex-item">
-            <img class="main-image" src="./CSS 요소.PNG" />
-          </article>
-        </div>
-        <div class="main-flex-container">
-          뭘 넣어야 할깡
-          <article class="main-flex-item">
-            <img class="main-image" src="./CSS 요소.PNG" />
-          </article>
-        </div>
-      </section>
+      <div class="main-flex-container">
+        <article>
+          What should I do?
+        </article>
+      </div>
     </main>
     <footer>
-      <h2 id="contact" class="contact-title">contact</h2>
+      <h1 id="contact" class="contact-title">contact</h2>
       <div class="contact-address">
-        <ul style="list-style: none">
+        <ul>
           <li>Phone : 010-9694-3994</li>
           <br />
           <li>E-mail : kia54682@gmail.com</li>
@@ -178,5 +175,17 @@
         </ul>
       </div>
     </footer>
+    <h2 class="just-text-title">Hello, My Universe!</h2>
+    <br />
+    <hr />
+    <br />
+    <h5 class="just-text">Welcome to visit my world.</h5>
+    <br />
+    <br />
+    <p class="just-texts">
+      안녕하세요. 김준수입니다. <br />이 페이지는 저를 위한 front-end 연습용
+      html 문서 공간입니다. <br />
+      부디 보람찬 하루와 즐거운 공부되시길 바랍니다.
+    </p>
   </body>
 </html>

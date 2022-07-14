@@ -618,7 +618,7 @@
                         첫번째와 마지막 flex item은 좌우 측면에 정렬
                         나머지는 균등한 간격으로 정렬
                     space-around
-                        모든 flex item은 균등한 간격으로 정령
+                        모든 flex item은 균등한 간격으로 정렬
                 align-content
                     flex container의 cross axis를 기준으로 flex item을 수직 정렬
                     stretch
