@@ -547,6 +547,50 @@ for (p in pretty) {
   }
 }
 
-// 
+const Love = function (emotion) {
+  this.emotion = emotion;
+};
 
-const pretty = new ;
+Love.prototype.people = 5;
+Love.prototype.sayHello = function () {
+  console.log('Hello!');
+}; // prototype 내부에 함수가 포함
+
+Love.prototype.navigation = 1;
+Love.prototype.sayBye = function () {
+  console.log('Bye~');
+};
+
+const trust = new Love('trust');
+
+// trust.__proto__ = love;
+
+console.log(trust);
+console.log(trust instanceof Love); // 객체와 생성자를 비교
+console.log(trust.constructor); // 객체의 생성자를 반환
+
+// Class
+class Pet {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  showName() {
+    console.log(this.name);
+  }
+  // prototype 내부에 함수가 포함
+}
+
+const john = new Pet('john', 5);
+
+john.showName();
+console.log(john);
+
+// class 상속
+class Cat extends Pet {
+  nya() {
+    console.log('nya~ nya~');
+  }
+}
+
+const nabi = new Cat('nabi', 3);

@@ -21,81 +21,147 @@
       /></a>
       <nav>
         <ul class="nav-container">
-          <li class="nav-item"><a href="#">글로모여</a></li>
-          <li class="nav-item"><a href="#">소통공간</a></li>
-          <li class="nav-item"><a href="#">모임등록</a></li>
-          <li class="nav-item"><a href="#">문의하기</a></li>
-          <li class="nav-item"><a href="#">로그인</a></li>
+          <li class="nav-item"><a href="./Introduce.html">글로모여</a></li>
+          <li class="nav-item"><a href="./Comunity.html">소통공간</a></li>
+          <li class="nav-item"><a href="./GroupResister.html">모임등록</a></li>
+          <li class="nav-item"><a href="./Q&A.html">문의하기</a></li>
+          <li class="nav-item"><a href="./LogIn.html">로그인</a></li>
         </ul>
       </nav>
     </header>
+    <aside>
+      <nav class="side-quick">
+        <button class="quick-top" type="button" onclick="location.href='#home'">
+          △ TOP
+        </button>
+        <div class="quick-button">
+          <button type="button" onclick="location.href='#'">
+            지역별로<br />찾기
+          </button>
+          <button type="button" onclick="location.href='#'">
+            테마별로<br />찾기
+          </button>
+          <button type="button" onclick="location.href='#'">
+            해시태그로<br />찾기
+          </button>
+          <button type="button" onclick="location.href='#'">
+            맞춤<br />설정
+          </button>
+        </div>
+      </nav>
+    </aside>
     <main id="home">
       <section class="main-top">
-        <button class="slide-button" type="left-slide">
-          <a href="#"><</a>
-        </button>
         <div class="slide-image">
           <img
-            src="../watermark.png"
+            src="../mountains-7302806_1920.jpg"
             alt="샘플 사진"
-            width="560"
-            height="360"
+            width="1280"
+            height="720px"
           />
         </div>
-        <button class="slide-button" type="right-slide">
-          <a href="#">></a>
-        </button>
       </section>
-      <section class="search-map">
-        <div class="map-API">
-            <img src="../캡처.PNG" alt="지도" height="395px">
-        </div>
-        <div class="search-button">
-          <button class="local-search" type="button">
-            <a href="#">지역별로<br>찾기</a>
-          </button>
-          <button class="local-search" type="button">
-            <a href="#">테마별로<br>찾기</a>
-          </button>
-          <button class="local-search" type="button">
-            <a href="#">해시태그로<br>찾기</a>
-          </button>
-          <button class="local-search" type="button">
-            <a href="#">맞춤<br>설정</a>
-          </button>
-        </div>
-      </section>
-      <section class="search-text">
-        <button class="notyet" type="button">
-          <a href="#"
-            >헤헤
-            <img class="" src="" alt="" height="40px" />
-          </a>
-        </button>
-          <input class="search-bar" type="text" id="search" />
-        <button class="search-option" type="button">
-          <a href="#"
-            >검색설정
-            <img class="" src="" alt="" height="20px" />
-          </a>
-        </button>
+      <section class="main-middle">
+        <section class="main-left">
+          <div class="search-text">
+            <input
+              class="search-bar"
+              type="text"
+              placeholder=" 검색어를 입력하세요."
+              id="search"
+            />
+            <p>#살려줘 #알코올중독 #손석구 #03연하남싸이퍼 #퇴폐미</p>
+          </div>
+          <article>
+            <div class="main-article">
+              <img
+                src="../coffee-2306471_1920.jpg"
+                alt=""
+                width="100%"
+                height="auto"
+              />
+            </div>
+            <div class="sub-article">
+              <div
+                class="article1"
+                onclick="location.href='https://www.youtube.com/watch?v=wiXJLUFm_7I'"
+                style="cursor: pointer"
+              >
+                <img
+                  src="../letter-g9b92aeb8e_1920.jpg"
+                  alt=""
+                  width="100%"
+                  height="auto"
+                />
+                <h2>안녕, 오랜만이야.</h2>
+                <p>
+                  물음표 없이 참 너다운 목소리. <br />
+                  정해진 규칙처럼 추운 문가에 늘 똑같은 네 자리. <br />
+                  제대로 잘 먹어. 다 지나가니까. <br />
+                  예전처럼 잠도 잘 자게 될 거야.
+                </p>
+                <h3>진심으로 빌게. 너는 더 행복할 자격이 있어.</h3>
+              </div>
+              <div
+                class="article2"
+                onclick="location.href='https://www.youtube.com/watch?v=F09Y6X-UBFY'"
+                style="cursor: pointer"
+              >
+                <img
+                  src="../letter-g9b92aeb8e_1920.jpg"
+                  alt=""
+                  width="100%"
+                  height="auto"
+                />
+                <h2>그런 말은 하지마. 제발...</h2>
+                <p>
+                  네 말이 더 아픈 거 알잖아. <br />
+                  사랑해줄 거가며. 다 뭐야... <br />
+                  어떤 맘을 준 건지 넌 모를 거야.
+                </p>
+                <h3>IU(아이유) - 이런 엔딩</h3>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="main-right">
+          <div class="slide-map"></div>
+          <div class="search-map"></div>
+          <div class="location-API">
+            <img src="../캡처.PNG" alt="지도" width="100%" height="100%" />
+          </div>
+        </section>
       </section>
       <section class="group-list">
         <div class="list-info">
-          <h2 class="list-title">우리 동네 텍스처</h2>
-          <button class="list-plus" type="button">
-            <a href="#">모임 등록</a>
+          <div class="list-title">
+            <h3>
+              우리 동네 모임
+              <button type="button">
+                <a href="#">></a>
+              </button>
+            </h3>
+            <p class="location-info"><a href="#">대구 북구</a></p>
+          </div>
+          <button
+            class="list-plus"
+            type="button"
+            onclick="location.href='./GroupResister.html'"
+          >
+            모임 등록
           </button>
         </div>
         <div class="list">
           <ul>
             <h3>저문 글쓰기 모임</h3>
-            <br />
             <li>종류: 글쓰기</li>
-            <li>인원: 6명</li>
             <li>지역: 대구 북구</li>
-            <li>한줄 소개: 도와주세요.</li>
-            <br />
+            <p>#대구 #2030 #존대필수</p>
+          </ul>
+          <ul>
+            <h3>저문 글쓰기 모임</h3>
+            <li>종류: 글쓰기</li>
+            <li>지역: 대구 북구</li>
             <p>#대구 #2030 #존대필수</p>
           </ul>
           <ul></ul>
@@ -104,29 +170,37 @@
           <ul></ul>
           <ul></ul>
           <ul></ul>
-          <ul></ul>
-          <ul></ul>
         </div>
-        <button class="more-group" type="button">
-          <a href="#">모임 더보기</a>
+        <button class="more-group" type="button" onclick="location.href=''">
+          모임 더보기 ▽
         </button>
       </section>
       <section class="writer-list">
         <div class="list-info">
-          <h2 class="list-title">우리 동네 작가</h2>
-          <button class="list-plus" type="button">
-            <a href="#">즐겨찾기</a>
+          <div class="list-title">
+            <h3>
+              우리 동네 작가
+              <button type="button">
+                <a href="#">></a>
+              </button>
+            </h3>
+            <p class="location-info"><a href="#">대구 북구</a></p>
+          </div>
+          <button class="list-plus" type="button" onclick="location.href=''">
+            즐겨찾기
           </button>
         </div>
         <div class="list">
           <ul>
             <h3>저문 스튜디오</h3>
-            <br />
-            <li>아이스 아메리카노</li>
-            <li>아이스 카페모카</li>
             <li>주소: 대구 북구 글로벌플라자</li>
             <li>한줄 소개: 휘핑 추가해주세요.</li>
-            <br />
+            <p>#독립출판 #6주완성 #에세이</p>
+          </ul>
+          <ul>
+            <h3>저문 스튜디오</h3>
+            <li>주소: 대구 북구 글로벌플라자</li>
+            <li>한줄 소개: 휘핑 추가해주세요.</li>
             <p>#독립출판 #6주완성 #에세이</p>
           </ul>
           <ul></ul>
@@ -135,33 +209,42 @@
           <ul></ul>
           <ul></ul>
           <ul></ul>
-          <ul></ul>
         </div>
-        <button class="more-group" type="button">
-            <a href="#">모임 더보기</a>
+        <button class="more-group" type="button" onclick="location.href=''">
+          작가 더보기 ▽
+        </button>
       </section>
     </main>
     <footer>
-        <div class="company-info">
-            <a href="#" alt="">인스타그램: writemore</a>
-            <br>
-            <a href="www.naver.com" alt="">블로그: www.naver.com</a>
-            <br>
-            <a href="#" alt="">이메일: writemore2022@gmail.com</a>
-        </div>
-        <a href="#home"
+      <div class="company-info">
+        <a
+          href="https://www.instagram.com/write_here_official/"
+          target="_blank"
+          alt=""
+          >인스타그램: writemore</a
+        >
+        <br />
+        <a href="tel=www.naver.com" target="_blank" alt=""
+          >연락처: 010-9694-3994</a
+        >
+        <br />
+        <a href="malito=writemore2022@gmail.com" target="_blank" alt=""
+          >이메일: writemore2022@gmail.com</a
+        >
+      </div>
+      <a href="#home"
         ><img
           class="footer-logo"
           src="../watermark.png"
           alt="글로모여"
           height="60px"
-        /></a>
-        <div class="footer-info">
-            <p>주소: 대구광역시 북구 산격로 8길 11-2</p>
-            <a href="#" alt="">광고서비스운영원칙 /</a>
-            <a href="#" alt="">전자금융거래이용약관 /</a>
-            <a href="#" alt="">개인정보취급방침</a>
-        </div>
+      /></a>
+      <div class="footer-info">
+        <p>주소: 대구광역시 북구 산격로 8길 11-2</p>
+        <a href="#" alt="">광고서비스운영원칙 /</a>
+        <a href="#" alt="">전자금융거래이용약관 /</a>
+        <a href="#" alt="">개인정보취급방침</a>
+      </div>
     </footer>
   </body>
 </html>
