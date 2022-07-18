@@ -256,7 +256,7 @@ article {
   margin-left: 110px;
   margin-right: 110px;
 }
-.list ul {
+.list div {
   box-sizing: border-box;
   text-align: start;
   border: 1px double black;
@@ -267,18 +267,18 @@ article {
   line-height: 1.5;
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
 }
-.list ul h3 {
+.list div h3 {
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 10px;
   font-size: 14px;
 }
-.list ul li {
+.list div li {
   margin-left: 40px;
   font-size: 10px;
   color: rgba(0, 0, 0, 0.5);
 }
-.list ul p {
+.list div p {
   margin-top: 10px;
   margin-left: 40px;
   margin-bottom: 30px;

@@ -591,6 +591,223 @@ class Cat extends Pet {
   nya() {
     console.log('nya~ nya~');
   }
+  showName() {
+    super.showName(); // super.function()을 통한 부모요소의 함수 표현
+    console.log(`my name is ${this.name}.`);
+    // 메소드 오버라이딩 (method overriding) => 덮어쓰기
+  }
+}
+
+class Dog extends Pet {
+  constructor(...args) {
+    super(...args);
+    this.navigation = 1; // 오버라이딩 (overriding)
+  }
+  mung() {
+    console.log('mung! mung!');
+  }
 }
 
 const nabi = new Cat('nabi', 3);
+const baduk = new Dog('baduk', 5);
+
+console.log(nabi.showName());
+console.log(baduk);
+
+// 프로미스 (Promise)
+const pr = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('OK');
+  }, 1000);
+});
+// resolve: 성공하였을 경우 / reject: 실패하였을 경우 => call back
+// promise는 state와 result를 property로 보유
+// state: pending(대기) -> fullfilled(이행) 또는 rejected(거부)
+// result: undefined -> value 또는 error
+
+pr.then(
+  function (result) {
+    console.log(result + ' 가지러 가자.');
+  }, // 이행 되었을 경우 실행
+  function (err) {
+    console.log('다시 주문해주세요...');
+  } // 거부 되었을 경우 실행
+);
+
+pr.then(function (result) {
+  console.log(result + ' 가지러 와요.');
+})
+  .catch(function (err) {
+    // .catch를 사용하는 것이 가독성에 유리
+    console.log('다시 주문해주세요...');
+  })
+  .finally(function () {
+    // .finally는 .then 수행 후 무조건 실행
+    console.log('--- 주문 끝 ---');
+  });
+
+const f1 = (message) => {
+  console.log(message);
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res('1번 주문 완료');
+    }, 1000);
+  });
+};
+
+const f2 = (message) => {
+  console.log(message);
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res('2번 주문 완료');
+      // rej('2번 주문 실패')
+    }, 2000);
+  });
+};
+
+const f3 = (message) => {
+  console.log(message);
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res('3번 주문 완료');
+    }, 3000);
+  });
+};
+
+// 프로미스 체이닝 (promise chaining)
+console.time('x');
+f1()
+  .then((res) => f2(res))
+  .then((res) => f3(res))
+  .then((res) => console.log(res))
+  .catch(console.log)
+  .finally(() => {
+    console.log('끝');
+    console.timeEnd('x');
+  });
+
+// Promise.all
+console.time('y');
+Promise.all([f1(), f2(), f3()]).then((res) => {
+  console.log(res);
+  console.timeEnd('y');
+});
+
+// Promise.race
+console.time('z');
+Promise.race([f1(), f2(), f3()]).then((res) => {
+  console.log(res);
+  console.timeEnd('z');
+});
+
+// async: 항상 Promise로 반환
+async function getHungry(state) {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res(state);
+    }, 4000);
+  });
+}
+
+console.log(getHungry("I'm hungry."));
+
+getHungry().then((hungry) => {
+  console.log(hungry);
+});
+
+// await: Promise의 반환값을 기다림
+async function showHungry() {
+  const soHungry = await getHungry('So hungry...');
+  console.log(soHungry);
+}
+
+showHungry();
+
+async function order() {
+  try {
+    // try 영역을 시도
+    const result1 = await f1();
+    const result2 = await f2(result1);
+    const result3 = await f3(result2);
+    // async와 await 사용 시 가독성에 더 유리
+    console.log(result3);
+  } catch (e) {
+    // 에러 발생 시 수행
+    console.log(e);
+  }
+  console.log('배고파');
+}
+
+order();
+
+// Gererator: 함수의 실행을 중간에 멈췄다가 재개할 수 있는 기능
+// next(), return(), throw()
+function* fn() {
+  try {
+    console.log(1);
+    yield 1;
+    console.log(2);
+    yield 2;
+    console.log(3);
+    console.log(4);
+    yield 3;
+    return 'finish';
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+const generator = fn();
+
+console.log(generator);
+console.log(generator.next());
+console.log(generator.next());
+console.log(generator.return('END'));
+console.log(generator.next());
+
+// iterator: next method를 가지며, value와 done 속성을 가진 객체를 반환함
+// iterable: Symbol.iterator method가 있으며, iterator를 반환해야 함
+const iterator = [1, 2, 3, 4, 5];
+const it = iterator[Symbol.iterator]();
+console.log(it.next());
+console.log(it.next());
+
+for (let num of iterator) {
+  console.log(num);
+}
+
+console.log(generator[Symbol.iterator]() === generator);
+
+const hello = 'hello';
+const hi = hello[Symbol.iterator]();
+
+console.log(hello[Symbol.iterator]);
+console.log(hi.next());
+console.log(hi.next());
+
+for (let str of hello) {
+  console.log(str);
+}
+
+function* infinite() {
+  let index = 0;
+  while (true) {
+    yield index++;
+  }
+} // while(true)와 같이 무한 반복문은 generator가 사용되어야 함
+
+function* gen1() {
+  yield 'w';
+  yield 'o';
+  yield 'r';
+  yield 'l';
+  yield 'd';
+}
+
+function* gen2() {
+  yield 'hello,';
+  yield* gen1();
+  yield '!';
+}
+
+console.log(...gen2());
