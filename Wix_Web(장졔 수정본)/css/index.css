@@ -20,10 +20,10 @@ a{
     height: 100px;
     background-color: aqua;
 }
-#slides{
-    width: auto;
-    height: 300px;
-    background-color: aquamarine;
+#main{
+    width: 100vw; /*화면 너비 전체에 표시*/
+    height: 2000px;
+    background-color: yellow;
 }
 #contents{
     width: auto;
