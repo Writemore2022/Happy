@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Android -->
+    <meta property="al:android:url" content="Android app URL" />
+    <meta property="al:android:app_name" content="Android app name" />
+    <meta property="al:android:package" content="Android package name" />
+    <meta property="al:wep:url" content="Android app URL" />
+
+    <!-- iOS -->
+    <meta property="al:ios:url" content="ios app URL" />
+    <meta property="al:ios:app_store_id" content="ios app store ID" />
+    <meta property="al:ios:app_name" content="ios app title" />
+
+    <title>모임 추천</title>
+
+    <style>
+      * {
+        margin: 0px auto;
+        padding: 0;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        max-width: 360px;
+        height: 100vh;
+        max-height: 640px;
+        /* background-color: lightgray; */
+      }
+      #title {
+        width: 50vw;
+        max-width: 300px;
+        font-size: medium;
+        height: 50px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+      }
+      #recommend {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 110px;
+        margin-right: 110px;
+      }
+      #recommend ul {
+        width: 75vw;
+        max-width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+      }
+      #recommend ul {
+        box-sizing: border-box;
+        text-align: start;
+        border: 1px double black;
+        list-style: none;
+        width: 240px;
+        height: 150px;
+        margin: 10px;
+        line-height: 1.5;
+        box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
+      }
+      #recommend ul h3 {
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      #recommend ul li {
+        margin-left: 40px;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      #recommend ul p {
+        margin-top: 10px;
+        margin-left: 30px;
+        /* margin-bottom: 30px; */
+        font-size: 10px;
+      }
+      #email {
+        width: 50vw;
+        max-width: 400px;
+        margin-top: 10px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+        box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="title">
+        <h3>당신을 위한 추천</h3>
+      </div>
+      <div id="recommend">
+        <ul>
+          <h3>저문, 쓰기 클럽</h3>
+          <li>지역: 대구 북구</li>
+          <li>테마: 스릴러</li>
+          <p>#대구북구 #공포 #2030</p>
+          <p>살려주세요살려주세요살려주세요</p>
+        </ul>
+        <ul>
+          <h3>저문, 쓰기 클럽</h3>
+          <li>지역: 대구 북구</li>
+          <li>테마: 스릴러</li>
+          <p>#대구북구 #공포 #2030</p>
+          <p>살려주세요살려주세요살려주세요</p>
+        </ul>
+        <ul>
+          <h3>저문, 쓰기 클럽</h3>
+          <li>지역: 대구 북구</li>
+          <li>테마: 스릴러</li>
+          <p>#대구북구 #공포 #2030</p>
+          <p>살려주세요살려주세요살려주세요</p>
+        </ul>
+        <!-- <img id="recommend" src="./publish/images/socute.jpg" alt="히히" />
+        <img id="recommend" src="./publish/images/socute.jpg" alt="히히" />
+        <img id="recommend" src="./publish/images/socute.jpg" alt="히히" /> -->
+      </div>
+      <div id="email">
+        <label for="email" id="email">이메일 적어라.</label>
+        <input type="email" id="email" placeholder="email" />
+      </div>
+    </main>
+  </body>
+</html>
