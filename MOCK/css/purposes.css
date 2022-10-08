@@ -1,0 +1,42 @@
+#purposes {
+  display: none;
+  width: 80vw;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* #wrap {
+  width: 80vw;
+  height: 640px;
+  background-color: aliceblue;
+} */
+
+/* #wrap > h1 {
+  width: 80vw;
+  height: 100px;
+  background-color: lightblue;
+} */
+
+/* #wrap > #contents {
+  width: 80vw;
+  height: 500px;
+  background-color: antiquewhite;
+} */
+
+/* #wrap > #contents > ul {
+  width: 80vw;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  display: flex;
+} */
+
+#wrap > #contents > #area {
+  margin-top: 10px;
+  background-color: lightpink;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#wrap > #contents > #area > input {
+  width: 40vw;
+}

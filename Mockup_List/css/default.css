@@ -1,0 +1,85 @@
+.move-btn {
+  width: 85px;
+  height: 39px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #6c390d;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.16);
+}
+
+.move-btn:last-child {
+  margin-left: 170px;
+}
+
+.move-btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+/* 달칵! 하는 느낌? */
+.move-btn:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+  background-color: #6c390d;
+  color: #fff;
+}
+
+.move-btn::after {
+  height: 0%;
+  width: 2px;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}

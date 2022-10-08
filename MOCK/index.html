@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="writemore" />
+    <meta name="keywords" content="글로모여 MOCK 테스트" />
+    <meta name="description" content="나에게 맞는 글쓰기 모임은?" />
+
+    <!-- sns share -->
+    <meta property="og:url" content="https://testmore.netlify.app" />
+    <meta property="og:title" content="글로모여 MOCK 테스트" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="socute.jpg" />
+    <meta property="og:description" content="글로모여 MOCK 테스트" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon-precomposed" href="favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>모임 추천</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/locations.css" />
+    <link rel="stylesheet" href="./css/purposes.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/recommend.css" />
+    <link rel="stylesheet" href="./css/groupInfo.css" />
+  </head>
+  <body>
+    <div id="container">
+      <section id="locations">
+        <div id="wrap">
+          <h1>당신의 동네는?</h1>
+          <div id="contents">
+            <div id="daegu">대구</div>
+            <ul>
+              <input
+                class="btn btn-outline-primary m-1"
+                id="location"
+                type="submit"
+                onclick="goPurposes('북구')"
+                value="북구"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="location"
+                type="submit"
+                onclick="goPurposes('동구')"
+                value="동구"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="location"
+                type="submit"
+                onclick="goPurposes('서구')"
+                value="서구"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="location"
+                type="submit"
+                onclick="goPurposes('중구')"
+                value="중구"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="location"
+                type="submit"
+                onclick="goPurposes('수성구')"
+                value="수성구"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="location"
+                type="submit"
+                onclick="goPurposes('달서구')"
+                value="달서구"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="location"
+                type="submit"
+                onclick="goPurposes('남구')"
+                value="남구"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="location"
+                type="submit"
+                onclick="goPurposes('달성군')"
+                value="달성군"
+              />
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="purposes">
+        <div id="wrap">
+          <h1>당신의 목적은?</h1>
+          <div id="contents">
+            <div id="area">실력</div>
+            <ul>
+              <input
+                class="btn btn-outline-primary m-1"
+                id="purpose"
+                type="submit"
+                onclick="goRecommend('치유')"
+                value="치유/힐링"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="purpose"
+                type="submit"
+                onclick="goRecommend('실력')"
+                value="신춘 등단"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="purpose"
+                type="submit"
+                onclick="goRecommend('친목')"
+                value="레포트"
+              />
+            </ul>
+            <div id="area">취미</div>
+            <ul>
+              <input
+                class="btn btn-outline-primary m-1"
+                id="purpose"
+                type="submit"
+                onclick="goRecommend('치유')"
+                value="힐링"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="purpose"
+                type="submit"
+                onclick="goRecommend('친목')"
+                value="개인 만족"
+              />
+              <input
+                class="btn btn-outline-primary m-1"
+                id="purpose"
+                type="submit"
+                onclick="goRecommend('커피 당첨!')"
+                value="감정 배출"
+              />
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="recommend">
+        <div id="title">당신을 위한 추천</div>
+        <div id="recommends">
+          <div class="recommend1" onclick="goGroupInfo()">
+            <div class="groupName1"></div>
+            <div class="groupLocation1"></div>
+            <div class="groupPurpose1"></div>
+          </div>
+          <div class="recommend2" onclick="goGroupInfo()">
+            <div class="groupName2"></div>
+            <div class="groupLocation2"></div>
+            <div class="groupPurpose2"></div>
+          </div>
+          <div class="recommend3" onclick="goGroupInfo()">
+            <div class="groupName3"></div>
+            <div class="groupLocation3"></div>
+            <div class="groupPurpose3"></div>
+          </div>
+        </div>
+        <div id="detail">
+          <div id="popup">
+            <h2>
+              <label for="layer-popup">상세페이지</label>
+            </h2>
+            <div id="groupName"></div>
+            <hr />
+            <button type="submit" class="goBack" onclick="goBack()">
+              뒤로가기
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./js/groupDB.js" charset="utf-8"></script>
+    <script src="./js/filter.js" charset="utf-8"></script>
+    <script src="./js/nextPage.js" charset="utf-8"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
