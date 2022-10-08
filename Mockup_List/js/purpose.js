@@ -1,6 +1,6 @@
 $(document).ready(function() {       
     $('.category-btn').on("click", function() {     //버튼 클릭시 호출되는 함수
-        if($('.category-btn').hasClass("active")){
+        if($(this).hasClass("active")){
             $(this).removeClass('active');      //클릭된 버튼에 속성(class 삭제)
             alert("[" + $(this).val() + "] 카테고리 선택이 취소되었습니다."); 
         } else{
