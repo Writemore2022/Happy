@@ -121,6 +121,7 @@
 .category-btn:hover{
     background-color: #6c390d;
     color: #fff;
+    cursor: pointer;
 }
 
 .category-btn.active{ /*버튼 클릭 후 배경, 글자 색 변환*/
