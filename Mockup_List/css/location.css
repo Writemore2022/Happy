@@ -1,0 +1,50 @@
+#wrap {
+  width: 390px;
+  height: 844px;
+  padding-top: 71px;
+  /* padding-left: 24px; */
+  box-sizing: border-box;
+  background-image: url('../images/wood-bg.jpg');
+}
+
+#wrap > #title {
+  width: 366px;
+  /* height: 25px; */
+  margin: 24px 0 43px 24px;
+  font-family: SeoulHangang-EB;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6c390d;
+}
+
+#contents {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-top: 43px; */
+  margin-left: 20px;
+  margin-right: 14px;
+}
+
+.location-button {
+  width: 104px;
+  height: 67px;
+  margin: 43px 14px 17px 0px;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  background-color: #6c390d;
+
+  font-family: SeoulHangang-EB;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff5ef;
+}
