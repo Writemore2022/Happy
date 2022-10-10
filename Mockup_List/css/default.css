@@ -20,13 +20,8 @@
   margin-left: 170px;
 }
 
-.move-btn:before {
-  height: 0%;
-  width: 2px;
-}
-
 /* 달칵! 하는 느낌? */
-.move-btn:active {
+.move-btn:focus {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
@@ -35,12 +30,7 @@
   color: #fff;
 }
 
-.move-btn::after {
-  height: 0%;
-  width: 2px;
-}
-
-.location-button:active {
+.location-button:focus {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),

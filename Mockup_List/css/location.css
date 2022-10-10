@@ -9,42 +9,64 @@
 
 #wrap > #title {
   width: 366px;
-  /* height: 25px; */
   margin: 24px 0 43px 24px;
   font-family: SeoulHangang-EB;
   font-size: 25px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
   color: #6c390d;
 }
 
 #contents {
   display: flex;
   flex-wrap: wrap;
-  /* padding-top: 43px; */
-  margin-left: 20px;
-  margin-right: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .location-button {
-  width: 104px;
-  height: 67px;
-  margin: 43px 14px 17px 0px;
-  border-radius: 15px;
+  width: 75px;
+  height: 187px;
+  margin: 42px 10px;
+  padding-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(149, 94, 58, 0.47);
+  border: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
-  background-color: #6c390d;
+  background-image: url('../images/wood-loca.jpg');
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hole {
+  margin: auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 50px;
+  position: relative;
+  background-image: url('../images/wood-bg.jpg');
+}
+
+.button-text {
+  width: 35px;
+  height: 140px;
+  margin: 0px 0 0;
   font-family: SeoulHangang-EB;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.34;
   letter-spacing: normal;
   text-align: center;
-  color: #fff5ef;
+  color: #955e3a;
+
+  /* 버튼 내 글자 세로 정렬 */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  inset: 0;
+  text-shadow: 0px -0.75px 0.75px #6c390d;
 }

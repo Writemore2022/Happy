@@ -8,8 +8,7 @@
 }
 
 #wrap > #title {
-  width: 339px;
-  height: 66px;
+  width: 366px;
   font-size: 25px;
   text-align: left;
   color: #6c390d;
@@ -19,7 +18,7 @@
 #wrap > #contents1 {
   width: 346px;
   height: 150px;
-  margin-top: 41px;
+  margin-top: 44px;
   text-align: center;
   border-radius: 17px;
   -webkit-backdrop-filter: blur(31.5px);
@@ -30,7 +29,7 @@
 
 #wrap > #contents1 > #growing-title {
   width: 346px;
-  height: 31.3px;
+  height: 32px;
   padding-top: 6px;
   box-sizing: border-box;
   font-size: 15px;
