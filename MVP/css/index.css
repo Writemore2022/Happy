@@ -1,0 +1,252 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'MaruBuri';
+}
+
+@font-face {
+  font-family: 'MaruBuri';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format('embedded-opentype'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format('woff'),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format('truetype');
+}
+
+@media screen and (max-width: 1024px) {
+  .left-cards,
+  .right-cards,
+  .map {
+    margin-top: 5%;
+  }
+
+  .comming-soon {
+    width: 100vw;
+  }
+
+  .table {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin-top: 2.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .map {
+    width: 40%;
+  }
+
+  .left-cards,
+  .right-cards {
+    width: 25%;
+  }
+
+  .daegu {
+    position: relative;
+    right: 10%;
+    margin-bottom: 10%;
+  }
+
+  .gyoungju {
+    position: relative;
+    left: 10%;
+    margin-bottom: 10%;
+  }
+
+  .changwon {
+    position: relative;
+    margin-top: 10%;
+  }
+
+  .pohang {
+    position: relative;
+    margin-top: 20%;
+  }
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  background-color: #412109;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  display: flex;
+  /* justify-content: flex-start; */
+}
+
+.watermark {
+  width: 300px;
+  max-width: 300px;
+  height: 100px;
+  max-height: 100px;
+}
+
+.logo-text {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+body {
+  background-image: url('../images/lof.jpg');
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* width: 60%; */
+}
+
+.left-cards,
+.right-cards {
+  min-width: 90px;
+  height: 100%;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.daegu {
+  width: 100%;
+  display: flex;
+}
+
+.gyoungju {
+  width: 75%;
+}
+
+.changwon {
+  width: 75%;
+}
+
+.pohang {
+  width: 75%;
+}
+
+.slide-card {
+  width: 100%;
+  min-width: 120px;
+  height: 100%;
+  min-height: 120px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: lightyellow;
+}
+
+.group-img {
+  width: 95%;
+  padding-top: 2.5%;
+  border: none;
+  border-radius: 20px;
+}
+
+.group-info {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 1rem 1.5rem;
+}
+
+.slide-btn {
+  font-size: 15px;
+  background: none;
+  border: none;
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.comming-soon {
+  width: 100%;
+  /* min-width: 180px; */
+  background-image: url('./images/comming-soon.png');
+  height: 100%;
+  min-height: 200px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+.map {
+  min-width: 400px;
+  height: 30%;
+  min-height: 600px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.map-img {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 480px;
+}
+
+footer {
+  width: 70%;
+  min-width: 320px;
+  margin-top: 2.5%;
+}
+
+.table {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.table-title {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  /* background-color: aliceblue; */
+}
+
+.table > div > button {
+  margin: 0.1rem;
+  padding: 0.5rem;
+  background-color: lightyellow;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.purpose {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  /* text-align: center; */
+}
+
+.genre {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  /* text-align: center; */
+}
+
+.mood {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  /* text-align: center; */
+}
