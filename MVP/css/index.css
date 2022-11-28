@@ -32,39 +32,8 @@
 @media screen and (min-width: 1024px) {
   main {
     margin-top: 2.5%;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
-  .map {
-    width: 40%;
-  }
-
-  .left-cards,
-  .right-cards {
-    width: 25%;
-  }
-
-  .daegu {
-    position: relative;
-    right: 10%;
-    margin-bottom: 10%;
-  }
-
-  .gyoungju {
-    position: relative;
-    left: 10%;
-    margin-bottom: 10%;
-  }
-
-  .changwon {
-    position: relative;
-    margin-top: 10%;
-  }
-
-  .pohang {
-    position: relative;
-    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -99,29 +68,32 @@ header {
 }
 
 body {
-  background-image: url('../images/lof.jpg');
+  /* background-image: url('../images/lof.jpg'); */
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* width: 60%; */
+  /* border: 1px solid black; */
 }
 
 .left-cards,
 .right-cards {
-  min-width: 90px;
-  height: 100%;
-  min-height: 180px;
+  min-width: 180px;
+  width: 20%;
+  height: 100vh;
+  max-height: 680px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   /* border: 1px solid black; */
 }
 
 .daegu {
   width: 100%;
   display: flex;
+  overflow: hidden;
 }
 
 .gyoungju {
@@ -138,54 +110,72 @@ body {
 
 .slide-card {
   width: 100%;
-  min-width: 120px;
+  min-width: 160px;
   height: 100%;
-  min-height: 120px;
+  max-height: 320px;
   text-align: center;
-  border: 1px solid black;
   border-radius: 20px;
-  background-color: lightyellow;
+  background-color: #fff4e7;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem;
 }
 
 .group-img {
-  width: 95%;
-  padding-top: 2.5%;
+  width: 80%;
+  height: 160px;
   border: none;
   border-radius: 20px;
 }
 
 .group-info {
   font-weight: bold;
-  font-size: 12px;
-  line-height: 1.5;
-  padding: 1rem 1.5rem;
+  font-size: 14px;
+  padding: 1rem;
+}
+
+.card-hashtag {
+  display: flex;
+  font-size: 11px;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.card-hashtag > div {
+  border: 0.5px solid #42210a;
+  border-radius: 20px;
+  width: 25%;
+  padding: 0.25rem;
 }
 
 .slide-btn {
-  font-size: 15px;
+  font-size: 30px;
   background: none;
   border: none;
-  color: white;
   margin: 0 0.5rem;
 }
 
 .comming-soon {
   width: 100%;
-  /* min-width: 180px; */
   background-image: url('./images/comming-soon.png');
   height: 100%;
-  min-height: 200px;
-  text-align: center;
+  min-height: 240px;
   border-radius: 20px;
   background-color: lightgray;
 }
 
 .map {
-  min-width: 400px;
-  height: 30%;
-  min-height: 600px;
-  border: 1px solid black;
+  width: 30%;
+  min-width: 320px;
+  height: 15%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
 }
 
 .map-img {
@@ -195,58 +185,24 @@ body {
   min-height: 480px;
 }
 
-footer {
-  width: 70%;
-  min-width: 320px;
-  margin-top: 2.5%;
+.map-select {
+  fill: #fff6e9;
+  fill-opacity: 1;
+  fill-rule: nonzero;
 }
 
-.table {
-  display: flex;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color: white;
+.map-unselect {
+  fill: #fff6e9;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  /* stroke: black; */
+  z-index: 0;
 }
 
-.table-title {
-  text-align: center;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 13px;
-  font-weight: bold;
-  border-bottom: 1px solid black;
-  /* background-color: aliceblue; */
+.daeguMap {
+  fill: #cccccc;
 }
 
-.table > div > button {
-  margin: 0.1rem;
-  padding: 0.5rem;
-  background-color: lightyellow;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 12px;
-}
-
-.purpose {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid black;
-  border-radius: 20px;
-  /* text-align: center; */
-}
-
-.genre {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid black;
-  border-radius: 20px;
-  /* text-align: center; */
-}
-
-.mood {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid black;
-  border-radius: 20px;
-  /* text-align: center; */
+.daeguHover {
+  display: none;
 }
