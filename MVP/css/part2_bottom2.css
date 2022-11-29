@@ -1,0 +1,33 @@
+/*label*/
+#wrap>#bottom>.bottom-menu>#label_bg2-1{
+    left: 70px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg2-2{
+    left: 170px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg2-3{
+    left: 270px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg2-4{
+    left: 370px;
+  }
+
+/*text*/
+#wrap>#bottom>.bottom-menu>#sub-txt2-1{
+    left: 70px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt2-2{
+    left: 170px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt2-3{
+    left: 270px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt2-4{
+    left: 370px;
+  }
