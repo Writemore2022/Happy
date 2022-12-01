@@ -13,9 +13,15 @@ li{
   list-style-type: none;
 }
 
+body{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
 #wrap {
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: 100%;
     -webkit-backdrop-filter: blur(7.8px);
     backdrop-filter: blur(7.8px);
     background-color: #d0d0d0;
@@ -24,23 +30,23 @@ li{
   }
 
 #wrap>#popup {
-  width: 787.5px;
-  height: 946.4px;
+  width: 537.5px;
+  height: 666.4px;
   position: absolute;
-  top: 66.8px;
-  left: 531.2px;
+  top: 36.8px;
+  left: 500.2px;
   border-radius: 20px;
   background-color: white;
   }
 
 #wrap>#popup>#top{
-  width: 787.5px;
-  height: 473.2px;
+  width: 537.5px;
+  height: 333.2px;
   /* background-color: aqua; */
 }
 
 #wrap>#popup>#bottom{
-  width: 787.5px;
-  height: 473.2px;
+  width: 537.5px;
+  height: 333.2px;
   /* background-color: pink; */
 }

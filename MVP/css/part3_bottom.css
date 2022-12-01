@@ -1,39 +1,39 @@
 /*모임 상세 정보*/
 #wrap>#popup>#bottom>#category>li{
     display: block;
-    width: 170px;
-    height: 93px;
-    margin-bottom: 1px;
+    width: 100px;
+    height: 66px;
+    margin-bottom: 0.8px;
     margin-right: 1px;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 25px;
     box-sizing: border-box;
     /* background-color: lightblue; */
   }
   
-  #wrap>#popup>#bottom>#contents, #category{
+   #wrap>#popup>#bottom>#contents, #category{
     float: left;
   }
   
   #wrap>#popup>#bottom>#contents>li{
     display: block;
-    width: 615px;
-    height: 93px;
-    margin-bottom: 1px;
+    width: 430px;
+    height: 66px;
+    margin-bottom: 0.8px;
     margin-left: 1px;
-    padding-top: 35px;
+    padding-top: 25px;
     padding-left: 50px;
     box-sizing: border-box;
     /* background-color: lightgreen; */
   }
   
   #wrap>#popup>#bottom>#contents>#date-conts>#day{
-    margin-top: -30px;
+    margin-top: -10px;
   }
   
   #wrap>#popup>#bottom>#contents>#date-conts>.date {
-    width: 550px;
-    height: 41px;
+    width: 320px;
+    height: 21px;
     margin-bottom: 1px;
     /* background-color: lightsalmon; */
   }
