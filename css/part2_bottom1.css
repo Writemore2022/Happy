@@ -1,0 +1,26 @@
+/*label*/
+#wrap>#bottom>.bottom-menu>#label_bg1-1{
+    left: 80px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg1-2{
+    left: 180px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg1-3{
+    left: 280px;
+  }
+
+/*text*/
+
+#wrap>#bottom>.bottom-menu>#sub-txt1-1{
+    left: 80px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt1-2{
+    left: 180px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt1-3{
+    left: 280px;
+  }

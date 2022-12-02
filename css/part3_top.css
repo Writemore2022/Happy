@@ -1,0 +1,103 @@
+/*모임 요약 정보*/
+#wrap>#popup>#top>#group{
+    float: left;
+    width: 269px; /*423.1*/
+    height: 333.2px; /*473.2*/
+    margin-right: 2px;
+    /* background-color: darkblue; */
+    position: relative;
+  }
+  
+  #wrap>#popup>#top>#group>#summary{
+    width: 228px;
+    height: 290px;
+    background-color: #fff4e7;
+    position: absolute;
+    top: 22px;
+    left: 23px;
+    border-radius: 15px;
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-area{
+    height: 45px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    font-size: 22px;
+    /* background-color: lawngreen; */
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-img{
+    height: 165px;
+    /* background-color: red; */
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-img>img{
+    width: 204px;
+    height: 154px;
+    margin-left: 12px;
+    margin-top: 5px;
+    border-radius: 20px;
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-name{
+    height: 40px;
+    /* background-color: blueviolet; */
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-hashtag{
+    height: 40px;
+    /* background-color: brown; */
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-hashtag>#hashtag>li{
+    text-align: center;
+    float: left;
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-hashtag>#hashtag>li:first-child{
+    width: auto;
+    height: 30px;
+    padding: 4.7px;
+    margin-left: 20px;
+    margin-top: 3px;
+    box-sizing: border-box;
+    border: solid 0.5px #42210a;
+    border-radius: 20px;
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-hashtag>#hashtag>li:nth-child(2){
+    width: auto;
+    height: 30px;
+    padding: 4.7px;
+    margin-left: 15px;
+    margin-top: 3px;
+    box-sizing: border-box;
+    border: solid 0.5px #42210a;
+    border-radius: 20px;
+  }
+  
+  #wrap>#popup>#top>#group>#summary>#group-hashtag>#hashtag>li:last-child{
+    width: auto;
+    height: 30px;
+    padding: 4.7px;
+    margin-left: 15px;
+    margin-top: 3px;
+    box-sizing: border-box;
+    border: solid 0.6px #42210a;
+    border-radius: 20px;
+  }
+  
+  /*모임 한줄 소개*/
+  #wrap>#popup>#top>#info{
+    float: left;
+    width: 265px;
+    height: 333.2px;
+    /* background-color: olive; */
+    padding: 25px 30px;
+    box-sizing: border-box;
+    font-size: 22px;
+  }
