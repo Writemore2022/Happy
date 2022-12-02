@@ -1,16 +1,12 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  font-family: 'MaruBuri';
+  font-family: 'LoveNovel';
 }
 
 @font-face {
-  font-family: 'MaruBuri';
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format('embedded-opentype'),
-    url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'),
-    url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format('woff'),
-    url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format('truetype');
+  font-family: 'LoveNovel';
+  src: url('../font/a연애소설.ttf');
 }
 
 @media screen and (max-width: 1024px) {
@@ -37,43 +33,20 @@
   }
 }
 
-header {
-  width: 100%;
-  height: 3rem;
-  background-color: #412109;
-  /* text-align: center; */
-  display: flex;
-  align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.logo {
-  display: flex;
-  /* justify-content: flex-start; */
-}
-
-.watermark {
-  width: 300px;
-  max-width: 300px;
-  height: 100px;
-  max-height: 100px;
-}
-
-.logo-text {
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
 body {
-  /* background-image: url('../images/lof.jpg'); */
+  color: #222;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   /* border: 1px solid black; */
 }
@@ -83,10 +56,11 @@ body {
   min-width: 180px;
   width: 20%;
   height: 100vh;
-  max-height: 680px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   /* border: 1px solid black; */
 }
 
@@ -141,6 +115,7 @@ body {
   display: flex;
   font-size: 11px;
   margin-top: 1rem;
+  justify-content: center;
   align-items: center;
 }
 
@@ -159,19 +134,20 @@ body {
 }
 
 .comming-soon {
-  width: 100%;
+  width: 75%;
   background-image: url('./images/comming-soon.png');
   height: 100%;
-  min-height: 240px;
+  min-height: 200px;
   border-radius: 20px;
   background-color: lightgray;
 }
 
 .map {
-  width: 30%;
+  width: 20%;
   min-width: 320px;
   height: 15%;
   background-color: white;
+  margin: 0 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
