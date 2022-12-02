@@ -39,7 +39,6 @@
 .searchBtn {
   margin-right: 5px;
   color: white;
-  float: right;
   border-radius: 30px;
   display: inline-block;
 }
@@ -50,6 +49,7 @@
   height: 40px;
   border-radius: 30px;
   display: inline-block;
+  text-align: center;
   font-size: medium;
 }
 

@@ -1,4 +1,4 @@
-const daeguCard = document.querySelector('.daegu');
+const daeguMap = document.querySelector('.daeguMap');
 const daeguHover = document.querySelector('.daeguHover');
 
 function daeguPopup() {

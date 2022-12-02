@@ -27,7 +27,6 @@
 
 @media screen and (min-width: 1024px) {
   main {
-    margin-top: 2.5%;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -35,7 +34,6 @@
 
 body {
   color: #222;
-  line-height: 1.5em;
 }
 
 a {
@@ -43,23 +41,30 @@ a {
   color: black;
 }
 
+header {
+  /* border: 1px solid black; */
+  line-height: 1.5em;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
   /* border: 1px solid black; */
 }
 
 .left-cards,
 .right-cards {
   min-width: 180px;
-  width: 20%;
+  width: 17.5%;
   height: 100vh;
   max-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: center;
   align-items: center;
   /* border: 1px solid black; */
 }
@@ -99,8 +104,8 @@ a {
 }
 
 .group-img {
-  width: 80%;
-  height: 160px;
+  width: 85%;
+  height: 120px;
   border: none;
   border-radius: 20px;
 }
@@ -115,15 +120,15 @@ a {
   display: flex;
   font-size: 11px;
   margin-top: 1rem;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .card-hashtag > div {
   border: 0.5px solid #42210a;
   border-radius: 20px;
-  width: 25%;
-  padding: 0.25rem;
+  width: 30%;
+  /* padding: 0.25rem; */
 }
 
 .slide-btn {
@@ -173,10 +178,6 @@ a {
   fill-rule: nonzero;
   /* stroke: black; */
   z-index: 0;
-}
-
-.daeguMap {
-  fill: #cccccc;
 }
 
 .daeguHover {
