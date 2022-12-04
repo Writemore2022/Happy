@@ -21,8 +21,8 @@ li {
 
 #wrap > #bottom > .bottom-menu {
   float: left;
-  width: 432px;
-  height: 150px;
+  width: 402px;
+  height: 120px;
   margin-right: 1px;
   /* background-color: aqua; */
   position: relative;
@@ -31,26 +31,25 @@ li {
 #wrap > #bottom > .bottom-menu > .paper {
   width: 422px;
   height: 230px;
-  margin-top: -30px;
-  margin-left: 15px;
+  margin-top: -60px;
 }
 
 #wrap > #bottom > .bottom-menu > .main-txt {
   position: absolute;
-  top: 50px;
-  left: 200px;
+  top: 25px;
+  left: 190px;
 }
 
 #wrap > #bottom > .bottom-menu > .label {
   position: absolute;
   width: 90px;
   height: 50px;
-  top: 70px;
+  top: 35px;
 }
 
 #wrap > #bottom > .bottom-menu > .sub-txt {
   position: absolute;
-  top: 86px;
+  top: 54px;
   width: 90px;
   height: 50px;
   text-align: center;
