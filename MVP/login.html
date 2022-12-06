@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-signin-client_id"
-      content="728240525281-gn7oj3uva49tja2rgn1ver38otj79ldu.apps.googleusercontent.com"
-    />
+    <meta name="google-signin-client_id" content="728240525281-gn7oj3uva49tja2rgn1ver38otj79ldu.apps.googleusercontent.com" />
     <title>로그인 페이지</title>
     <style>
       header {
@@ -254,15 +251,9 @@
   <body>
     <header>
       <nav>
-        <a href="#none"
-          >로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-        >
-        <a href="#none"
-          >회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-        >
-        <a href="#none"
-          >장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-        >
+        <a href="#none">로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="#none">회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="#none">장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
       </nav>
     </header>
     <br /><br />
@@ -271,23 +262,12 @@
     </div>
     <br />
     <div class="logo">
-      <a href="1,5.html"
-        ><img
-          src="./images/logo.png"
-          alt="글로모여 로고"
-          width="250"
-      /></a>
+      <a href="./index.html"><img src="./images/logo.png" alt="글로모여 로고" width="250" /></a>
     </div>
     <div class="search_main">
       <div class="search">
         <form action="https://search.naver.com/search.naver" method="GET">
-          <input
-            id="query"
-            class="input_text"
-            name="query"
-            type="search"
-            placeholder="어떤 모임을 기대하나요?"
-          />
+          <input id="query" class="input_text" name="query" type="search" placeholder="어떤 모임을 기대하나요?" />
           <button class="Button" type="submit">
             <div class="searchBtn">검색</div>
           </button>
@@ -371,9 +351,7 @@
           <input type="password" name="" id="" placeholder="비밀번호" />
         </div>
         <div class="login_etc">
-          <div class="checkbox">
-            <input type="checkbox" name="" id="" /> 로그인 상태 유지
-          </div>
+          <div class="checkbox"><input type="checkbox" name="" id="" /> 로그인 상태 유지</div>
           <div class="forgot_pw">
             <a href="">비밀번호를 잊으셨나요?</a>
           </div>
@@ -381,45 +359,46 @@
         <div class="submit">
           <div class="submit_input">로그인</div>
         </div>
+      </div>
     </div>
     <!-- google login -->
     <ul>
       <li id="GgCustomLogin">
-       <a href="javascript:void(0)">
-        <span>Login with Google</span>
-       </a>
+        <a href="javascript:void(0)">
+          <span>Login with Google</span>
+        </a>
       </li>
-     </ul>
-     <script>
-     function init() {
-       gapi.load('auth2', function() {
-         gapi.auth2.init();
-         options = new gapi.auth2.SigninOptionsBuilder();
-         options.setPrompt('select_account');
-         options.setScope('email profile openid https://www.googleapis.com/auth/user.birthday.read');
-         gapi.auth2.getAuthInstance().attachClickHandler('GgCustomLogin', options, onSignIn, onSignInFailure);
-       })
-     }
-     
-     function onSignIn(googleUser) {
-       var access_token = googleUser.getAuthResponse().access_token
-       $.ajax({
-         url: 'https://people.googleapis.com/v1/people/me'
-         , data: {personFields:'birthdays', key:'AIzaSyD32--Pcrnr6jjas0Z8PCLB6XLSPeLgfQ8', 'access_token': access_token}
-         , method:'GET'
-       })
-       .done(function(e){
-         var profile = googleUser.getBasicProfile();
-         console.log(profile)
-       })
-       .fail(function(e){
-         console.log(e);
-       })
-     }
-     function onSignInFailure(t){		
-       console.log(t);
-     }
-     </script>
-     <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+    </ul>
   </body>
+  <script>
+    function init() {
+      gapi.load('auth2', function () {
+        gapi.auth2.init();
+        options = new gapi.auth2.SigninOptionsBuilder();
+        options.setPrompt('select_account');
+        options.setScope('email profile openid https://www.googleapis.com/auth/user.birthday.read');
+        gapi.auth2.getAuthInstance().attachClickHandler('GgCustomLogin', options, onSignIn, onSignInFailure);
+      });
+    }
+
+    function onSignIn(googleUser) {
+      var access_token = googleUser.getAuthResponse().access_token;
+      $.ajax({
+        url: 'https://people.googleapis.com/v1/people/me',
+        data: { personFields: 'birthdays', key: 'AIzaSyD32--Pcrnr6jjas0Z8PCLB6XLSPeLgfQ8', access_token: access_token },
+        method: 'GET',
+      })
+        .done(function (e) {
+          var profile = googleUser.getBasicProfile();
+          console.log(profile);
+        })
+        .fail(function (e) {
+          console.log(e);
+        });
+    }
+    function onSignInFailure(t) {
+      console.log(t);
+    }
+  </script>
+  <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
 </html>

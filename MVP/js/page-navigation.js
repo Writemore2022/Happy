@@ -13,9 +13,7 @@ submenu.addEventListener('click', (e) => {
 
   let select = e.target.innerHTML;
 
-  //   window.onload = () => {
   name(select);
-  //   };
 
   //   window.addEventListener('DOMContentLoaded', () => {
   //     if (select == '전체보기') {
