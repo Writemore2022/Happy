@@ -95,7 +95,12 @@
     width: 30px;
     height: 30px;
     float: right;
+    padding: 10px 25px;
+    box-sizing: border-box;
+  
     font-size: 22px;
+    background: none;
+    border: none;
  }
 
   /*모임 한줄 소개*/
