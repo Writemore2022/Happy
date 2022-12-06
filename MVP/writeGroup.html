@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글쓰기 모임</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-nav">
+        <div>
+          <a href="./login.html">로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="#none">회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="#none">장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+      </div>
+      <div class="logo-box">
+        <div class="junior">
+          <a href="#none">글로모여 주니어</a>
+        </div>
+        <br />
+        <div class="logo">
+          <a href="./index.html"><img src="./images/logo.png" alt="글로모여 로고" width="250" /></a>
+        </div>
+        <div class="search_main">
+          <div class="search">
+            <form action="https://search.naver.com/search.naver" method="GET">
+              <input id="query" class="input_text" name="query" type="search" placeholder="어떤 모임을 기대하나요?" />
+              <button class="searchBtn" type="submit">검색</button>
+            </form>
+          </div>
+          <button class="extraBtn" name="myPage">마이페이지</button>
+          <button class="extraBtn" name="registerGroup">모임 등록하기</button>
+        </div>
+      </div>
+      <div class="menu-nav">
+        <ul class="myMenu">
+          <li>
+            글쓰기 모임
+            <ul class="submenu" id="write-submenu">
+              <li>전체보기</li>
+              <li>목적</li>
+              <li>장르</li>
+              <li>분위기</li>
+              <li>글모 거점 소개서</li>
+            </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            독서모임
+            <ul class="submenu">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+              <li>list 4</li>
+            </ul>
+          </li>
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>
+              이벤트
+              <ul class="submenu">
+                <li>list 1</li>
+                <li>list 2</li>
+                <li>list 3</li>
+                <li>list 4</li>
+              </ul>
+            </li> -->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            커뮤니티
+            <ul class="submenu">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+              <li>list 4</li>
+            </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            글로모여 소개
+            <ul class="submenu">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+              <li>list 4</li>
+            </ul>
+          </li>
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="menu1">
+              공지
+              <ul class="menu1_s submenu">
+                <li>list 1</li>
+                <li>list 2</li>
+                <li>list 3</li>
+                <li>list 4</li>
+              </ul>
+            </li> -->
+        </ul>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <div class="main-nav">
+        <ul class="write-menu">
+          <li id="write-total">전체보기</li>
+          <li id="write-purpose">목적</li>
+          <li id="write-ganre">장르</li>
+          <li id="write-mood">분위기</li>
+        </ul>
+      </div>
+      <div class="collect-group">
+        <div class="option-box">
+          <div class="select-option">
+            <ul class="date-option">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="time-option">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <button class="end-group-btn"></button>
+          </div>
+          <div class="rank-option"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./js/page-navigation.js"></script>
+</html>

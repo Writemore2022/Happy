@@ -4,58 +4,124 @@
   font-family: 'LoveNovel';
 }
 
-@font-face {
-  font-family: 'LoveNovel';
-  src: url('../font/a연애소설.ttf');
-}
-
-@media screen and (max-width: 1024px) {
-  .left-cards,
-  .right-cards,
-  .map {
-    margin-top: 5%;
-  }
-
-  .comming-soon {
-    width: 100vw;
-  }
-
-  .table {
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-body {
-  color: #222;
-}
-
 a {
   text-decoration-line: none;
   color: black;
 }
 
-header {
-  /* border: 1px solid black; */
-  line-height: 1.5em;
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'LoveNovel';
+  src: url('../font/a연애소설.ttf');
+}
+
+/* @media screen and (max-width: 1024px) {
+  .right-cards,
+  .map {
+    margin-top: 5%;
+  } */
+
+/* @media screen and (min-width: 1024px) {
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+} */
+
+body {
+  color: #222;
+}
+
+main {
+  margin: 40px 0;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  /* border: 1px solid #222; */
+}
+
+.explain-map {
+  font-size: 20px;
+  position: relative;
+  right: 300px;
+  color: rgb(127, 127, 127);
+}
+
+/* 상담하기 버튼 */
+.consultBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 60%;
+  left: 90%;
+  background-color: #fff4e7;
+  width: 75px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 80px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 지도 크기 및 위치 정리 */
+.map {
+  width: 25%;
+  min-width: 320px;
+  height: 15%;
+  background-color: white;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* border: 1px solid black; */
 }
 
-.left-cards,
+.map-img {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 480px;
+}
+
+/* 지도 색상 및 display */
+.map-select {
+  fill: #fff6e9;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+}
+
+.map-unselect {
+  fill: #fff6e9;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  /* stroke: black; */
+  z-index: 0;
+}
+
+.daeguHover {
+  display: none;
+}
+
+/* 이전 버전에서 쓰던 css인데 보존할 필요가 있어 남겨둡니다. */
 .right-cards {
   min-width: 180px;
   width: 17.5%;
@@ -73,18 +139,6 @@ header {
   width: 100%;
   display: flex;
   overflow: hidden;
-}
-
-.gyoungju {
-  width: 75%;
-}
-
-.changwon {
-  width: 75%;
-}
-
-.pohang {
-  width: 75%;
 }
 
 .slide-card {
@@ -136,50 +190,4 @@ header {
   background: none;
   border: none;
   margin: 0 0.5rem;
-}
-
-.comming-soon {
-  width: 75%;
-  background-image: url('./images/comming-soon.png');
-  height: 100%;
-  min-height: 200px;
-  border-radius: 20px;
-  background-color: lightgray;
-}
-
-.map {
-  width: 20%;
-  min-width: 320px;
-  height: 15%;
-  background-color: white;
-  margin: 0 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 1px solid black; */
-}
-
-.map-img {
-  width: 100%;
-  min-width: 320px;
-  height: 100%;
-  min-height: 480px;
-}
-
-.map-select {
-  fill: #fff6e9;
-  fill-opacity: 1;
-  fill-rule: nonzero;
-}
-
-.map-unselect {
-  fill: #fff6e9;
-  fill-opacity: 1;
-  fill-rule: nonzero;
-  /* stroke: black; */
-  z-index: 0;
-}
-
-.daeguHover {
-  display: none;
 }

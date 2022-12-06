@@ -38,66 +38,67 @@
   <body>
     <header>
       <div class="top-nav">
-        <nav>
-          <a href="#none">로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <div>
+          <a href="./login.html">로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           <a href="#none">회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <a href="#none" id="modal-btn">장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        </nav>
-      </div>
-      <br /><br />
-      <div class="junior">
-        <a href="#none"> 글로모여 주니어 </a>
-      </div>
-      <br />
-      <div class="logo">
-        <a href="#none"><img src="./images/logo.png" alt="글로모여 로고" width="250" /></a>
-      </div>
-      <div class="search_main">
-        <div class="search">
-          <form action="https://search.naver.com/search.naver" method="GET">
-            <input id="query" class="input_text" name="query" type="search" placeholder="어떤 모임을 기대하나요?" />
-            <button class="Button" type="submit">
-              <div class="searchBtn">검색</div>
-            </button>
-          </form>
+          <a href="#none">장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </div>
       </div>
-      <br /><br />
-      <div id="container">
+      <div class="logo-box">
+        <div class="junior">
+          <a href="#none">글로모여 주니어</a>
+        </div>
+        <br />
+        <div class="logo">
+          <a href="#none"><img src="./images/logo.png" alt="글로모여 로고" width="250" /></a>
+        </div>
+        <div class="search_main">
+          <div class="search">
+            <form action="https://search.naver.com/search.naver" method="GET">
+              <input id="query" class="input_text" name="query" type="search" placeholder="어떤 모임을 기대하나요?" />
+              <button class="searchBtn" type="submit">검색</button>
+            </form>
+          </div>
+          <button class="extraBtn" name="myPage">마이페이지</button>
+          <button class="extraBtn" name="registerGroup">모임 등록하기</button>
+        </div>
+      </div>
+      <div class="menu-nav">
         <ul class="myMenu">
-          <li class="menu1">
+          <li>
             글쓰기 모임
-            <ul class="menu1_s submenu">
-              <li>list 1</li>
-              <li>list 2</li>
-              <li>list 3</li>
-              <li>list 4</li>
+            <ul class="submenu" id="write-submenu">
+              <li>전체보기</li>
+              <li>목적</li>
+              <li>장르</li>
+              <li>분위기</li>
+              <li>글모 거점 소개서</li>
             </ul>
           </li>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <li class="menu2">
+          <li>
             독서모임
-            <ul class="menu2_s submenu">
+            <ul class="submenu" id="read-submenu">
               <li>list 1</li>
               <li>list 2</li>
               <li>list 3</li>
               <li>list 4</li>
             </ul>
           </li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <li class="menu3">
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
             이벤트
-            <ul class="menu3_s submenu">
+            <ul class="submenu">
               <li>list 1</li>
               <li>list 2</li>
               <li>list 3</li>
               <li>list 4</li>
             </ul>
-          </li>
+          </li> -->
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <li class="menu4">
+          <li>
             커뮤니티
-            <ul class="menu1_s submenu">
+            <ul class="submenu">
               <li>list 1</li>
               <li>list 2</li>
               <li>list 3</li>
@@ -105,16 +106,16 @@
             </ul>
           </li>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <li class="menu5">
+          <li>
             글로모여 소개
-            <ul class="menu1_s submenu">
+            <ul class="submenu">
               <li>list 1</li>
               <li>list 2</li>
               <li>list 3</li>
               <li>list 4</li>
             </ul>
           </li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li class="menu1">
             공지
             <ul class="menu1_s submenu">
@@ -123,13 +124,14 @@
               <li>list 3</li>
               <li>list 4</li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </div>
     </header>
+    <hr />
     <main>
       <div class="container">
-        <div class="left-cards"></div>
+        <div class="explain-map">* 지도에서 원하는 지역을 클릭하세요!</div>
         <div class="map">
           <svg
             version="1.1"
@@ -386,7 +388,7 @@
             </g>
           </svg>
         </div>
-        <div class="right-cards">
+        <!-- <div class="right-cards">
           <div class="daegu">
             <button class="slide-btn" id="daeguPrevBtn"><</button>
             <div class="slide-card daegu-card">
@@ -403,7 +405,7 @@
             </div>
             <button class="slide-btn" id="daeguNextBtn">></button>
           </div>
-        </div>
+        </div> -->
       </div>
       <div id="label">
         <div id="bottom">
@@ -411,23 +413,23 @@
             <img src="./images/paper.png" alt="papar_bg" id="paper_bg1" class="paper" />
             <div class="main-txt" id="main-txt1">"목적"</div>
             <img src="./images/label.png" alt="label_bg" id="label_bg1-1" class="label" />
-            <div class="sub-txt" id="sub-txt1-1">목적1</div>
+            <div class="sub-txt" id="sub-txt1-1">등단</div>
             <img src="./images/label.png" alt="label_bg" id="label_bg1-2" class="label" />
-            <div class="sub-txt" id="sub-txt1-2">목적2</div>
+            <div class="sub-txt" id="sub-txt1-2">친목</div>
             <img src="./images/label.png" alt="label_bg" id="label_bg1-3" class="label" />
-            <div class="sub-txt" id="sub-txt1-3">목적3</div>
+            <div class="sub-txt" id="sub-txt1-3">취미</div>
           </div>
           <div class="bottom-menu" id="bottom-menu2">
             <img src="./images/paper.png" alt="papar_bg" id="paper_bg2" class="paper" />
             <div class="main-txt" id="main-txt2">"장르"</div>
             <img src="./images/label.png" alt="label_bg" id="label_bg2-1" class="label" />
-            <div class="sub-txt" id="sub-txt2-1">장르1</div>
+            <div class="sub-txt" id="sub-txt2-1">시</div>
             <img src="./images/label.png" alt="label_bg" id="label_bg2-2" class="label" />
-            <div class="sub-txt" id="sub-txt2-2">장르2</div>
+            <div class="sub-txt" id="sub-txt2-2">소설</div>
             <img src="./images/label.png" alt="label_bg" id="label_bg2-3" class="label" />
-            <div class="sub-txt" id="sub-txt2-3">장르3</div>
+            <div class="sub-txt" id="sub-txt2-3">에세이</div>
             <img src="./images/label.png" alt="label_bg" id="label_bg2-4" class="label" />
-            <div class="sub-txt" id="sub-txt2-4">장르4</div>
+            <div class="sub-txt" id="sub-txt2-4">기타</div>
           </div>
           <div class="bottom-menu" id="bottom-menu3">
             <img src="./images/paper.png" alt="papar_bg" id="paper_bg3" class="paper" />
@@ -443,6 +445,7 @@
           </div>
         </div>
       </div>
+      <button class="consultBtn" id="modal-btn">상담하기</button>
     </main>
     <div id="modal" class="modal-overlay">
       <div id="popup">
@@ -463,6 +466,7 @@
               </div>
             </div>
           </div>
+          <button id="del_btn">X</button>
           <div id="info">"시를 통해 등단하고자 하는 모임입니다 :)"</div>
         </div>
         <div id="bottom">
@@ -489,6 +493,7 @@
   </body>
   <script src="./data.js"></script>
   <script src="./js/map-popup.js"></script>
-  <script src="./js/image-slider.js"></script>
+  <!-- <script src="./js/image-slider.js"></script> -->
   <script src="./js/Modal.js"></script>
+  <script src="./js/page-navigation.js"></script>
 </html>
