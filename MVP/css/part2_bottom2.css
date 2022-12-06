@@ -1,33 +1,33 @@
 /*label*/
-#wrap>#bottom>.bottom-menu>#label_bg2-1{
-    left: 40px;
-  }
-  
-  #wrap>#bottom>.bottom-menu>#label_bg2-2{
-    left: 120px;
-  }
-  
-  #wrap>#bottom>.bottom-menu>#label_bg2-3{
-    left: 200px;
-  }
-  
-  #wrap>#bottom>.bottom-menu>#label_bg2-4{
-    left: 280px;
-  }
+#label > #bottom > .bottom-menu > #label_bg2-1 {
+  left: 40px;
+}
+
+#label > #bottom > .bottom-menu > #label_bg2-2 {
+  left: 120px;
+}
+
+#label > #bottom > .bottom-menu > #label_bg2-3 {
+  left: 200px;
+}
+
+#label > #bottom > .bottom-menu > #label_bg2-4 {
+  left: 280px;
+}
 
 /*text*/
-#wrap>#bottom>.bottom-menu>#sub-txt2-1{
-    left: 40px;
-  }
-  
-  #wrap>#bottom>.bottom-menu>#sub-txt2-2{
-    left: 120px;
-  }
-  
-  #wrap>#bottom>.bottom-menu>#sub-txt2-3{
-    left: 200px;
-  }
-  
-  #wrap>#bottom>.bottom-menu>#sub-txt2-4{
-    left: 280px;
-  }
+#label > #bottom > .bottom-menu > #sub-txt2-1 {
+  left: 40px;
+}
+
+#label > #bottom > .bottom-menu > #sub-txt2-2 {
+  left: 120px;
+}
+
+#label > #bottom > .bottom-menu > #sub-txt2-3 {
+  left: 200px;
+}
+
+#label > #bottom > .bottom-menu > #sub-txt2-4 {
+  left: 280px;
+}

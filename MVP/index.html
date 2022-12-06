@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="./css/part2_bottom1.css" />
     <link rel="stylesheet" href="./css/part2_bottom2.css" />
     <link rel="stylesheet" href="./css/part2_bottom3.css" />
+    <link rel="stylesheet" href="./css/part3.css" />
+    <link rel="stylesheet" href="./css/part3_top.css" />
+    <link rel="stylesheet" href="./css/part3_bottom.css" />
 
     <title>글로모여 MVP</title>
   </head>
@@ -38,7 +41,7 @@
         <nav>
           <a href="#none">로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           <a href="#none">회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <a href="#none">장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="#none" id="modal-btn">장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </nav>
       </div>
       <br /><br />
@@ -126,14 +129,7 @@
     </header>
     <main>
       <div class="container">
-        <div class="left-cards">
-          <div class="gyoungju">
-            <img class="comming-soon" src="./images/pol.png" />
-          </div>
-          <div class="changwon">
-            <img class="comming-soon" src="./images/pol.png" />
-          </div>
-        </div>
+        <div class="left-cards"></div>
         <div class="map">
           <svg
             version="1.1"
@@ -407,12 +403,9 @@
             </div>
             <button class="slide-btn" id="daeguNextBtn">></button>
           </div>
-          <div class="pohang">
-            <img class="comming-soon" src="./images/pol.png" />
-          </div>
         </div>
       </div>
-      <div id="wrap">
+      <div id="label">
         <div id="bottom">
           <div class="bottom-menu" id="bottom-menu1">
             <img src="./images/paper.png" alt="papar_bg" id="paper_bg1" class="paper" />
@@ -451,9 +444,51 @@
         </div>
       </div>
     </main>
+    <div id="modal" class="modal-overlay">
+      <div id="popup">
+        <div id="top">
+          <div id="group">
+            <div id="summary">
+              <div id="group-area">대구</div>
+              <div id="group-img">
+                <img src="./images/sample.jpg" alt="group-img" />
+              </div>
+              <div id="group-name">쓰기클럽 저문</div>
+              <div id="group-hashtag">
+                <ul id="hashtag">
+                  <li>#시</li>
+                  <li>#등단</li>
+                  <li>#따뜻한공감</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="info">"시를 통해 등단하고자 하는 모임입니다 :)"</div>
+        </div>
+        <div id="bottom">
+          <ul id="category">
+            <li id="name">모임 이름</li>
+            <li id="location">위치</li>
+            <li id="type">모임 형태</li>
+            <li id="date">모임 지속성</li>
+            <li id="fee">참가비</li>
+          </ul>
+          <ul id="contents">
+            <li id="name-conts">쓰기클럽 저문</li>
+            <li id="location-conts">네이버 지도 링크</li>
+            <li id="type-conts">성비, 나잇대별 비율, 그래프</li>
+            <li id="date-conts">
+              <div id="day" class="date">월 <span style="color: red">화</span> 수 목 <span style="color: red">금</span></div>
+              <div id="period" class="date"><span style="color: red">매주</span> 격주 매월 비정기</div>
+            </li>
+            <li id="fee-conts">회당 10,000원 (대관, 음료 포함)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="./data.js"></script>
   <script src="./js/map-popup.js"></script>
   <script src="./js/image-slider.js"></script>
-  <!-- <script src="./js/part5.js"></script> -->
+  <script src="./js/Modal.js"></script>
 </html>
