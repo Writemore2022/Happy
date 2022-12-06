@@ -1,5 +1,4 @@
 .top-nav {
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -49,7 +48,6 @@
   height: 40px;
   border-radius: 30px;
   display: inline-block;
-  text-align: center;
   font-size: medium;
 }
 

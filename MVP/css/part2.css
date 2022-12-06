@@ -6,7 +6,6 @@ li {
   display: flex;
   text-align: center;
   justify-content: center;
-  /* border: 1px solid black; */
 }
 
 #wrap > #bottom {
@@ -14,7 +13,6 @@ li {
   height: 150px;
   top: 570px;
   left: 120px;
-  /* background-color: yellow; */
   font-size: 14px;
   justify-content: center;
 }
@@ -24,7 +22,6 @@ li {
   width: 402px;
   height: 120px;
   margin-right: 1px;
-  /* background-color: aqua; */
   position: relative;
 }
 
