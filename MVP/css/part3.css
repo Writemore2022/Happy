@@ -1,35 +1,35 @@
 @font-face {
-  font-family: "LoveNovel";
-  src: url("../font/a연애소설.ttf");
+  font-family: 'LoveNovel';
+  src: url('../font/a연애소설.ttf');
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "LoveNovel";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'LoveNovel';
 }
 
-li{
+li {
   list-style-type: none;
 }
 
-body{
+body {
   width: 100%;
   height: 100%;
   position: fixed;
 }
 
 #wrap {
-    width: 100%;
-    height: 100%;
-    -webkit-backdrop-filter: blur(7.8px);
-    backdrop-filter: blur(7.8px);
-    background-color: #d0d0d0;
-    position: relative;
-    /*직접 합쳐보면 실행될 듯?*/
-  }
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(7.8px);
+  backdrop-filter: blur(7.8px);
+  background-color: #d0d0d0;
+  position: relative;
+  /*직접 합쳐보면 실행될 듯?*/
+}
 
-#wrap>#popup {
+#wrap > #popup {
   width: 537.5px;
   height: 666.4px;
   position: absolute;
@@ -37,15 +37,15 @@ body{
   left: 500.2px;
   border-radius: 20px;
   background-color: white;
-  }
+}
 
-#wrap>#popup>#top{
+#wrap > #popup > #top {
   width: 537.5px;
   height: 333.2px;
   /* background-color: aqua; */
 }
 
-#wrap>#popup>#bottom{
+#wrap > #popup > #bottom {
   width: 537.5px;
   height: 333.2px;
   /* background-color: pink; */
