@@ -1,8 +1,8 @@
 /*모임 요약 정보*/
 #wrap>#popup>#top>#group{
     float: left;
-    width: 269px; /*423.1*/
-    height: 333.2px; /*473.2*/
+    width: 269px; 
+    height: 333.2px; 
     margin-right: 2px;
     /* background-color: darkblue; */
     position: relative;
@@ -91,13 +91,20 @@
     border-radius: 20px;
   }
   
+ #wrap>#popup>#top>#del_btn{
+    width: 30px;
+    height: 30px;
+    float: right;
+    font-size: 22px;
+ }
+
   /*모임 한줄 소개*/
   #wrap>#popup>#top>#info{
     float: left;
     width: 265px;
-    height: 333.2px;
+    height: 308.2px;
     /* background-color: olive; */
-    padding: 25px 30px;
+    padding: 15px 30px;
     box-sizing: border-box;
     font-size: 22px;
   }
