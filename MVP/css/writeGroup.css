@@ -15,7 +15,7 @@
 }
 
 .collect-group {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   border: 1px solid black;
 }
@@ -29,6 +29,7 @@
 
 .collect-card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
