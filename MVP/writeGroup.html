@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/writeGroup.css" />
+
+    <link rel="stylesheet" href="./css/part3.css" />
+    <link rel="stylesheet" href="./css/part3_top.css" />
+    <link rel="stylesheet" href="./css/part3_bottom.css" />
   </head>
   <body>
     <header>
@@ -103,34 +108,150 @@
       </div>
     </header>
     <hr />
+    <div class="main-nav">
+      <ul class="write-menu">
+        <li id="write-total">전체보기</li>
+        <li id="write-purpose">목적</li>
+        <li id="write-ganre">장르</li>
+        <li id="write-mood">분위기</li>
+        <li id="write-mood">거점어쩌구</li>
+      </ul>
+    </div>
+    <hr />
     <main>
-      <div class="main-nav">
-        <ul class="write-menu">
-          <li id="write-total">전체보기</li>
-          <li id="write-purpose">목적</li>
-          <li id="write-ganre">장르</li>
-          <li id="write-mood">분위기</li>
-        </ul>
-      </div>
       <div class="collect-group">
         <div class="option-box">
           <div class="select-option">
-            <ul class="date-option">
+            <ul class="drop-option">
+              날짜▽
               <li></li>
               <li></li>
               <li></li>
             </ul>
-            <ul class="time-option">
+            <ul class="drop-option">
+              시간▽
               <li></li>
               <li></li>
               <li></li>
             </ul>
-            <button class="end-group-btn"></button>
+            <button class="end-group-btn">
+              <div style="width: 25px; height: 25px; background-color: black; margin: 5px"></div>
+              마감된 모임 보기
+            </button>
           </div>
-          <div class="rank-option"></div>
+          <div class="rank-option">
+            <button>인기순</button>
+            <button>마감 임박순</button>
+            <button>최신 등록순</button>
+            <button>낮은 가격순</button>
+            <button>높은 가격순</button>
+          </div>
+        </div>
+        <div class="collect-card">
+          <div class="card" id="modal-btn1" onClick="modalOn()">
+            <div id="group-area">대구</div>
+            <div id="group-img">
+              <img src="./images/sample.jpg" alt="group-img" />
+            </div>
+            <div id="group-name">쓰기클럽 저문</div>
+            <div id="group-hashtag">
+              <ul id="hashtag">
+                <li>#시</li>
+                <li>#등단</li>
+                <li>#따뜻한공감</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card" id="modal-btn2" onClick="modalOn()">
+            <div id="group-area">대구</div>
+            <div id="group-img">
+              <img src="./images/sample.jpg" alt="group-img" />
+            </div>
+            <div id="group-name">쓰기클럽 저문</div>
+            <div id="group-hashtag">
+              <ul id="hashtag">
+                <li>#시</li>
+                <li>#등단</li>
+                <li>#따뜻한공감</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card" id="modal-btn3" onClick="modalOn()">
+            <div id="group-area">대구</div>
+            <div id="group-img">
+              <img src="./images/sample.jpg" alt="group-img" />
+            </div>
+            <div id="group-name">쓰기클럽 저문</div>
+            <div id="group-hashtag">
+              <ul id="hashtag">
+                <li>#시</li>
+                <li>#등단</li>
+                <li>#따뜻한공감</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card" id="modal-btn4" onClick="modalOn()">
+            <div id="group-area">대구</div>
+            <div id="group-img">
+              <img src="./images/sample.jpg" alt="group-img" />
+            </div>
+            <div id="group-name">쓰기클럽 저문</div>
+            <div id="group-hashtag">
+              <ul id="hashtag">
+                <li>#시</li>
+                <li>#등단</li>
+                <li>#따뜻한공감</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+      <button class="consultBtn modal-btn">상담하기</button>
     </main>
+    <div id="modal" class="modal-overlay">
+      <div id="popup">
+        <div id="top">
+          <div id="group">
+            <div id="summary">
+              <div id="group-area">대구</div>
+              <div id="group-img">
+                <img src="./images/sample.jpg" alt="group-img" />
+              </div>
+              <div id="group-name">쓰기클럽 저문</div>
+              <div id="group-hashtag">
+                <ul id="hashtag">
+                  <li>#시</li>
+                  <li>#등단</li>
+                  <li>#따뜻한공감</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button id="del_btn">X</button>
+          <div id="info">"시를 통해 등단하고자 하는 모임입니다 :)"</div>
+        </div>
+        <div id="bottom">
+          <ul id="category">
+            <li id="name">모임 이름</li>
+            <li id="location">위치</li>
+            <li id="type">모임 형태</li>
+            <li id="date">모임 지속성</li>
+            <li id="fee">참가비</li>
+          </ul>
+          <ul id="contents">
+            <li id="name-conts">쓰기클럽 저문</li>
+            <li id="location-conts">네이버 지도 링크</li>
+            <li id="type-conts">성비, 나잇대별 비율, 그래프</li>
+            <li id="date-conts">
+              <div id="day" class="date">월 <span style="color: red">화</span> 수 목 <span style="color: red">금</span></div>
+              <div id="period" class="date"><span style="color: red">매주</span> 격주 매월 비정기</div>
+            </li>
+            <li id="fee-conts">회당 10,000원 (대관, 음료 포함)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="./js/Modal.js"></script>
   <script src="./js/page-navigation.js"></script>
 </html>

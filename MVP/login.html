@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-signin-client_id" content="728240525281-gn7oj3uva49tja2rgn1ver38otj79ldu.apps.googleusercontent.com" />
     <title>로그인 페이지</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+
     <style>
-      header {
+      /* header {
         top: 0;
         left: 0;
         right: 0;
@@ -121,14 +125,14 @@
       ul.myMenu > li ul.submenu > li:hover {
         background: #fff;
         color: red;
-      }
+      } */
       hr {
         margin-top: 20px;
         background-color: khaki;
         height: 2px;
       }
       /* 로그인 페이지 */
-      * {
+      /* * {
         margin: 0;
         padding: 0;
         box-sizing: content-box;
@@ -140,10 +144,11 @@
       }
       li {
         list-style: none;
-      }
+      } */
       .wrap {
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
+        margin-top: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -250,93 +255,97 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#none">로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="#none">회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="#none">장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-      </nav>
-    </header>
-    <br /><br />
-    <div class="junior">
-      <a href="#none"> 글로모여 주니어 </a>
-    </div>
-    <br />
-    <div class="logo">
-      <a href="./index.html"><img src="./images/logo.png" alt="글로모여 로고" width="250" /></a>
-    </div>
-    <div class="search_main">
-      <div class="search">
-        <form action="https://search.naver.com/search.naver" method="GET">
-          <input id="query" class="input_text" name="query" type="search" placeholder="어떤 모임을 기대하나요?" />
-          <button class="Button" type="submit">
-            <div class="searchBtn">검색</div>
-          </button>
-        </form>
+      <div class="top-nav">
+        <div>
+          <a href="./login.html">로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="#none">회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="#none">장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
       </div>
-    </div>
-    <br /><br />
-    <div id="container">
-      <ul class="myMenu">
-        <li class="menu1">
-          글쓰기 모임
-          <ul class="menu1_s submenu">
-            <li>전체보기</li>
-            <li>목적</li>
-            <li>장르</li>
-            <li>분위기</li>
-          </ul>
-        </li>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <li class="menu2">
-          독서모임
-          <ul class="menu2_s submenu">
-            <li>이용방법</li>
-            <li>목적</li>
-            <li>장르</li>
-            <li>분위기</li>
-          </ul>
-        </li>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <li class="menu3">
-          이벤트
-          <ul class="menu3_s submenu">
-            <li>list 1</li>
-            <li>list 2</li>
-            <li>list 3</li>
-            <li>list 4</li>
-          </ul>
-        </li>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <li class="menu4">
-          커뮤니티
-          <ul class="menu1_s submenu">
-            <li>list 1</li>
-            <li>list 2</li>
-            <li>list 3</li>
-            <li>list 4</li>
-          </ul>
-        </li>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <li class="menu5">
-          글로모여 소개
-          <ul class="menu1_s submenu">
-            <li>이용방법</li>
-            <li>연혁</li>
-          </ul>
-        </li>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <li class="menu1">
-          공지
-          <ul class="menu1_s submenu">
-            <li>list 1</li>
-            <li>list 2</li>
-            <li>list 3</li>
-            <li>list 4</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <hr />
+      <div class="logo-box">
+        <div class="junior">
+          <a href="#none">글로모여 주니어</a>
+        </div>
+        <br />
+        <div class="logo">
+          <a href="#none"><img src="./images/logo.png" alt="글로모여 로고" width="250" /></a>
+        </div>
+        <div class="search_main">
+          <div class="search">
+            <form action="https://search.naver.com/search.naver" method="GET">
+              <input id="query" class="input_text" name="query" type="search" placeholder="어떤 모임을 기대하나요?" />
+              <button class="searchBtn" type="submit">검색</button>
+            </form>
+          </div>
+          <button class="extraBtn" name="myPage">마이페이지</button>
+          <button class="extraBtn" name="registerGroup">모임 등록하기</button>
+        </div>
+      </div>
+      <div class="menu-nav">
+        <ul class="myMenu">
+          <li>
+            글쓰기 모임
+            <ul class="submenu" id="write-submenu">
+              <li>전체보기</li>
+              <li>목적</li>
+              <li>장르</li>
+              <li>분위기</li>
+              <li>글모 거점 소개서</li>
+            </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            독서모임
+            <ul class="submenu" id="read-submenu">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+              <li>list 4</li>
+            </ul>
+          </li>
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            이벤트
+            <ul class="submenu">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+              <li>list 4</li>
+            </ul>
+          </li> -->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            커뮤니티
+            <ul class="submenu">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+              <li>list 4</li>
+            </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            글로모여 소개
+            <ul class="submenu">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+              <li>list 4</li>
+            </ul>
+          </li>
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li class="menu1">
+            공지
+            <ul class="menu1_s submenu">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+              <li>list 4</li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+    </header>
     <div class="wrap">
       <div class="login">
         <div class="login_sns">
@@ -401,4 +410,5 @@
     }
   </script>
   <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+  <script src="./js/page-navigation.js"></script>
 </html>

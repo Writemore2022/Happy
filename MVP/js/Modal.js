@@ -1,4 +1,4 @@
-const modal = document.querySelector('#modal-btn');
+const modal = document.querySelector('.card');
 const popup = document.querySelector('#modal');
 const modalOffBtn = document.querySelector('#del_btn');
 

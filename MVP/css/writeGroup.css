@@ -1,0 +1,165 @@
+.write-menu {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.write-menu > li {
+  display: inline-block;
+  width: 100px;
+  padding: 20px 60px;
+  background: white;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.collect-group {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.option-box {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.collect-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank-option > button {
+  margin: 0 10px;
+  padding: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.rank-option > button:focus {
+  color: red;
+  font-weight: bold;
+}
+
+.drop-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 25px;
+  padding: 5px;
+  margin: 0 10px;
+  background-color: #fff4e7;
+}
+
+.end-group-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* s */
+
+.card {
+  width: 228px;
+  height: 290px;
+  background-color: #fff4e7;
+  border-radius: 15px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: all;
+}
+
+.card > #group-area {
+  height: 45px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+.card > #group-img {
+  height: 165px;
+  display: flex;
+  justify-content: center;
+}
+
+.card > #group-img > img {
+  width: 204px;
+  height: 154px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.card > #group-name {
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.card > #group-hashtag {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card > #group-hashtag > #hashtag > li {
+  text-align: center;
+  float: left;
+}
+
+.card > #group-hashtag > #hashtag > li:first-child {
+  width: auto;
+  height: 30px;
+  padding: 4.7px;
+  margin-top: 3px;
+  box-sizing: border-box;
+  border: solid 0.5px #42210a;
+  border-radius: 20px;
+}
+
+.card > #group-hashtag > #hashtag > li:nth-child(2) {
+  width: auto;
+  height: 30px;
+  padding: 4.7px;
+  margin-left: 15px;
+  margin-top: 3px;
+  box-sizing: border-box;
+  border: solid 0.5px #42210a;
+  border-radius: 20px;
+}
+
+.card > #group-hashtag > #hashtag > li:last-child {
+  width: auto;
+  height: 30px;
+  padding: 4.7px;
+  margin-left: 15px;
+  margin-top: 3px;
+  box-sizing: border-box;
+  border: solid 0.6px #42210a;
+  border-radius: 20px;
+}
