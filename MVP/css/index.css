@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'JejuGothic';
+  font-size: 12px;
 }
 
 a {
@@ -56,7 +57,7 @@ main {
 }
 
 .explain-map {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   right: 300px;
   color: rgb(127, 127, 127);
