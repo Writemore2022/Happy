@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   background-color: aliceblue;
+  font-size: 12px;
 }
 
 .write-menu > li {
@@ -24,6 +25,7 @@
   height: 100px;
   display: flex;
   justify-content: space-between;
+  margin-left: 2.5%;
   /* border: 1px solid black; */
 }
 
@@ -44,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 2.5%;
 }
 
 .rank-option > button {
@@ -52,6 +55,7 @@
   border: none;
   background-color: white;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .rank-option > button:focus {
@@ -68,6 +72,7 @@
   padding: 5px;
   margin: 0 10px;
   background-color: #fff4e7;
+  font-size: 12px;
 }
 
 .end-group-btn {
@@ -78,6 +83,8 @@
   margin: 0 10px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 /* s */
@@ -99,7 +106,7 @@
   text-align: center;
   padding-top: 15px;
   box-sizing: border-box;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .card > #group-img {
@@ -120,23 +127,26 @@
   text-align: center;
   padding-top: 10px;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 .card > #group-hashtag {
   height: 40px;
   display: flex;
   justify-content: center;
+  font-size: 12px;
 }
 
 .card > #group-hashtag > #hashtag > li {
   text-align: center;
+  line-height: 1.5;
   float: left;
 }
 
 .card > #group-hashtag > #hashtag > li:first-child {
   width: auto;
   height: 30px;
-  padding: 4.7px;
+  padding: 5px;
   margin-top: 3px;
   box-sizing: border-box;
   border: solid 0.5px #42210a;
@@ -146,7 +156,7 @@
 .card > #group-hashtag > #hashtag > li:nth-child(2) {
   width: auto;
   height: 30px;
-  padding: 4.7px;
+  padding: 5px;
   margin-left: 15px;
   margin-top: 3px;
   box-sizing: border-box;
@@ -157,7 +167,7 @@
 .card > #group-hashtag > #hashtag > li:last-child {
   width: auto;
   height: 30px;
-  padding: 4.7px;
+  padding: 5px;
   margin-left: 15px;
   margin-top: 3px;
   box-sizing: border-box;

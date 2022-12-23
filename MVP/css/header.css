@@ -83,7 +83,7 @@ header {
   margin: 0 5px;
   width: 70px;
   height: 70px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /* 메뉴바 */
@@ -101,6 +101,7 @@ ul.myMenu > li {
   text-align: center;
   position: relative;
   cursor: pointer;
+  font-size: 14px;
 }
 
 ul.myMenu > li:hover {
@@ -120,6 +121,7 @@ ul.myMenu > li:hover ul.submenu {
   color: black;
   z-index: 1;
   border: 1px solid rgb(255, 235, 123);
+  font-size: 12px;
 }
 
 ul.myMenu > li ul.submenu > li {
