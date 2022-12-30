@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'JejuGothic';
+  font-size: 12px;
 }
 
 a {
@@ -16,11 +17,6 @@ li {
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-@font-face {
-  font-family: 'LoveNovel';
-  src: url('../font/a연애소설.ttf');
 }
 
 @font-face {
@@ -61,7 +57,7 @@ main {
 }
 
 .explain-map {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   right: 300px;
   color: rgb(127, 127, 127);
@@ -195,4 +191,12 @@ main {
   background: none;
   border: none;
   margin: 0 0.5rem;
+}
+
+#total-map {
+  display: none;
+}
+
+#daegu-map {
+  display: block;
 }

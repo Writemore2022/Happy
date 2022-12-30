@@ -123,19 +123,19 @@
         <div class="option-box">
           <div class="select-option">
             <ul class="drop-option">
-              날짜▽
+              날짜 ▽
               <li></li>
               <li></li>
               <li></li>
             </ul>
             <ul class="drop-option">
-              시간▽
+              시간 ▽
               <li></li>
               <li></li>
               <li></li>
             </ul>
             <button class="end-group-btn">
-              <div style="width: 25px; height: 25px; background-color: black; margin: 5px"></div>
+              <div style="width: 20px; height: 20px; background-color: black; margin: 5px"></div>
               마감된 모임 보기
             </button>
           </div>
@@ -312,4 +312,14 @@
   <script src="./js/Modal.js"></script>
   <script src="./js/page-navigation.js"></script>
   <script src="./js/cardInfo.js"></script>
+  <script>
+    window.onload = function () {
+      for (let i = 0; i < writeArr.length; i++) {
+        groupName[i].innerHTML = writeArr[i].name;
+        hashtagGanre[i].innerHTML = '#' + writeArr[i].ganre;
+        hashtagPurpose[i].innerHTML = '#' + writeArr[i].purpose;
+        hashtagMood[i].innerHTML = '#' + writeArr[i].mood;
+      }
+    };
+  </script>
 </html>
