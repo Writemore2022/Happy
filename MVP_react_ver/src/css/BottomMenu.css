@@ -1,0 +1,155 @@
+  li {
+    list-style-type: none;
+  }
+  
+  #wrap {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    background-color: aqua;
+  }
+  
+  #wrap > #bottom {
+    width: 1300px;
+    height: 150px;
+    top: 570px;
+    left: 120px;
+    font-size: 14px;
+    justify-content: center;
+  }
+  
+  #wrap > #bottom > .bottom-menu {
+    float: left;
+    width: 402px;
+    height: 120px;
+    margin-right: 1px;
+    position: relative;
+  }
+  
+  #wrap > #bottom > .bottom-menu > .paper {
+    width: 422px;
+    height: 230px;
+    margin-top: -60px;
+  }
+  
+  #wrap > #bottom > .bottom-menu > .main-txt {
+    position: absolute;
+    top: 25px;
+    left: 190px;
+  }
+  
+  #wrap > #bottom > .bottom-menu > .label {
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: 35px;
+  }
+  
+  #wrap > #bottom > .bottom-menu > .sub-txt {
+    position: absolute;
+    top: 54px;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+  }
+
+/* part 1*/
+
+/*label*/
+#wrap>#bottom>.bottom-menu>#label_bg1-1{
+    left: 60px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg1-2{
+    left: 160px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg1-3{
+    left: 260px;
+  }
+
+/*text*/
+
+#wrap>#bottom>.bottom-menu>#sub-txt1-1{
+    left: 60px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt1-2{
+    left: 160px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt1-3{
+    left: 260px;
+  }
+
+/* part 2*/
+/*label*/
+#wrap>#bottom>.bottom-menu>#label_bg2-1{
+    left: 40px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg2-2{
+    left: 120px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg2-3{
+    left: 200px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg2-4{
+    left: 280px;
+  }
+
+/*text*/
+#wrap>#bottom>.bottom-menu>#sub-txt2-1{
+    left: 40px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt2-2{
+    left: 120px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt2-3{
+    left: 200px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt2-4{
+    left: 280px;
+  }
+
+/* part 3*/
+/*label*/
+#wrap>#bottom>.bottom-menu>#label_bg3-1{
+    left: 40px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg3-2{
+    left: 120px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg3-3{
+    left: 200px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#label_bg3-4{
+    left: 280px;
+  }
+
+/*text*/
+  #wrap>#bottom>.bottom-menu>#sub-txt3-1{
+    left: 40px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt3-2{
+    left: 120px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt3-3{
+    left: 200px;
+  }
+  
+  #wrap>#bottom>.bottom-menu>#sub-txt3-4{
+    left: 280px;
+  }

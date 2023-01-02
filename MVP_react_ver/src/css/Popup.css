@@ -1,0 +1,34 @@
+li {
+    list-style-type: none;
+  }
+  
+  #modal {
+    -webkit-backdrop-filter: blur(7.8px);
+    backdrop-filter: blur(7.8px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  #modal > #popup {
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  #modal > #popup > #top {
+    width: 537.5px;
+    height: 333.2px;
+    /* background-color: aqua; */
+  }
+  
+  #modal > #popup > #bottom {
+    width: 537.5px;
+    height: 333.2px;
+    /* background-color: pink; */
+  }

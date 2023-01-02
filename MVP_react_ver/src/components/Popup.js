@@ -1,0 +1,54 @@
+import React from 'react';
+import '../css/Popup.css'
+
+function Popup() {
+    return(
+        <div>
+            <div id="wrap">
+      <div id="popup">
+        <div id="top">
+          <div id="group">
+            <div id="summary">
+              <div id="group-area">대구</div>
+              <div id="group-img">
+                <img src="./images/sample.jpg" alt="group-img" />
+              </div>
+              <div id="group-name">쓰기클럽 저문</div>
+              <div id="group-hashtag">
+                <ul id="hashtag">
+                  <li>#시</li>
+                  <li>#등단</li>
+                  <li>#따뜻한공감</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button id="del_btn">X</button>
+          <div id="info">"시를 통해 등단하고자 하는 모임입니다 :)"</div>
+        </div>
+        <div id="bottom">
+          <ul id="category">
+            <li id="name">모임 이름</li>
+            <li id="location">위치</li>
+            <li id="type">모임 형태</li>
+            <li id="date">모임 지속성</li>
+            <li id="fee">참가비</li>
+          </ul>
+          <ul id="contents">
+            <li id="name-conts">쓰기클럽 저문</li>
+            <li id="location-conts">네이버 지도 링크</li>
+            <li id="type-conts">성비, 나잇대별 비율, 그래프</li>
+            <li id="date-conts">
+              <div id="day" className="date">월 <span style="color: red">화</span> 수 목 <span style="color: red">금</span></div>
+              <div id="period" className="date"><span style="color: red">매주</span> 격주 매월 비정기</div>
+            </li>
+            <li id="fee-conts">회당 10,000원 (대관, 음료 포함)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        </div>
+    )
+}
+
+export default Popup;
