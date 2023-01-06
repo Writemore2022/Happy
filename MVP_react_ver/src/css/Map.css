@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'LoveNovel';
+  }
+  
+  @font-face {
+    font-family: 'LoveNovel';
+    src: url('../font/a연애소설.ttf');
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .left-cards,
+    .right-cards,
+    .map {
+      margin-top: 5%;
+    }
+  
+    .comming-soon {
+      width: 100vw;
+    }
+  
+    .table {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    main {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  
+  body {
+    color: #222;
+  }
+  
+  a {
+    text-decoration-line: none;
+    color: black;
+  }
+  
+  header {
+    /* border: 1px solid black; */
+    line-height: 1.5em;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+  }
+  
+  .left-cards,
+  .right-cards {
+    min-width: 180px;
+    width: 17.5%;
+    height: 100vh;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+  
+  .daegu {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .gyoungju {
+    width: 75%;
+  }
+  
+  .changwon {
+    width: 75%;
+  }
+  
+  .pohang {
+    width: 75%;
+  }
+  
+  .slide-card {
+    width: 100%;
+    min-width: 160px;
+    height: 100%;
+    max-height: 320px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff4e7;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  .group-img {
+    width: 85%;
+    height: 120px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .group-info {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1rem;
+  }
+  
+  .card-hashtag {
+    display: flex;
+    font-size: 11px;
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card-hashtag > div {
+    border: 0.5px solid #42210a;
+    border-radius: 20px;
+    width: 30%;
+    /* padding: 0.25rem; */
+  }
+  
+  .slide-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    margin: 0 0.5rem;
+  }
+  
+  .comming-soon {
+    width: 75%;
+    background-image: url('./images/comming-soon.png');
+    height: 100%;
+    min-height: 200px;
+    border-radius: 20px;
+    background-color: lightgray;
+  }
+  
+  .map {
+    width: 20%;
+    min-width: 320px;
+    height: 15%;
+    background-color: white;
+    margin: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+  
+  .map-img {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    min-height: 480px;
+  }
+  
+  .map-select {
+    fill: #fff6e9;
+    fill-opacity: 1;
+    fill-rule: nonzero;
+  }
+  
+  .map-unselect {
+    fill: #fff6e9;
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    /* stroke: black; */
+    z-index: 0;
+  }
+  
+  .daeguHover {
+    display: none;
+  }
