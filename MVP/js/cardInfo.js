@@ -57,6 +57,9 @@ deadlineBtn.addEventListener(
       hashtagGanre[i].innerHTML = '#' + writeArr[i].ganre;
       hashtagPurpose[i].innerHTML = '#' + writeArr[i].purpose;
       hashtagMood[i].innerHTML = '#' + writeArr[i].mood;
+
+      if (!writeArr[i]) {
+      }
     }
   },
   { once: true }

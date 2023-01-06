@@ -77,8 +77,8 @@ main {
   height: 100px;
   padding: 20px;
   border-radius: 80px;
-  font-weight: bold;
   cursor: pointer;
+  border: 1px solid black;
 }
 
 /* 지도 크기 및 위치 정리 */
