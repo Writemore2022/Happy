@@ -1,7 +1,11 @@
+main{
+  position: relative;
+}
+
 .write-menu {
   display: flex;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: rgb(248, 237, 175);
   font-size: 12px;
 }
 
@@ -16,9 +20,49 @@
 }
 
 .collect-group {
-  width: 95%;
-  margin: 0 auto;
-  border: 1px solid black;
+  background-image: url("../images/index2.png");
+  background-size: 1120px 1045px; /*가로 세로*/
+  position: absolute;
+  top: -45px;
+  left: 50px;
+  padding-top: 75px;
+  box-sizing: border-box;
+}
+
+.category-list>#gnb>li{
+  display: block;
+  writing-mode: vertical-lr; /*세로 쓰기*/
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  left: 90px;
+  font-size: 15px;
+}
+
+.category-list>#gnb>li:first-child{
+  top: 50px;
+}
+
+.category-list>#gnb>li:nth-child(2){
+  top: 240px;
+}
+
+.category-list>#gnb>li:nth-child(3){
+  top: 420px ;
+}
+
+#write-club{
+  text-shadow: 1.5px 1.5px 1.5px gray;
+  font-size: 25px;
+  position: absolute;
+  top: 55px;
+  left: 165px;
+  color:rgb(246, 220, 71);
+}
+
+#write-club:hover {
+  background: #fff;
+  color: red;
 }
 
 .option-box {
@@ -26,7 +70,6 @@
   display: flex;
   justify-content: space-between;
   margin-left: 2.5%;
-  /* border: 1px solid black; */
 }
 
 .collect-card {
@@ -40,13 +83,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50px;
+  margin-left: 125px;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .rank-option {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 2.5%;
+  height: 50px;
+  margin-right: 150px;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .rank-option > button {
@@ -89,13 +139,18 @@
 
 /* s */
 
+.collect-card{
+  margin-top: -10px;
+  box-sizing: border-box;
+}
+
 .card {
   width: 228px;
-  height: 290px;
+  height: 250px;
   background-color: #fff4e7;
   border-radius: 15px;
   margin: 0 40px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 
   display: flex;
   flex-direction: column;
@@ -112,14 +167,14 @@
 }
 
 .card > #group-img {
-  height: 165px;
+  height: 125px;
   display: flex;
   justify-content: center;
 }
 
 .card > #group-img > img {
   width: 204px;
-  height: 154px;
+  height: 114px;
   margin-top: 5px;
   border-radius: 20px;
 }

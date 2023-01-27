@@ -25,7 +25,7 @@
       </div>
       <div class="logo-box">
         <div class="junior">
-          <a href="#none">글로모여 주니어</a>
+          <a href="#none"></a>
         </div>
         <br />
         <div class="logo">
@@ -42,7 +42,7 @@
           <button class="extraBtn" name="registerGroup">모임 등록하기</button>
         </div>
       </div>
-      <div class="menu-nav">
+      <!-- <div class="menu-nav">
         <ul class="myMenu">
           <li>
             글쓰기 모임
@@ -54,6 +54,7 @@
               <li>글모 거점 소개서</li>
             </ul>
           </li>
+
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li>
             독서모임
@@ -64,7 +65,9 @@
               <li>list 4</li>
             </ul>
           </li>
-          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <li>
               이벤트
               <ul class="submenu">
@@ -73,7 +76,8 @@
                 <li>list 3</li>
                 <li>list 4</li>
               </ul>
-            </li> -->
+            </li>
+
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li>
             커뮤니티
@@ -94,7 +98,9 @@
               <li>list 4</li>
             </ul>
           </li>
-          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+        
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <li class="menu1">
               공지
               <ul class="menu1_s submenu">
@@ -103,23 +109,32 @@
                 <li>list 3</li>
                 <li>list 4</li>
               </ul>
-            </li> -->
+            </li>
         </ul>
-      </div>
+      </div> -->
     </header>
-    <hr />
-    <div class="main-nav">
+    <!-- <hr /> -->
+    <!-- <div class="main-nav">
       <ul class="write-menu">
-        <li id="write-total">전체보기</li>
         <li id="write-purpose">목적</li>
         <li id="write-ganre">장르</li>
         <li id="write-mood">분위기</li>
         <li id="write-mood">거점어쩌구</li>
       </ul>
-    </div>
-    <hr />
+    </div> -->
+    <!-- <hr /> -->
     <main>
-      <div class="collect-group">
+      <div class="collect-group"> <!--Group 모인 곳-->
+        <div class="category-list">
+          <ul id="gnb">
+            <li>목 적</li>
+            <li>장 르</li>
+            <li>분 위 기</li>
+          </ul>
+        </div>
+          <div id="write-club">
+            글쓰기 모임
+          </div>
         <div class="option-box">
           <div class="select-option">
             <ul class="drop-option">
@@ -260,9 +275,23 @@
               </ul>
             </div>
           </div>
+          <div class="card" onClick="modalOn()">
+            <div id="group-area">대구</div>
+            <div id="group-img">
+              <img src="./images/sample.jpg" alt="group-img" />
+            </div>
+            <div id="group-name"></div>
+            <div id="group-hashtag">
+              <ul id="hashtag">
+                <li id="hashtag-ganre"></li>
+                <li id="hashtag-purpose"></li>
+                <li id="hashtag-mood"></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="consultBtn">상담하기</button>
+      <!-- <button class="consultBtn">상담하기</button> -->
     </main>
     <div id="modal" class="modal-overlay">
       <div id="popup">
