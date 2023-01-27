@@ -1,4 +1,4 @@
-main {
+main{
   position: relative;
 }
 
@@ -20,16 +20,16 @@ main {
 }
 
 .collect-group {
-  background-image: url('../images/index2.png');
-  background-size: 97% 107%; /*가로 1115px 세로 1045px*/
+  background-image: url("../images/index7.png");
+  background-size: 97% 101%; /*가로 1115px 세로 1045px*/
   position: absolute;
-  top: -45px;
+  top: -35px;
   left: 50px;
   padding-top: 75px;
   box-sizing: border-box;
 }
 
-.category-list > #gnb > li > a {
+.category-list>#gnb>li>a{
   display: block;
   writing-mode: vertical-lr; /*세로 쓰기*/
   width: 50px;
@@ -39,28 +39,28 @@ main {
   font-size: 15px;
 }
 
-.category-list > #gnb > li:first-child > a {
+.category-list>#gnb>li:first-child>a{
   top: 50px;
 }
 
-.category-list > #gnb > li:nth-child(2) > a {
+.category-list>#gnb>li:nth-child(2)>a{
   top: 235px;
 }
 
-.category-list > #gnb > li:nth-child(3) > a {
-  top: 415px;
+.category-list>#gnb>li:nth-child(3)>a{
+  top: 415px ;
 }
 
-#write-club > a {
+#write-club>a{
   text-shadow: 1.5px 1.5px 1.5px gray;
   font-size: 25px;
   position: absolute;
   top: 55px;
   left: 165px;
-  color: rgb(246, 220, 71);
+  color:rgb(246, 220, 71);
 }
 
-#write-club > a:hover {
+#write-club>a:hover {
   background: #fff;
   color: red;
 }
@@ -139,7 +139,7 @@ main {
 
 /* s */
 
-.collect-card {
+.collect-card{
   margin-top: -10px;
   box-sizing: border-box;
 }
@@ -150,7 +150,7 @@ main {
   background-color: #fff4e7;
   border-radius: 15px;
   margin: 0 40px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 
   display: flex;
   flex-direction: column;
