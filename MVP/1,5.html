@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글로모여</title>
+    <style>
+      header {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        padding: 1rem;
+        color: black;
+        background: gainsboro;
+        font-weight: bold;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-size: medium;
+      }
+      a {
+        text-decoration-line: none;
+        color: black;
+      }
+      .logo {
+        align-items: center;
+        display: inline-block;
+        margin-left: 630px;
+      }
+      .search_main {
+        margin-right: 200px;
+        float: right;
+        display: inline-block;
+      }
+      .searchBtn {
+        margin-right: 5px;
+        color: white;
+        float: right;
+        border-radius: 30px;
+        display: inline-block;
+      }
+      .input_text {
+        border: 2.5px solid gray;
+        width: 200px;
+        height: 40px;
+        border-radius: 30px;
+        display: inline-block;
+        font-family: 제주고딕;
+        font-size: medium;
+      }
+      .Button {
+        border: 0.2px solid gray;
+        width: 50px;
+        height: 40px;
+        background: gray;
+        border-radius: 30px;
+        display: inline-block;
+        cursor: pointer;
+        font-family: 제주고딕;
+        font-size: medium;
+      }
+      .menu {
+        text-align: center;
+      }
+      body {
+        font-family: 제주고딕;
+        color: #222;
+        line-height: 1.5em;
+      }
+      ul,
+      ol,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      ul.myMenu {
+      }
+      ul.myMenu > li {
+        display: inline-block;
+        width: 80px;
+        padding: 5px 10px;
+        background: white;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+      }
+      ul.myMenu > li:hover {
+        background: #fff;
+        color: red;
+      }
+      ul.myMenu > li ul.submenu {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+      }
+      ul.myMenu > li:hover ul.submenu {
+        display: block;
+        color: black;
+      }
+      ul.myMenu > li ul.submenu > li {
+        display: inline-block;
+        width: 80px;
+        padding: 5px 10px;
+        background: #eee;
+        border: 1px solid #eee;
+        text-align: center;
+      }
+      ul.myMenu > li ul.submenu > li:hover {
+        background: #fff;
+        color: red;
+      }
+      hr {
+        margin-top: 20px;
+        background-color: khaki;
+        height: 2px;
+      }
+      .elements {
+        text-align: center;
+        color: grey;
+        display: flex;
+      }
+      .map > h2 {
+      }
+
+      .v-line {
+        border-left: medium solid gainsboro;
+        height: 700px;
+        margin-left: 160px;
+        margin-right: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="login.html"
+          >로그인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+        >
+        <a href="#none"
+          >회원가입&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+        >
+        <a href="#none"
+          >장바구니&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+        >
+      </nav>
+    </header>
+    <br /><br />
+    <br />
+    <div class="logo">
+      <a href="1,5.html"
+        ><img src="logo.png" alt="글로모여 로고" width="250"
+      /></a>
+    </div>
+    <div class="search_main">
+      <div class="search">
+        <form action="https://search.naver.com/search.naver" method="GET">
+          <input
+            id="query"
+            class="input_text"
+            name="query"
+            type="search"
+            placeholder="어떤 모임을 기대하나요?"
+          />
+          <button class="Button" type="submit">
+            <div class="searchBtn">검색</div>
+          </button>
+        </form>
+      </div>
+    </div>
+    <br /><br />
+    <div id="container">
+      <ul class="myMenu">
+        <li class="menu1">
+          독서 모임
+          <ul class="menu1_s submenu">
+            <li>전체보기</li>
+            <li>목적</li>
+            <li>장르</li>
+            <li>분위기</li>
+          </ul>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="menu2">
+          글쓰기 모임
+          <ul class="menu2_s submenu">
+            <li>이용방법</li>
+            <li>목적</li>
+            <li>장르</li>
+            <li>분위기</li>
+          </ul>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="menu3">
+          이벤트
+          <ul class="menu3_s submenu">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+          </ul>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="menu4">
+          커뮤니티
+          <ul class="menu1_s submenu">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+          </ul>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="menu5">
+          글로모여 소개
+          <ul class="menu1_s submenu">
+            <li>이용방법</li>
+            <li>연혁</li>
+          </ul>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="menu1">
+          공지
+          <ul class="menu1_s submenu">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <br />
+    <div class="elements">
+      <div class="map">
+        <h2 style="margin-left: 120px">지역별 찾기</h2>
+        <!-- Image Map Generated by http://www.image-map.net/ -->
+        <img src="mapfix.png" usemap="#image-map" style="margin-left: 150px" />
+
+        <map name="image-map">
+          <area
+            target="_blank"
+            alt="동구"
+            title="동구"
+            href="donggu"
+            coords="298,90,281,106,297,160,308,187,310,232,288,262,310,269,329,259,346,264,366,278,389,274,408,289,422,279,433,254,433,237,431,224,410,191,410,162,418,133,402,120,400,104,374,91,352,84"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="북구"
+            title="북구"
+            href="bukgu"
+            coords="195,201,175,229,205,241,226,236,247,248,274,257,296,240,299,205,284,153,272,118,236,134,213,149,195,125,200,160,202,181"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="서구"
+            title="서구"
+            href="seogu"
+            coords="190,276,210,287,228,276,236,263,232,251,215,246,197,250"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="중구"
+            title="중구"
+            href="junggu"
+            coords="241,274,238,286,250,287,269,291,273,278,278,271,270,266,258,261,249,259"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="수성구"
+            title="수성구"
+            href="suseonggu"
+            coords="262,345,298,346,356,365,386,350,383,322,402,311,397,290,374,290,327,273,298,281,285,281,278,318,278,330"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="남구"
+            title="남구"
+            href="namgu"
+            coords="226,315,250,338,266,329,268,311,266,297,248,293,236,296"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="달서구"
+            title="달서구"
+            href="dalseogu"
+            coords="149,334,173,339,178,353,210,374,234,387,240,369,250,352,227,335,214,309,226,293,203,296,176,284,156,286,145,296"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="달성군"
+            title="달성군"
+            href="dalseonggun"
+            coords="82,499,25,483,23,516,71,562,49,604,83,599,117,570,170,563,185,561,182,523,206,504,203,474,254,438,281,438,298,478,333,466,363,451,354,380,302,363,270,360,253,373,254,392,229,408,206,390,170,358,146,346,117,353,90,353,68,386,54,408,66,429,101,462,101,483,96,494,86,492"
+            shape="poly"
+          />
+          <area
+            target="_blank"
+            alt="달성군"
+            title="달성군"
+            href="dalseonggun"
+            coords="57,302,80,295,132,310,139,279,186,264,176,240,138,234,138,186,118,177,87,199,65,244,49,280"
+            shape="poly"
+          />
+        </map>
+      </div>
+      <div class="v-line"></div>
+      <div class-="tag">
+        <h2>태그별 찾기</h2>
+        <!-- Image Map Generated by http://www.image-map.net/ -->
+        <img src="tagfix.png" usemap="#image-map2" />
+
+        <map name="image-map2">
+          <area
+            target="_blank"
+            alt="목적-등단"
+            title="목적-등단"
+            href="#none"
+            coords="107,50,191,86"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="목적-친목"
+            title="목적-친목"
+            href="#none"
+            coords="255,52,341,86"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="목적-취미"
+            title="목적-취미"
+            href="#none"
+            coords="404,52,485,85"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="장르-문학"
+            title="장르-문학"
+            href="#none"
+            coords="0,273,85,308"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="장르-인문사회"
+            title="장르-인문사회"
+            href="#none"
+            coords="129,274,211,306"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="장르-과학기술"
+            title="장르-과학기술"
+            href="#none"
+            coords="255,274,339,305"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="장르-경영경제"
+            title="장르-경영경제"
+            href="#none"
+            coords="383,274,465,306"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="장르-기타"
+            title="장르-기타"
+            href="#none"
+            coords="510,274,592,309"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="분위기-따뜻한공감"
+            title="분위기-따뜻한공감"
+            href="#none"
+            coords="52,494,167,529"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="분위기-유쾌한토크"
+            title="분위기-유쾌한토크"
+            href="#none"
+            coords="239,490,355,526"
+            shape="rect"
+          />
+          <area
+            target="_blank"
+            alt="분위기-치열한토론"
+            title="분위기-치열한토론"
+            href="#none"
+            coords="429,491,543,526"
+            shape="rect"
+          />
+        </map>
+      </div>
+    </div>
+  </body>
+</html>
