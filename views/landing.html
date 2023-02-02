@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글로모여</title>
+    <style rel="stylesheet" href="../css/index.css"></style>
+    <style rel="stylesheet" href="../css/landing.css"></style>
+    <style>
+      @font-face {
+        font-family: 'JejuMyoungjo';
+        src: url('../assets/fonts/JejuMyeongjo.ttf');
+      }
+      @media (max-width: 540px) {
+        main {
+          margin: 10%;
+          margin-bottom: 0;
+          flex-direction: column;
+        }
+        .landing-explain {
+          padding: 0;
+          margin-bottom: 40px;
+        }
+        .landing-explain-title {
+          display: none;
+        }
+        .landing-box,
+        .landing-box-reverse {
+          margin-bottom: 40px;
+        }
+      }
+
+      @media (max-width: 1140px) {
+        main {
+          margin: 10%;
+        }
+        .host-image {
+          width: 100%;
+        }
+        .landing-box {
+          flex-direction: column;
+        }
+        .landing-box-reverse {
+          flex-direction: column-reverse;
+        }
+      }
+
+      * {
+        margin: 0 auto;
+        padding: 0;
+        font-family: 'JejuMyoungjo';
+      }
+
+      main {
+        max-width: 1140px;
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+
+      .landing-explain {
+        width: 30%;
+        padding: 40px;
+      }
+
+      .landing-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .landing-box-reverse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .host-box {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .host-image {
+        margin-bottom: 10px;
+        max-width: 270px;
+        max-height: 180px;
+        object-fit: contain;
+      }
+
+      .host-text {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .host-text > p {
+        font-weight: '750';
+      }
+
+      .main-btn {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .host-info {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="landing-image"
+      width="100%"
+      height="auto"
+      src="../assets/images/landingimage2.png"
+    />
+    <main>
+      <div class="landing-explain">
+        <div
+          style="font-size: 24px; font-weight: bold; margin-bottom: 200px"
+          class="landing-explain-title"
+        >
+          모임장의<br />
+          한 마디
+        </div>
+        <div style="margin-bottom: 50px; font-size: 16px">
+          글로모여는 "모임장"의 스토리를 소개합니다.
+        </div>
+        <button class="main-btn">글로모여 더 알아보기</button>
+      </div>
+      <div style="width: 70%">
+        <div class="landing-box">
+          <div class="host-box">
+            <img class="host-image" src="../assets/images/sample.png" />
+            <p class="host-info"><테린느> 모임장 이혜정</p>
+          </div>
+          <div class="host-text">
+            <p>우리의 일상을 <span style="color: yellow">기록물</span>로 만들어 보아요.</p>
+          </div>
+        </div>
+        <div class="landing-box-reverse">
+          <div class="host-text">
+            <p>우리의 일상을 <span style="color: yellow">기록물</span>로 만들어 보아요.</p>
+          </div>
+          <div class="host-box">
+            <img class="host-image" src="../assets/images/sample.jpg" />
+            <p class="host-info" style="text-align: right"><최강야구> 모임장 이지예</p>
+          </div>
+        </div>
+        <div class="landing-box">
+          <div class="host-box">
+            <img class="host-image" src="../assets/images/sample.png" />
+            <p class="host-info"><저문> 모임장 황정윤</p>
+          </div>
+          <div class="host-text">
+            <p>우리의 일상을 <span style="color: yellow">기록물</span>로 만들어 보아요.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
