@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'JejuMyoungjo';
+    src: url('./assets/fonts/JejuMyeongjo.ttf');
+  }
+
+*{
+    margin: auto;
+    padding: 0;
+    font-family: 'JejuMyoungjo';
+}
+
+/*모임 정보 : 짱졔*/
+.group-wrap{
+    background-color: beige;
+    padding: 1% 8%;
+    box-sizing: border-box;
+}
+
+.group-wrap>h1>a{
+    display: block;
+    width: 1200px;
+
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.46;
+    text-align: left;
+    
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.group-wrap>h2>span{
+    display: block;
+    width: 1200px;
+
+    font-size: 17px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: left;
+    color: #9e9e9e;
+
+    margin-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.group-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: gray; */
+    height: auto;
+    width: 1200px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.group-img{
+    width: 280px;
+    height: 180px;
+}
+
+.group-info {
+    /* background-color: lightpink; */
+    width: 280px;
+    padding: 0px 0.8px;
+}
+
+.group-details>div{
+    width: 95%;
+    height: 30px;
+    margin: 5px;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+
+}
+
+.group-details>div:first-child{
+    width: 95%;
+    height: 50px;
+    font-size: 1.2rem;
+}
+
+.group-details>div:nth-child(2){
+    border-bottom: 1px gray solid;
+    height: 50px;
+}
+
+.group-details>div:nth-child(3){
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
