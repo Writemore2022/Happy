@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      @media (max-width: 1140px) {
+        body {
+          margin: 0 20px;
+        }
+      }
+
+      @media (min-width: 1140px) {
+        body {
+          margin: 0 20%;
+        }
+      }
+
+      .top-banner {
+        width: 100%;
+        height: 240px;
+        margin-top: 100px;
+        object-fit: cover;
+      }
+
+      .category {
+        margin-top: 20px;
+        padding: 20px;
+      }
+
+      .category-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .category-list {
+        display: flex;
+        flex-direction: 'row';
+        padding: 32px 0;
+      }
+
+      .category-list > a {
+        font-size: 14px;
+        padding: 12px;
+        font-weight: bold;
+        color: grey;
+        cursor: pointer;
+      }
+
+      .category-list > a:hover {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 상단 배너 : 준수 -->
+    <div>
+      <img class="top-banner" src="./assets/images/landingimage2.png" ></img>
+    </div>
+
+    <!-- 카테고리 : 준수 -->
+    <div class="category">
+      <div class="category-title">
+        무슨 <span style="color: orange">목적</span>인가요?
+      </div>
+      <div class="category-list">
+        <a>등단</a>
+        <a>친목</a>
+        <a>취미</a>
+      </div>
+      <div class="category-title">
+        이런 <span style="color: orange">장르</span>는 어때요?
+      </div>
+      <div class="category-list">
+        <a>문학</a>
+        <a>인문사회</a>
+        <a>과학기술</a>
+        <a>경영경제</a>
+        <a>기타</a>
+      </div>
+      <div class="category-title">
+        어떤 <span style="color: orange">분위기</span>가 좋아요?
+      </div>
+      <div class="category-list">
+        <a href="./main.html">따뜻한 공감</a>
+        <a>유쾌한 토크</a>
+        <a>치열한 토론</a>
+      </div>
+    </div>
+  </body>
+</html>
