@@ -1,62 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    
-    <!-- 모임 정보 : 짱졔-->
-    <div class="group-wrap"> <!--모임 정보 전체-->
-        <h1> <!--제목-->
-            <a>💛 지역 맞춤 글로모여</a>
-        </h1> 
-        <h2>
-            <span>지역 기반으로 추천해드려요</span>
-        </h2>
-        <div class="group-container"> <!--그룹 정보가 다 담긴 칸-->
-            <div class="group-info"> <!-- 각 그룹 정보-->
-                <img src="./assets/images/sample.jpg" class="group-img">
-                <div class="group-details">
-                    <div>방구석 강아지 자랑 대회</div>
-                    <div>세상에서 젤 예쁜 울 강쥐, 동네방네 자랑하기</div>
-                    <div>장소: 강아지가 있는 어디든지</div>
-                    <div>40,000원~</div>
-                </div>
-            </div>
-            <div class="group-info"> <!-- 각 그룹 정보-->
-                <img src="./assets/images/landingimage.png" class="group-img">
-                <div class="group-details">
-                    <div>너네 우리만큼 힙하냐?</div>
-                    <div>세상 힙한 글로모여 팀원들의 이야기</div>
-                    <div>장소: 경북대학교의 가장 힙한 곳</div>
-                    <div>50,000원~</div>
-                </div>
-            </div>
-            <div class="group-info"> <!-- 각 그룹 정보-->
-                <img src="./assets/images/landingimage2.png" class="group-img">
-                <div class="group-details">
-                    <div>단체 사진 잘 찍는 법</div>
-                    <div>카메라 앞에만 서면 돌이 되는 당신께, 다양한 포즈를 알려줄게요!</div>
-                    <div>장소: 경북대학교 근처 사진관</div>
-                    <div>60,000원~ </div>
-                </div>
-            </div>
-            <div class="group-info"> <!-- 각 그룹 정보-->
-                <img src="./assets/images/sample.jpg" class="group-img">
-                <div class="group-details">
-                    <div>강친소</div>
-                    <div>강아지의 친구를 소개합니다</div>
-                    <div>장소: 펫카페 어디든지</div>
-                    <div>30,000원~</div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <!-- 헤더 : 준수 -->
+    <header>
+      <div class="header-nav">
+        <div class="header-left">
+          <img src="./assets/images/logo.png" width="180px" class="logo" />
+          <a>글로모여 소개</a>
+          <a>모임 등록하기</a>
+          <a>후기</a>
         </div>
+        <div class="header-right">
+          <a class="login">로그인 / 회원가입</a>
+          <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
+        </div>
+      </div>
+    </header>
+
+    <!-- 상단 배너 : 준수 -->
+    <div>
+      <img class="top-banner" src="./assets/images/landingimage2.png" />
     </div>
 
-    
-</body>
+    <main>
+      <!-- 카테고리 : 준수 -->
+      <div class="category">
+        <div class="category-title">무슨 <span style="color: orange">목적</span>인가요?</div>
+        <div class="category-list">
+          <a>등단</a>
+          <a>친목</a>
+          <a>취미</a>
+        </div>
+        <div class="category-title">이런 <span style="color: orange">장르</span>는 어때요?</div>
+        <div class="category-list">
+          <a>문학</a>
+          <a>인문사회</a>
+          <a>과학기술</a>
+          <a>경영경제</a>
+          <a>기타</a>
+        </div>
+        <div class="category-title">어떤 <span style="color: orange">분위기</span>가 좋아요?</div>
+        <div class="category-list">
+          <a href="./main.html">따뜻한 공감</a>
+          <a>유쾌한 토크</a>
+          <a>치열한 토론</a>
+        </div>
+      </div>
+
+      <!-- 모임 정보 : 짱졔-->
+      <div class="group-wrap">
+        <!--모임 정보 전체-->
+        <h1>
+          <!--제목-->
+          <a>💛 지역 맞춤 글로모여</a>
+        </h1>
+        <h2>
+          <span>지역 기반으로 추천해드려요</span>
+        </h2>
+        <div class="group-container">
+          <!--그룹 정보가 다 담긴 칸-->
+          <div class="group-info">
+            <!-- 각 그룹 정보-->
+            <img src="./assets/images/sample.jpg" class="group-img" />
+            <div class="group-details">
+              <div>방구석 강아지 자랑 대회</div>
+              <div>세상에서 젤 예쁜 울 강쥐, 동네방네 자랑하기</div>
+              <div>장소: 강아지가 있는 어디든지</div>
+              <div>40,000원~</div>
+            </div>
+          </div>
+          <div class="group-info">
+            <!-- 각 그룹 정보-->
+            <img src="./assets/images/sample2.jpg" class="group-img" />
+            <div class="group-details">
+              <div>너네 우리만큼 힙하냐?</div>
+              <div>세상 힙한 글로모여 팀원들의 이야기</div>
+              <div>장소: 경북대학교의 가장 힙한 곳</div>
+              <div>50,000원~</div>
+            </div>
+          </div>
+          <div class="group-info">
+            <!-- 각 그룹 정보-->
+            <img src="./assets/images/landingimage2.png" class="group-img" />
+            <div class="group-details">
+              <div>단체 사진 잘 찍는 법</div>
+              <div>카메라 앞에만 서면 돌이 되는 당신께, 다양한 포즈를 알려줄게요!</div>
+              <div>장소: 경북대학교 근처 사진관</div>
+              <div>60,000원~</div>
+            </div>
+          </div>
+          <div class="group-info">
+            <!-- 각 그룹 정보-->
+            <img src="./assets/images/sample1.jpg" class="group-img" />
+            <div class="group-details">
+              <div>강친소</div>
+              <div>강아지의 친구를 소개합니다</div>
+              <div>장소: 펫카페 어디든지</div>
+              <div>30,000원~</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 모임 정보 : 짱졔-->
+      <div class="group-wrap">
+        <h1>
+          <a>마감 임박 모임</a>
+        </h1>
+        <h2>
+          <span>곧 마감인 모임입니다.</span>
+        </h2>
+        <div class="group-container">
+          <div class="group-info">
+            <img src="./assets/images/sample3.jpg" class="group-img" />
+            <div class="group-details">
+              <div>방구석 강아지 자랑 대회</div>
+              <div>세상에서 젤 예쁜 울 강쥐, 동네방네 자랑하기</div>
+              <div>장소: 강아지가 있는 어디든지</div>
+              <div>40,000원~</div>
+            </div>
+          </div>
+          <div class="group-info">
+            <img src="./assets/images/sample2.jpg" class="group-img" />
+            <div class="group-details">
+              <div>너네 우리만큼 힙하냐?</div>
+              <div>세상 힙한 글로모여 팀원들의 이야기</div>
+              <div>장소: 경북대학교의 가장 힙한 곳</div>
+              <div>50,000원~</div>
+            </div>
+          </div>
+          <div class="group-info">
+            <!-- 각 그룹 정보-->
+            <img src="./assets/images/landingimage2.png" class="group-img" />
+            <div class="group-details">
+              <div>단체 사진 잘 찍는 법</div>
+              <div>카메라 앞에만 서면 돌이 되는 당신께, 다양한 포즈를 알려줄게요!</div>
+              <div>장소: 경북대학교 근처 사진관</div>
+              <div>60,000원~</div>
+            </div>
+          </div>
+          <div class="group-info">
+            <!-- 각 그룹 정보-->
+            <img src="./assets/images/sample4.jpg" class="group-img" />
+            <div class="group-details">
+              <div>강친소</div>
+              <div>강아지의 친구를 소개합니다</div>
+              <div>장소: 펫카페 어디든지</div>
+              <div>30,000원~</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

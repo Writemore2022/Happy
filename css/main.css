@@ -1,95 +1,157 @@
-@font-face {
-    font-family: 'JejuMyoungjo';
-    src: url('./assets/fonts/JejuMyeongjo.ttf');
+/* 반응형 css */
+@media (max-width: 880px) {
+  body {
+    margin: 0 20px;
+  }
+  .group-info {
+    width: 45%;
+  }
+}
+
+@media (min-width: 880px) {
+  body {
+    margin: 0 5%;
+  }
+  .group-info {
+    width: 24%;
+  }
+}
+
+@media (min-width: 1140px) {
+  body {
+    margin: 0 10%;
   }
 
-*{
-    margin: auto;
-    padding: 0;
-    font-family: 'JejuMyoungjo';
+  .header {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin: 0 20%;
+  }
+}
+
+/* 임시 */
+body {
+  height: 2500px;
+}
+
+/* 상단 배너 */
+.top-banner {
+  width: 100%;
+  height: 360px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* 카테고리 */
+.category {
+  margin-top: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.category-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.category-list {
+  flex-direction: 'row';
+  padding: 2rem;
+}
+
+.category-list > a,
+.category-list > div {
+  font-size: 14px;
+  padding: 0.6rem;
+  padding-right: 4rem;
+  font-weight: bold;
+  color: grey;
+  cursor: pointer;
+}
+
+.category-list > a:hover {
+  color: orange;
 }
 
 /*모임 정보 : 짱졔*/
-.group-wrap{
-    background-color: beige;
-    padding: 1% 8%;
-    box-sizing: border-box;
+.group-wrap {
+  /* background-color: beige; */
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
-.group-wrap>h1>a{
-    display: block;
-    width: 1200px;
+.group-wrap > h1 > a {
+  display: block;
+  width: 100%;
 
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.46;
-    text-align: left;
-    
-    padding-left: 10px;
-    box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.46;
+  text-align: left;
+
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
-.group-wrap>h2>span{
-    display: block;
-    width: 1200px;
+.group-wrap > h2 > span {
+  display: block;
 
-    font-size: 17px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    text-align: left;
-    color: #9e9e9e;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+  color: #9e9e9e;
 
-    margin-top: 10px;
-    padding-left: 10px;
-    box-sizing: border-box;
+  margin-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
-.group-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* background-color: gray; */
-    height: auto;
-    width: 1200px;
-    margin-top: 20px;
-    box-sizing: border-box;
+.group-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: gray; */
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
-.group-img{
-    width: 280px;
-    height: 180px;
+.group-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
 .group-info {
-    /* background-color: lightpink; */
-    width: 280px;
-    padding: 0px 0.8px;
+  /* background-color: lightpink; */
 }
 
-.group-details>div{
-    width: 95%;
-    height: 30px;
-    margin: 5px;
-    box-sizing: border-box;
-    font-size: 0.8rem;
-
+.group-details > div {
+  width: 95%;
+  height: 30px;
+  margin: 5px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
 }
 
-.group-details>div:first-child{
-    width: 95%;
-    height: 50px;
-    font-size: 1.2rem;
+.group-details > div:first-child {
+  width: 95%;
+  height: 50px;
+  font-size: 1.2rem;
 }
 
-.group-details>div:nth-child(2){
-    border-bottom: 1px gray solid;
-    height: 50px;
+.group-details > div:nth-child(2) {
+  border-bottom: 1px gray solid;
+  height: 50px;
 }
 
-.group-details>div:nth-child(3){
-    padding-top: 5px;
-    box-sizing: border-box;
+.group-details > div:nth-child(3) {
+  padding-top: 5px;
+  box-sizing: border-box;
 }
-
