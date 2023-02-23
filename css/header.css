@@ -11,6 +11,9 @@
   nav {
     display: none;
   }
+  .menu-icon {
+    display: none;
+  }
 }
 
 header {
