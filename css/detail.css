@@ -84,7 +84,7 @@
   }
 
   .host-page{
-    width: 75%;
+    width: 80%;
     height: 160px;
     background-color: rgb(243, 241, 241);
     margin-top: 40px;
@@ -152,4 +152,101 @@
     color: gray;
 
     line-height: 150%;
+  }
+
+  .reservation::before{
+    color: gray;
+  }
+
+  .reservation{
+    width: 80%;
+    height: 200px;
+
+    margin-top: 50px;
+    /* background-color: lightcyan; */
+  }
+
+  .reservation>div:first-child{
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+
+    padding-top: 12px;
+    box-sizing: border-box;
+    /* background-color: lightseagreen; */
+  }
+
+  .reservation>div:nth-child(2){
+    height: 100px;
+    line-height: 150%;
+    font-size: 0.9em;
+
+    padding-top: 15px;
+    box-sizing: border-box;
+    background-color: rgb(243, 241, 241);
+    /* background-color: violet; */
+  }
+
+  .reservation_btn{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: none;
+  }
+
+  .reservation_btn:hover{
+    background-color: gray;
+    color: ivory;
+  }
+
+  .group-contents{
+    width: 80%;
+    height: auto;
+
+    margin-top: 50px;
+    box-sizing: border-box;
+    background-color: rgb(243, 241, 241);
+  }
+
+  #g-list{
+    width: 100%;
+    height: 50px;
+
+    padding: 10px;
+    box-sizing: border-box;
+    /* background-color: red; */
+    border-bottom: 1px solid gray;
+  }
+
+  #g-list>li{ 
+    display: block;
+    width: 80px;
+    height: 30px;
+
+    float: left;
+    margin-right: 20px;
+    padding-top: 7px;
+    padding-left: 5px;
+    box-sizing: border-box;
+
+    font-size: 1.1em;
+
+    /* background-color: lightcyan; */
+  }
+
+  #g-list>li:hover{
+    font-weight: bold;
+  }
+
+  .g-story{
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 150%;
+  }
+
+  .g-story>h3{
+    padding: 5px;
+    padding-left: 0px;
   }
