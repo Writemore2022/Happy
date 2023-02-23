@@ -1,19 +1,10 @@
 /* 반응형 css */
-@media (max-width: 880px) {
+@media (max-width: 1140px) {
   body {
-    margin: 0 20px;
+    margin: 0;
   }
   .group-info {
     width: 45%;
-  }
-}
-
-@media (min-width: 880px) {
-  body {
-    margin: 0 5%;
-  }
-  .group-info {
-    width: 24%;
   }
 }
 
@@ -21,28 +12,36 @@
   body {
     margin: 0 10%;
   }
-
+  .group-info {
+    width: 24%;
+  }
   .header {
     width: 100%;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
+  body {
+    margin: 0 15%;
+  }
+}
+
+@media (min-width: 1920px) {
   body {
     margin: 0 20%;
   }
 }
 
 /* 임시 */
-body {
+/* body {
   height: 2500px;
-}
+} */
 
 /* 상단 배너 */
 .top-banner {
   width: 100%;
   height: 360px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   object-fit: cover;
 }
 
@@ -97,10 +96,16 @@ body {
   box-sizing: border-box;
 }
 
-.group-wrap > h2 > span {
+.group-wrap > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.group-wrap > div > p {
   display: block;
 
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -110,6 +115,22 @@ body {
 
   margin-top: 10px;
   padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.group-wrap > div > a {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+  color: #9e9e9e;
+
+  margin-top: 10px;
+  padding-right: 10px;
   box-sizing: border-box;
 }
 
@@ -124,7 +145,7 @@ body {
 
 .group-img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -142,6 +163,7 @@ body {
 
 .group-details > div:first-child {
   width: 95%;
+  padding-top: 5px;
   height: 50px;
   font-size: 1.2rem;
 }
