@@ -33,6 +33,19 @@
     }
   }
 
+  @font-face {
+    font-family: 'JejuMyoungjo';
+    src: url('../assets/fonts/JejuMyeongjo.ttf');
+  }
+  
+  * {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'JejuMyoungjo';
+    list-style: none;
+    text-decoration: none;
+  }
+
   /* 임시 */
   body {
     height: 2500px;
