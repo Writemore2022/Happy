@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="Utility.js"></script>
+    <style>
+
+        body{
+
+            display: flex;
+            flex-direction: column;
+            
+            /* justify-content: center;
+            align-items: center; */
+
+            padding: 0;
+            margin: 0;
+            font-family: 제주명조;
+            /* background-color: blue; */
+        }
+
+        /* 헤더 박스 (로고, 로그인) */
+        header{
+            height: 60px;
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            flex-grow : 0;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        /* 헤더의 버튼들 */
+        header > button {
+            border: transparent;
+            background-color: transparent;
+            font-size: larger;
+            font-family:제주명조;
+        }
+
+        /*  로그인 전체 박스 중앙정렬 */
+        .container{
+            /* background-color: aqua; */
+            min-height: 600px;
+            height: 100%;
+            /* width: 400px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 24px;
+            margin-bottom: 48px;
+            /* background-color: aquamarine; */
+        }
+
+
+        /* <!-- terms and conditions --> */
+        .TandC{
+
+            border: 1px solid gray;
+            padding:16px;
+
+        }
+
+
+        /* 회원 정보 박스 */
+        .MemberInfo_box{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+
+        /* 입력창 */
+        .MemberInfo_box input {
+            width: 100%;
+            height: 60px;
+            font-size: large;
+            padding:8px;
+            box-sizing : border-box;
+            font-family:제주명조;
+            
+        }
+  
+        /* 회원정보 각 요소 박스(입력창+텍스트) */
+        .MemberInfo_box > div{
+
+            margin-top:8px;
+            margin-bottom:8px;
+        
+        }
+
+        /* 회원정보 글씨 */
+        .MemberInfo_box p{
+            margin:0;
+            padding:0;
+            display: none;
+        }
+
+        .MemberInfo_box > div > a{
+            text-decoration-line: none;
+            margin-left: 185px;
+            border: solid 2px orange;
+        }
+
+        
+
+    </style>
+
+    
+
+
+</head>
+<body>
+
+
+    <header>
+
+        <!-- 클릭 시 메인 페이지로 이동 -->
+        <button onclick="PageRequest(Main_page)">글로모여</button>
+        <!-- 클릭 시 로그인 페이지 이동 -->
+        <button onclick="PageRequest(Login_page)">로그인</button>
+
+    </header>
+
+
+    <!--  -->
+    <form action="" class="container">
+        
+        
+
+        <p>
+            <!-- 회원 정보 -->
+            이메일로 회원가입하기
+        </p>
+        
+        <!-- Collection of personal(member) information? -->
+        <!-- 회원 정보 -->
+        <div class="MemberInfo_box">
+            
+            <!-- 이메일 주소 -->
+            <div>
+                <input type="text" placeholder="이메일 주소">
+                <p>휴대폰/이메일 메세지</p>
+            </div>
+
+            <!-- 비밀번호 -->
+            <div>
+                <input type="password" placeholder="비밀번호">
+                <p>비밀번호 메세지</p>
+            </div>
+
+            <!-- 비밀번호 확인 -->
+            <div>
+                <input type="password" placeholder="비밀번호 확인">
+                <p>비밀번호 확인 메세지</p>
+            </div>
+
+            <!-- 닉네임 -->
+            <div>
+                <input type="text" placeholder="닉네임">
+                <p>닉네임 메세지</p>
+            </div>
+
+            <!-- 다음 -->
+            <div>
+                <a href="signup_2.html">다음</a>
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+</html>

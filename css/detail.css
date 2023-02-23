@@ -1,0 +1,155 @@
+/* 반응형 css */
+@media (max-width: 880px) {
+    body {
+      margin: 0 20px;
+    }
+    .group-info {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width: 880px) {
+    body {
+      margin: 0 5%;
+    }
+    .group-info {
+      width: 24%;
+    }
+  }
+  
+  @media (min-width: 1140px) {
+    body {
+      margin: 0 10%;
+    }
+  
+    .header {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    body {
+      margin: 0 20%;
+    }
+  }
+
+  /* 임시 */
+  body {
+    height: 2500px;
+  }
+
+  /* 상세페이지 */
+  .detail-page{
+    text-align: left;
+  }
+
+  .g-img{
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+  }
+
+  .g-name{
+    display: block;
+    width: 80%;
+    height: 70px;
+
+    padding-top: 30px;
+    box-sizing: border-box;
+    
+    font-size: 1.6em;
+    font-weight: 600;
+    /* background-color: yellow; */
+  }
+
+  .g-intro{
+    display: block;
+    width: 80%;
+    height: 50px;
+
+    font-size: 1.1em;
+    /* background-color: rgb(141, 216, 141); */
+  }
+
+  .g-address{
+    display: block;
+    width: 80%;
+    height: 50px;
+
+    padding-top: 10px;
+    box-sizing: border-box;
+    
+    /* background-color: aqua; */
+    border-top: 0.5px solid gray;
+  }
+
+  .host-page{
+    width: 75%;
+    height: 160px;
+    background-color: rgb(243, 241, 241);
+    margin-top: 40px;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .host-left{
+    width: 20%;
+    height: 100%;
+    /* background-color: lightcoral; */
+    float: left;
+    display: flex;
+  }
+
+  .host-img{
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    margin-top: 10%;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+
+  .host-right{
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    /* background-color: lightgray; */
+    float: left;
+  }
+
+  .host-name{
+    height: 30%;
+    /* background-color: lightskyblue; */
+  }
+
+  .host-name>span:first-child{
+    display: block;
+    height: 50%;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+    font-size: 0.8em;
+    color: gray;
+    /* background-color: thistle; */
+  }
+
+  .host-name>span:last-child>a{
+    display: block;
+    height: 50%;
+
+    font-size: 0.9em;
+    font-weight: 600;
+    color: black;
+    /* background-color: violet; */
+  }
+
+  .host-intro{
+    height: 70%;
+    /* background-color: lightgoldenrodyellow; */
+
+    font-size: 0.9rem;
+    color: gray;
+
+    line-height: 150%;
+  }
