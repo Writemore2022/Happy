@@ -3,18 +3,16 @@
     body {
       margin: 0 20px;
     }
-    .group-info {
-      width: 45%;
-    }
   }
   
   @media (min-width: 880px) {
     body {
       margin: 0 5%;
     }
-    .group-info {
-      width: 24%;
-    }
+    /* .host-img{
+      width: 80px;
+      height: 80px;
+    } */
   }
   
   @media (min-width: 1140px) {
@@ -29,7 +27,7 @@
   
   @media (min-width: 1440px) {
     body {
-      margin: 0 20%;
+      margin: 0 10%;
     }
   }
 
@@ -39,7 +37,7 @@
   }
   
   * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     font-family: 'JejuMyoungjo';
     list-style: none;
@@ -54,12 +52,14 @@
   /* 상세페이지 */
   .detail-page{
     text-align: left;
+    margin-left: 17%;
+    box-sizing: border-box;
   }
 
   .g-img{
     width: 80%;
     height: 40%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
   }
 
   .g-name{
@@ -73,6 +73,7 @@
     font-size: 1.6em;
     font-weight: 600;
     /* background-color: yellow; */
+
   }
 
   .g-intro{
@@ -98,7 +99,7 @@
 
   .host-page{
     width: 80%;
-    height: 160px;
+    height: 165px;
     background-color: rgb(243, 241, 241);
     margin-top: 40px;
     padding-top: 10px;
@@ -110,16 +111,25 @@
     height: 100%;
     /* background-color: lightcoral; */
     float: left;
-    display: flex;
+  }
+
+  .host-left>a{
+    display: block;
+    width: 90%;
+    height: 95%;
+    /* background-color: aliceblue; */
+    margin-left: 5%;
+    box-sizing: border-box;
   }
 
   .host-img{
-    width: 80px;
-    height: 80px;
-    align-items: center;
-    margin-top: 10%;
+    width: 100%;
+    /* height: 100%; */
     border-radius: 100%;
-    box-sizing: border-box;
+    border: solid 2px ivory;
+    box-shadow: 0 0 4px gray;
+
+    aspect-ratio: 1/1; /* 화면 작아져도 고정 비율 유지 (1:1)*/
   }
 
   .host-right{
@@ -173,7 +183,7 @@
 
   .reservation{
     width: 80%;
-    height: 200px;
+    height: auto;
 
     margin-top: 50px;
     /* background-color: lightcyan; */
@@ -190,7 +200,7 @@
   }
 
   .reservation>div:nth-child(2){
-    height: 100px;
+    height: auto;
     line-height: 150%;
     font-size: 0.9em;
 
