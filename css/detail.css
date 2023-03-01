@@ -46,7 +46,7 @@
 
   /* 임시 */
   body {
-    height: 2500px;
+    height: 3000px;
   }
 
   /* 상세페이지 */
@@ -246,7 +246,7 @@
   #g-list>li{ 
     display: block;
     width: 80px;
-    height: 30px;
+    height: 39px;
 
     float: left;
     margin-right: 20px;
@@ -261,6 +261,7 @@
 
   #g-list>li:hover{
     font-weight: bold;
+    border-bottom: 2px solid black;
   }
 
   .g-story{
@@ -269,7 +270,9 @@
     line-height: 150%;
   }
 
-  .g-story>h3{
+  .g-story>h2{
     padding: 5px;
     padding-left: 0px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
   }
