@@ -1,6 +1,6 @@
 let li_1 = document.getElementById("list1");
 let li_2 = document.getElementById("list2");
-let li_3 = document.getElementById("list3");
+// let li_3 = document.getElementById("list3");
 
 let title = document.getElementById("g-title");
 let story = document.getElementById("g-story");
@@ -44,7 +44,7 @@ let arr_story = [`안녕하세요.<br>
 <br><br>
 ------------------------------------------------------------------------------
 <br><br>
-<h3>제공사항</h3> <br>
+<h3>진행 사항</h3> <br>
 <span style="font-weight: bold;">1. 그림책을 읽어드려요.</span> <br> 
 '정윤'이 그림책을 읽어드리고, 몇가지 질문들을 나누는 시간<br><br>
 <span style="font-weight: bold;">2. 그림책을 읽으며 지금-여기에 집중 해 볼까요?</span> <br> 
@@ -53,15 +53,7 @@ let arr_story = [`안녕하세요.<br>
 그림책을 읽으면서 마음에 닿았던 그림책을 소개 해 주고 그림책에 대하여 함께 이야기를 나누는 시간<br><br>
 <span style="font-weight: bold;">4. 오늘을 간직해 볼까요?</span> <br> 
 가장 마음에 닿았던 그림책을 필사하거나, 그림을 그리고 꾸미는 시간<br><br>
-<br><br>`, 
-`<br>
-<img src="./assets/images/sample.jpg" width="80%" height="40%"/> <br><br>
-어른들에게 그림책의 여백은 대부분 상상이 아닌 나의 경험과 느낌으로 채워집니다. <br>
-여러분과 함게 할 이 방 역시 지금은 여백이 가득 하죠! <br>
-따뜻한 조명, 포근한 러그 그리고 100여권의 그림책 빼고는 책상과 의자 밖에 없는 공간이에요. <br>
-썰렁해 보이는 이 공간이 여러분으 생각과 느낌으로 가득차면 얼마나 더 멋져질까요! <br>
-포스트잇과 여러 꾸미기 도구들을 활용하여 점점 이 방을 꾸며 갈 예정이에요! <br>
-어서 오셔서 여러분으로 이 방을 채워주세요! <br><br><br>`];
+<br><br>`, ];
 
 li_1.addEventListener('click', () => {
     title.innerHTML = li_1.innerText
@@ -73,7 +65,7 @@ li_2.addEventListener('click', () => {
     story.innerHTML = arr_story[1]
 })
 
-li_3.addEventListener('click', () => {
-    title.innerHTML = li_3.innerText
-    story.innerHTML = arr_story[2]
-})
+// li_3.addEventListener('click', () => {
+//     title.innerHTML = li_3.innerText
+//     story.innerHTML = arr_story[2]
+// })
