@@ -16,7 +16,7 @@
         <a href="./introduce.html" class="link">글로모여 소개</a>
         <a href="./collectGroup.html" class="link">모임 전체보기</a>
         <a href="" class="link">후기</a>
-        <a href="" class="link">로그인</a>
+        <a href="./admin.html" class="link">로그인</a>
         <a class="link" id="menuClose">뒤로가기</a>
       </div>
     </nav>
@@ -80,7 +80,7 @@
           <!--그룹 정보가 다 담긴 칸-->
           <div class="group-info">
             <!-- 각 그룹 정보-->
-            <a href="./detail.html"><img src="./assets/images/sample.jpg" class="group-img"/></a>
+            <a href="./detail.html"><img src="./assets/images/sample.jpg" class="group-img" /></a>
             <div class="group-details">
               <div>방구석 강아지 자랑 대회</div>
               <div>세상에서 젤 예쁜 울 강쥐, 동네방네 자랑하기</div>
@@ -100,7 +100,9 @@
           </div>
           <div class="group-info">
             <!-- 각 그룹 정보-->
-            <a href="./detail.html"><img src="./assets/images/landingimage2.png" class="group-img" /></a>
+            <a href="./detail.html"
+              ><img src="./assets/images/landingimage2.png" class="group-img"
+            /></a>
             <div class="group-details">
               <div>단체 사진 잘 찍는 법</div>
               <div>카메라 앞에만 서면 돌이 되는 당신께, 다양한 포즈를 알려줄게요!</div>
@@ -112,10 +114,10 @@
             <!-- 각 그룹 정보-->
             <a href="./detail.html"><img src="./assets/images/sample1.jpg" class="group-img" /></a>
             <div class="group-details">
-              <div>강친소</div>
-              <div>강아지의 친구를 소개합니다</div>
+              <div id="good-group-title4"></div>
+              <div id="good-group-intro4"></div>
               <div>장소: 펫카페 어디든지</div>
-              <div>30,000원~</div>
+              <div id="good-group-cost4"></div>
             </div>
           </div>
         </div>
@@ -150,7 +152,9 @@
           </div>
           <div class="group-info">
             <!-- 각 그룹 정보-->
-            <a href="./detail.html"><img src="./assets/images/landingimage2.png" class="group-img" /></a>
+            <a href="./detail.html"
+              ><img src="./assets/images/landingimage2.png" class="group-img"
+            /></a>
             <div class="group-details">
               <div>단체 사진 잘 찍는 법</div>
               <div>카메라 앞에만 서면 돌이 되는 당신께, 다양한 포즈를 알려줄게요!</div>
@@ -273,4 +277,8 @@
     </main>
   </body>
   <script src="./js/sidemenu.js"></script>
+  <script type="module" src="/js/main.js"></script>
+  <script>
+    console.log(document.scrollingElement.scrollTop);
+  </script>
 </html>

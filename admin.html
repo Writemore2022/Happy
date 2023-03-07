@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글로모여 관리자 페이지</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+      }
+      body {
+        margin: 10%;
+      }
+      h1 {
+        margin: 20px;
+      }
+      #exist-group {
+        margin: 20px;
+      }
+      #exist-group > div {
+        margin: 10px;
+      }
+      #resister-group-form {
+        flex-direction: column;
+        margin-left: 30px;
+      }
+      #resister-group-form > input {
+        margin: 10px;
+        display: flex;
+        width: 240px;
+        text-align: center;
+      }
+      #resister-group-form > button {
+        margin: 10px;
+        padding: 20px;
+      }
+      #delete-group-form {
+        flex-direction: column;
+        margin-left: 30px;
+      }
+      #delete-group-form > input {
+        margin: 10px;
+        display: flex;
+        width: 240px;
+      }
+      #delete-group-form > button {
+        margin: 10px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./main.html">뒤로가기</a>
+    <h1>현재 등록된 모임</h1>
+    <div id="exist-group"></div>
+    <hr />
+    <h1>모임을 등록합니다.</h1>
+    <form id="resister-group-form">
+      <label for="resisterGroupTitle">모임 이름</label>
+      <input id="resisterGroupTitle" name="resisterGroupTitle" type="text" />
+      <label for="resisterGroupIntro">모임 한 줄 소개</label>
+      <input id="resisterGroupIntro" name="resisterGroupIntro" type="text" />
+      <label for="resisterGroupCost">모임 가격</label>
+      <input id="resisterGroupCost" name="resisterGroupCost" type="number" />
+      <button type="submit">등록하기</button>
+    </form>
+    <hr />
+    <h1>모임을 삭제합니다.</h1>
+    <form id="delete-group-form">
+      <label for="deleteGroupTitle">모임 이름</label>
+      <input id="deleteGroupTitle" name="deleteGroupTitle" type="text" />
+      <button type="submit">삭제하기</button>
+    </form>
+  </body>
+  <script type="module" src="/js/admin.js"></script>
+</html>
