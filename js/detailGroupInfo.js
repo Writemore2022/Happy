@@ -5,9 +5,9 @@ let li_2 = document.getElementById("list2");
 let title = document.getElementById("g-title");
 let story = document.getElementById("g-story");
 
-function btn(){
-    alert('예약하기 창, 준비 중 입니다.');
-}
+// function btn(){
+//     alert('예약하기 창, 준비 중 입니다.');
+// }
 
 let arr_story = [`안녕하세요.<br>
 드디어 그림책방을 갖게된 정윤입니다.💜<br>
