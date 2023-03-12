@@ -7,100 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/detail.css">
     <link rel="stylesheet" href="./css/header.css">
-    <!-- <link rel="stylesheet" href="./css/index.css"> -->
-    <script src="https://kit.fontawesome.com/0bc54cb32d.js" crossorigin="anonymous"></script>
     <!--달력-->
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function() {
-          var calendarEl = document.getElementById('calendar');
-      
-          var calendar = new FullCalendar.Calendar(calendarEl, {
-            headerToolbar: {
-              left: 'prev,next today',
-              center: 'title',
-              right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
-            },
-            initialDate: '2023-01-12',
-            navLinks: true, // can click day/week names to navigate views
-            businessHours: true, // display business hours
-            editable: true,
-            selectable: true,
-            events: [
-              {
-                title: 'Business Lunch',
-                start: '2023-01-03T13:00:00',
-                constraint: 'businessHours'
-              },
-              {
-                title: 'Meeting',
-                start: '2023-01-13T11:00:00',
-                constraint: 'availableForMeeting', // defined below
-                color: '#257e4a'
-              },
-              {
-                title: 'Conference',
-                start: '2023-01-18',
-                end: '2023-01-20'
-              },
-              {
-                title: 'Party',
-                start: '2023-01-29T20:00:00'
-              },
-      
-              // areas where "Meeting" must be dropped
-              {
-                groupId: 'availableForMeeting',
-                start: '2023-01-11T10:00:00',
-                end: '2023-01-11T16:00:00',
-                display: 'background'
-              },
-              {
-                groupId: 'availableForMeeting',
-                start: '2023-01-13T10:00:00',
-                end: '2023-01-13T16:00:00',
-                display: 'background'
-              },
-      
-              // red areas where no events can be dropped
-              {
-                start: '2023-01-24',
-                end: '2023-01-28',
-                overlap: false,
-                display: 'background',
-                color: '#ff9f89'
-              },
-              {
-                start: '2023-01-06',
-                end: '2023-01-08',
-                overlap: false,
-                display: 'background',
-                color: '#ff9f89'
-              }
-            ]
-          });
-      
-          calendar.render();
-        });
-      
-      </script>
-      <style>
-
-        body {
-          margin: 40px 10px;
-          padding: 0;
-          font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-          font-size: 14px;
-        }
-      
-        #calendar {
-          max-width: 1100px;
-          margin: 0 auto;
-        }
-      
-      </style>
-    <!--달력-->
-
+    <link rel="stylesheet" href="./css/calendar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/calendar.js"></script>
+    
 </head>
 <body>
     <!-- 헤더 : 준수 -->
@@ -160,13 +71,66 @@
                 2. 서로의 글에 주의를 기울이고 존중해요.<br>
                 3. 진실된 글을 쓰기 위해 노력해요.
             </div>
-            <!-- <button class="reservation_btn" onclick="btn()">예약하기</button> -->
-            <a href="./ex/background-events.html"><button class="reservation_btn">예약하기</button></a> <!--달력 넘어가기-->
-            <br>
             <!--달력-->
-            <div id='calendar'></div>
-            
-
+            <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
+            <br><br>
+            <!--달력-->
+            <div class="res">방문 일정</div>
+            <div class="calendar_page">
+                <div id="cal_left">
+                    <div class="cal">
+                        <div class="sec_cal">
+                            <div class="cal_nav">
+                              <a href="javascript:;" class="nav-btn go-prev">prev</a>
+                              <div class="year-month"></div>
+                              <a href="javascript:;" class="nav-btn go-next">next</a>
+                            </div>
+                            <div class="cal_wrap">
+                              <div class="days">
+                                <div class="day">SUN</div>
+                                <div class="day">TUE</div>
+                                <div class="day">WED</div>
+                                <div class="day">THU</div>
+                                <div class="day">FRI</div>
+                                <div class="day">SAT</div>
+                                <div class="day">MON</div>
+                              </div>
+                              <div class="dates"></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="cal_request">
+                        <button>희망 일정 요청하기</button>
+                    </div>
+                    <div class="cal_state">
+                        <ul id="gnb">
+                            <li>💖 선택 가능</li>
+                            <li>🤍 종료된 남의 집</li>
+                            <li>🖤 선택 불가</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="cal_right"> <!--예약 디테일 창-->
+                    <div class="cal_grid">
+                        <div class="cal_notice">
+                            📢 <b>방문 일정에 따라 세부 정보가 달라질 수 있어요.</b><br>
+                            날짜에 따라 게스트님을 위한 준비가 달라질 수 있어요. <br>
+                            일정을 변경한 경우 세부 정보를 다시 한번 확인해주세요!
+                        </div>
+                        <div class="cal_plan">
+                            <div class="plan_detail">
+                                <span> <b>오후 6시</b> </span>
+                                <span> 49000원 </span>
+                                <span> | </span>
+                                <span> 10명 초대 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cal_btn">
+                        <button id="cal_btn">신청 예약하기</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="group-contents">
             <ul id="g-list">

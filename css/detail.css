@@ -3,9 +3,6 @@
     body {
       margin: 0 20px;
     }
-    .detail-page{
-      width: 100%;
-    }
   }
   
   @media (min-width: 880px) {
@@ -45,7 +42,7 @@
 
   /* 임시 */
   body {
-    height: 3000px;
+    height: 3500px;
   }
 
   /* 상세페이지 */
@@ -57,7 +54,7 @@
 
   .g-img{
     width: 80%;
-    height: 40%;
+    height: 350px;
     /* margin-left: 10%; */
   }
 
@@ -250,7 +247,7 @@
     float: left;
     margin-right: 20px;
     padding-top: 7px;
-    padding-left: 5px;
+    padding-left: 10px;
     box-sizing: border-box;
 
     font-size: 1.1em;
