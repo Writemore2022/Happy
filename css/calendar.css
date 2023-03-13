@@ -31,8 +31,10 @@
 
   #cal_right{
     position: absolute;
-    left: 402px;
+    left: 403px;
     top: 0;
+
+    max-width: fit-content;
 
   }
 
@@ -44,8 +46,8 @@
     background-color: yellow;
   }
 
-  .plan_detail{
-    
+  .plan_detail>span{
+    max-height: fit-content;
   }
 
   #cal_btn{
