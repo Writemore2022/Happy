@@ -42,12 +42,16 @@
 
   }
 
-  .cal_notice, .plan_detail{
-    background-color: yellow;
+  .cal_notice{
+    /* background-color: yellow; */
+  }
+
+  .plan_detail{
+    
   }
 
   .plan_detail>span{
-    max-height: fit-content;
+    
   }
 
   #cal_btn{
