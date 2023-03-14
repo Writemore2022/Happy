@@ -63,7 +63,6 @@ async function groupSearch(option) {
 }
 
 await groupSearch('good');
-console.log(goodGroup);
 
 goodGroupTitle1.innerHTML = goodGroup[0].title;
 goodGroupIntro1.innerHTML = goodGroup[0].intro;
@@ -82,20 +81,19 @@ goodGroupIntro4.innerHTML = goodGroup[3].intro;
 goodGroupCost4.innerHTML = goodGroup[3].cost.toLocaleString('ko-KR') + '원~';
 
 await groupSearch('deadline');
-console.log(deadlineGroup);
 
 deadlineGroupTitle1.innerHTML = deadlineGroup[0].title;
 deadlineGroupIntro1.innerHTML = deadlineGroup[0].intro;
 deadlineGroupCost1.innerHTML = deadlineGroup[0].cost.toLocaleString('ko-KR') + '원~';
 
-deadlineGroupTitle2.innerHTML = deadlineGroup[1].title;
-deadlineGroupIntro2.innerHTML = deadlineGroup[1].intro;
-deadlineGroupCost2.innerHTML = deadlineGroup[1].cost.toLocaleString('ko-KR') + '원~';
+// deadlineGroupTitle2.innerHTML = deadlineGroup[1].title;
+// deadlineGroupIntro2.innerHTML = deadlineGroup[1].intro;
+// deadlineGroupCost2.innerHTML = deadlineGroup[1].cost.toLocaleString('ko-KR') + '원~';
 
-deadlineGroupTitle3.innerHTML = deadlineGroup[2].title;
-deadlineGroupIntro3.innerHTML = deadlineGroup[2].intro;
-deadlineGroupCost3.innerHTML = deadlineGroup[2].cost.toLocaleString('ko-KR') + '원~';
+// deadlineGroupTitle3.innerHTML = deadlineGroup[2].title;
+// deadlineGroupIntro3.innerHTML = deadlineGroup[2].intro;
+// deadlineGroupCost3.innerHTML = deadlineGroup[2].cost.toLocaleString('ko-KR') + '원~';
 
-deadlineGroupTitle4.innerHTML = deadlineGroup[3].title;
-deadlineGroupIntro4.innerHTML = deadlineGroup[3].intro;
-deadlineGroupCost4.innerHTML = deadlineGroup[3].cost.toLocaleString('ko-KR') + '원~';
+// deadlineGroupTitle4.innerHTML = deadlineGroup[3].title;
+// deadlineGroupIntro4.innerHTML = deadlineGroup[3].intro;
+// deadlineGroupCost4.innerHTML = deadlineGroup[3].cost.toLocaleString('ko-KR') + '원~';
