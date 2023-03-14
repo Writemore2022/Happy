@@ -1,167 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/detail.css">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/detail.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <!--달력-->
-    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/calendar.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/calendar.js"></script>
-    
-</head>
-<body>
+  </head>
+  <body>
     <!-- 헤더 : 준수 -->
     <header>
-        <div class="header-nav">
-          <div class="header-left">
-            <img src="./assets/images/logo.png" width="180px" class="logo" />
-            <a>글로모여 소개</a>
-            <a>모임 등록하기</a>
-            <a>후기</a>
-          </div>
-          <div class="header-right">
-            <a class="login">로그인 / 회원가입</a>
-            <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
-          </div>
+      <div class="header-nav">
+        <div class="header-left">
+          <img src="./assets/images/logo.png" width="180px" class="logo" />
+          <a>글로모여 소개</a>
+          <a>모임 등록하기</a>
+          <a>후기</a>
         </div>
-      </header>
+        <div class="header-right">
+          <a class="login">로그인 / 회원가입</a>
+          <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
+        </div>
+      </div>
+    </header>
 
-      <!--상세페이지 : 짱졔-->
-      <!-- 1. 모임 사진, 모임 이름, 한 줄 소개-->
-      <!-- 2. 모임 기본 규칙 (공통 적용되는)
+    <!--상세페이지 : 짱졔-->
+    <!-- 1. 모임 사진, 모임 이름, 한 줄 소개-->
+    <!-- 2. 모임 기본 규칙 (공통 적용되는)
       3. 모임 소개 (디테일하게)
       4. 호스트 소개
       5. 모임 진행 방식
       6. 신청/참여 기간 (달력 넣기, 금액 기재, 신청기간, 참여기간 표시) - 색으로 구분?
       7. 해시태그 3개  -->
-      <div class="detail-page">
-        <img src="./assets/images/sample1.jpg" alt="group-img" class="g-img">
-        <span class="g-name"> 나와 만나는 그림책</span>
-        <span class="g-intro"> 그림책을 통해 나와 마주한다면 어떤 일들이 벌어질까요?</span>
-        <div class="address-area">
-            <!--위치 아이콘 넣기: 폰트어썸으로-->
-            <span class="g-address"> <i class="fas fa-solid fa-map-pin" style="color:gray"> </i> 서울특별시 강동구 암사동</span>
+    <div class="detail-page">
+      <img src="./assets/images/sample1.jpg" alt="group-img" class="g-img" />
+      <span class="g-name"> 나와 만나는 그림책</span>
+      <span class="g-intro"> 그림책을 통해 나와 마주한다면 어떤 일들이 벌어질까요?</span>
+      <div class="address-area">
+        <!--위치 아이콘 넣기: 폰트어썸으로-->
+        <span class="g-address">
+          <i class="fas fa-solid fa-map-pin" style="color: gray"> </i> 서울특별시 강동구
+          암사동</span
+        >
+      </div>
+      <div class="host-page">
+        <div class="host-left">
+          <a href="#">
+            <img src="./assets/images/host_sample.jpg" alt="host-img" class="host-img" />
+          </a>
         </div>
-        <div class="host-page">
-            <div class="host-left">
-                <a href="#">
-                    <img src="./assets/images/host_sample.jpg" alt="host-img" class="host-img">
-                </a>
-            </div>
-            <div class="host-right">
-                <div class="host-name">
-                    <span>호스트</span>
-                    <span><a href="#">정윤 ></a></span>
-                </div>
-                <div class="host-intro">
-                    안녕하세요. 그림책을 알리는 일을 하고 있는 그림책 에반젤리스트 정윤입니다. <br>
-                    그림책 3권과 에세이 2권을 낸 작가이자, 그림책테라피를 진행하는 강사로 활동하고 있습니다.
-                </div>
-            </div>
-        </div>
-        <div class="rule">
-            <div>모임 규칙</div>
-            <div>
-                <!-- <i class="fas fa-solid fa-bullhorn" style="color: gray"></i> -->
-                1. 서로의 글을 비난하지 말아요.<br>
-                2. 서로의 글에 주의를 기울이고 존중해요.<br>
-                3. 진실된 글을 쓰기 위해 노력해요.
-            </div>
-            <!--달력-->
-            <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
-            <br><br>
-            <!--달력-->
-            <div class="res">방문 일정</div>
-            <div class="calendar_page">
-                <div id="cal_left">
-                    <div class="cal">
-                        <div class="sec_cal">
-                            <div class="cal_nav">
-                              <a href="javascript:;" class="nav-btn go-prev">prev</a>
-                              <div class="year-month"></div>
-                              <a href="javascript:;" class="nav-btn go-next">next</a>
-                            </div>
-                            <div class="cal_wrap">
-                              <div class="days">
-                                <div class="day">SUN</div>
-                                <div class="day">TUE</div>
-                                <div class="day">WED</div>
-                                <div class="day">THU</div>
-                                <div class="day">FRI</div>
-                                <div class="day">SAT</div>
-                                <div class="day">MON</div>
-                              </div>
-                              <div class="dates"></div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="cal_request">
-                        <button>희망 일정 요청하기</button>
-                    </div>
-                    <div class="cal_state">
-                        <ul id="gnb">
-                            <li>💖 선택 가능</li>
-                            <li>🤍 종료된 남의 집</li>
-                            <li>🖤 선택 불가</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="cal_right"> <!--예약 디테일 창-->
-                    <div class="cal_grid">
-                        <div class="cal_notice">
-                            📢 <b>방문 일정에 따라 세부 정보가 달라질 수 있어요.</b><br>
-                            날짜에 따라 게스트님을 위한 준비가 달라질 수 있어요. <br>
-                            일정을 변경한 경우 세부 정보를 다시 한번 확인해주세요!
-                        </div>
-                        <div class="cal_plan">
-                            <div class="plan_detail">
-                                <span> <b>오후 6시</b> </span>
-                                <span> 49000원 </span>
-                                <span> | </span>
-                                <span> 10명 초대 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cal_btn">
-                        <button id="cal_btn">신청 예약하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="group-contents">
-            <ul id="g-list">
-                <li id="list1">모임 소개</li>
-                <li id="list2">진행 안내</li>
-                <!-- <li id="list3">공간 소개</li> -->
-            </ul>
-            <div class="g-story">
-                <h2 id="g-title">모임 소개</h2>
-                <div id="g-story">
-                    안녕하세요.<br>
-                    드디어 그림책방을 갖게된 정윤입니다.💜<br>
-                    <img src="./assets/images/sample2.jpg" width="80%" height="40%"/> <br>
-                    그림책은 그림과 그림사이, 단어와 단어사이 여백이 가득가득한 책이에요.<br>
-                    그래서 읽는 동안 혼잣말로 그 사이를 채우기도 하고 잠시 멈춰 옛날 일을 떠올리기도 하죠. <br><br>
-                    아! 모든 그림책을 읽고 다 그러는 것은 아니에요.<br>
-                    마음이 닿은 그림책이 이런 신비한 일을 가능하게하죠.<br><br>
-                    이렇게 읽게된 그림책은 이제 더이상 ‘그냥 그림책’이 아니게 된답니다.<br><br>
-                    <u>‘내가 읽은 그림책’이 되어버리죠.</u> <br><br>
-                    똑같은 그림책을 읽더라도 각자의 경험, 생각, 감정들이 다르기 때문에 함께 나눌 때는 각자 다른 감상들을 뱉어내게 되는거죠.<br>
-                    <img src="./assets/images/sample3.jpg" width="80%" height="40%"/> <br>
-                    나의 생각을 말하고 남의 생각을 듣다보면 ‘어? 나 왜이렇게 생각하고 있지?’ 혹은 ‘저사람은 어떻게 이렇게 생각을 하지?’ 의문이 들때가 있을 거에요.<br><br>
-                    저희는 그 ‘다른’ 이야기를 더 듣고 나눌 거에요.🙌 <br><br>
-                    몇권을 함께 읽고 나누다보면 어느새 나만의 생각이 정리되는 분들도, 이 시간이 따뜻했던 분들도, 혹은 뭔가 마음이 불편하신 분들도 있을 거에요. <br><br>
-                    그렇게 시간이 끝나고 집에 돌아갈 때 조금만 더 함께한 시간을 생각해주세요. <br><br>
-                    언젠가 오늘 그림책을 통해 나의 세계를 만났던 경험이 위안이 되기를 바라며 열심히 준비하고 기다리고 있을게요.🙏 <br><br><br><br>
-                </div>
-            </div>
+        <div class="host-right">
+          <div class="host-name">
+            <span>호스트</span>
+            <span><a href="#">정윤 ></a></span>
+          </div>
+          <div class="host-intro">
+            안녕하세요. 그림책을 알리는 일을 하고 있는 그림책 에반젤리스트 정윤입니다. <br />
+            그림책 3권과 에세이 2권을 낸 작가이자, 그림책테라피를 진행하는 강사로 활동하고 있습니다.
+          </div>
         </div>
       </div>
-      <script src="./js/detailGroupInfo.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
-</body>
+      <div class="rule">
+        <div>모임 규칙</div>
+        <div>
+          <!-- <i class="fas fa-solid fa-bullhorn" style="color: gray"></i> -->
+          1. 서로의 글을 비난하지 말아요.<br />
+          2. 서로의 글에 주의를 기울이고 존중해요.<br />
+          3. 진실된 글을 쓰기 위해 노력해요.
+        </div>
+        <!--달력-->
+        <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
+        <br /><br />
+        <!--달력-->
+        <div class="res">방문 일정</div>
+        <div class="calendar_page">
+          <div id="cal_left">
+            <div class="cal">
+              <div class="sec_cal">
+                <div class="cal_nav">
+                  <a href="javascript:;" class="nav-btn go-prev">prev</a>
+                  <div class="year-month"></div>
+                  <a href="javascript:;" class="nav-btn go-next">next</a>
+                </div>
+                <div class="cal_wrap">
+                  <div class="days">
+                    <div class="day">SUN</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day">FRI</div>
+                    <div class="day">SAT</div>
+                    <div class="day">MON</div>
+                  </div>
+                  <div class="dates"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cal_request">
+              <button>희망 일정 요청하기</button>
+            </div>
+            <div class="cal_state">
+              <ul id="gnb">
+                <li>💖 선택 가능</li>
+                <li>🤍 종료된 남의 집</li>
+                <li>🖤 선택 불가</li>
+              </ul>
+            </div>
+          </div>
+          <div id="cal_right">
+            <!--예약 디테일 창-->
+            <div class="cal_grid">
+              <div class="cal_notice">
+                📢 <b>방문 일정에 따라 세부 정보가 달라질 수 있어요.</b><br />
+                날짜에 따라 게스트님을 위한 준비가 달라질 수 있어요. <br />
+                일정을 변경한 경우 세부 정보를 다시 한번 확인해주세요!
+              </div>
+              <div class="cal_plan">
+                <div class="plan_detail">
+                  <span> <b>오후 6시</b> </span>
+                  <span> 49000원 </span>
+                  <span> | </span>
+                  <span> 10명 초대 </span>
+                </div>
+              </div>
+            </div>
+            <div class="cal_btn">
+              <button id="cal_btn">신청 예약하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-contents">
+        <ul id="g-list">
+          <li id="list1">모임 소개</li>
+          <li id="list2">진행 안내</li>
+          <!-- <li id="list3">공간 소개</li> -->
+        </ul>
+        <div class="g-story">
+          <h2 id="g-title">모임 소개</h2>
+          <div id="g-story">
+            안녕하세요.<br />
+            드디어 그림책방을 갖게된 정윤입니다.💜<br />
+            <img src="./assets/images/sample2.jpg" width="80%" height="40%" /> <br />
+            그림책은 그림과 그림사이, 단어와 단어사이 여백이 가득가득한 책이에요.<br />
+            그래서 읽는 동안 혼잣말로 그 사이를 채우기도 하고 잠시 멈춰 옛날 일을 떠올리기도 하죠.
+            <br /><br />
+            아! 모든 그림책을 읽고 다 그러는 것은 아니에요.<br />
+            마음이 닿은 그림책이 이런 신비한 일을 가능하게하죠.<br /><br />
+            이렇게 읽게된 그림책은 이제 더이상 ‘그냥 그림책’이 아니게 된답니다.<br /><br />
+            <u>‘내가 읽은 그림책’이 되어버리죠.</u> <br /><br />
+            똑같은 그림책을 읽더라도 각자의 경험, 생각, 감정들이 다르기 때문에 함께 나눌 때는 각자
+            다른 감상들을 뱉어내게 되는거죠.<br />
+            <img src="./assets/images/sample3.jpg" width="80%" height="40%" /> <br />
+            나의 생각을 말하고 남의 생각을 듣다보면 ‘어? 나 왜이렇게 생각하고 있지?’ 혹은 ‘저사람은
+            어떻게 이렇게 생각을 하지?’ 의문이 들때가 있을 거에요.<br /><br />
+            저희는 그 ‘다른’ 이야기를 더 듣고 나눌 거에요.🙌 <br /><br />
+            몇권을 함께 읽고 나누다보면 어느새 나만의 생각이 정리되는 분들도, 이 시간이 따뜻했던
+            분들도, 혹은 뭔가 마음이 불편하신 분들도 있을 거에요. <br /><br />
+            그렇게 시간이 끝나고 집에 돌아갈 때 조금만 더 함께한 시간을 생각해주세요. <br /><br />
+            언젠가 오늘 그림책을 통해 나의 세계를 만났던 경험이 위안이 되기를 바라며 열심히 준비하고
+            기다리고 있을게요.🙏 <br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/detailGroupInfo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
+  </body>
 </html>
