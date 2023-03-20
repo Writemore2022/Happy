@@ -27,6 +27,13 @@
     }
   }
 
+  @media (max-width: 1020px) { /*0~930*/
+    .host-sns{
+      display: none;
+    }
+
+  }
+
   @font-face {
     font-family: 'JejuMyoungjo';
     src: url('../assets/fonts/JejuMyeongjo.ttf');
@@ -39,6 +46,7 @@
     list-style: none;
     text-decoration: none;
   }
+
 
   /* 임시 */
   body {
@@ -106,10 +114,10 @@
     height: 25px;
 
     color: orange;
-    font-weight: 600;
+    /* font-weight: 600; */
     /* background-color: orange; */
     border-radius: 50px;
-    box-shadow: 0 0 3px gray;
+    box-shadow: 0 0 1.5px gray;
 
     padding: 5px;
     margin-right: 10px;
