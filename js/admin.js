@@ -27,7 +27,10 @@ groupData.forEach((doc) => {
 resisterGroupForm.onsubmit = function () {
   let groupTitle = this.resisterGroupTitle.value;
   let groupIntro = this.resisterGroupIntro.value;
-  let groupCost = Number(this.resisterGroupCost.value);
+  let groupPeopleMin = this.resisterGroupPeopleMin.value;
+  let groupPeopleMax = this.resisterGroupPeopleMax.value;
+  let groupContent = this.resisterGroupContent.value;
+  let groupCost = this.resisterGroupCost.value;
 
   if (groupTitle == '') {
     alert('모임 이름을 적어주세요');

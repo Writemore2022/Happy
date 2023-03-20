@@ -59,11 +59,33 @@
     <h1>모임을 등록합니다.</h1>
     <form id="resister-group-form">
       <label for="resisterGroupTitle">모임 이름</label>
-      <input id="resisterGroupTitle" name="resisterGroupTitle" type="text" />
+      <input name="resisterGroupTitle" type="text" />
       <label for="resisterGroupIntro">모임 한 줄 소개</label>
-      <input id="resisterGroupIntro" name="resisterGroupIntro" type="text" />
-      <label for="resisterGroupCost">모임 가격</label>
-      <input id="resisterGroupCost" name="resisterGroupCost" type="number" />
+      <input name="resisterGroupIntro" type="text" />
+      <label for="resisterGroupTerm">모임 형태</label>
+      <input name="resisterGroupTerm" type="text" />
+      <label for="resisterGroupPeopleMin">최소 모임 인원</label>
+      <input name="resisterGroupPeopleMin" type="number" />
+      <label for="resisterGroupPeopleMax">최대 모임 인원</label>
+      <input name="resisterGroupPeopleMax" type="number" />
+      <label for="resisterGroupPurpose">모임 목적</label>
+      <input name="resisterGroupPurpose" type="checkbox" value="취미" />
+      <input name="resisterGroupPurpose" type="checkbox" value="친목" />
+      <input name="resisterGroupPurpose" type="checkbox" value="등단" />
+      <label for="resisterGroupGanre">모임 장르</label>
+      <input name="resisterGroupGanre" type="checkbox" value="문학" />
+      <input name="resisterGroupGanre" type="checkbox" value="논픽션" />
+      <input name="resisterGroupGanre" type="checkbox" value="자기계발" />
+      <input name="resisterGroupGanre" type="checkbox" value="경영경제" />
+      <input name="resisterGroupGanre" type="checkbox" value="기타" />
+      <label for="resisterGroupMood">모임 분위기</label>
+      <input name="resisterGroupMood" type="checkbox" value="따뜻한 공감" />
+      <input name="resisterGroupMood" type="checkbox" value="유쾌한 토크" />
+      <input name="resisterGroupMood" type="checkbox" value="치열한 토론" />
+      <label for="resisterGroupCost">참가비</label>
+      <input name="resisterGroupCost" type="text" />
+      <label for="resisterGroupContent">모임 소개</label>
+      <input name="resisterGroupContent" type="textarea" />
       <button type="submit">등록하기</button>
     </form>
     <hr />
