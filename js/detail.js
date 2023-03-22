@@ -1,3 +1,13 @@
+import { db } from './firebase.js';
+import {
+  getDoc,
+  getDocs,
+  doc,
+  query,
+  where,
+  collection,
+} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js';
+
 const test = {
   class: '글쓰기',
   address: '대구광역시 북구 산격로 8길 11-2',
@@ -19,3 +29,16 @@ const groupIntro = document.querySelector('.g-intro');
 
 groupTitle.innerHTML = test.title;
 groupIntro.innerHTML = test.intro;
+
+const receiveGroupTitle = localStorage.getItem('targetGroupTitle');
+console.log(receiveGroupTitle);
+
+const targetGroup = query(collection(db, 'group'), where('title', '==', '인권스터디'));
+console.log(targetGroup);
+
+const targetSnap = await getDocs(targetGroup);
+
+targetSnap.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  console.log(doc.id, ' => ', doc.data());
+});

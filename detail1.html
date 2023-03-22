@@ -1,193 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/detail1.css">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/detail1.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <!--달력-->
-    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/calendar.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/calendar.js"></script>
     <script src="https://kit.fontawesome.com/0bc54cb32d.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 헤더 : 준수 -->
     <header>
-        <div class="header-nav">
-          <div class="header-left">
-            <img src="./assets/images/logo.png" width="180px" class="logo" />
-            <a>글로모여 소개</a>
-            <a>모임 등록하기</a>
-            <a>후기</a>
-          </div>
-          <div class="header-right">
-            <a class="login">로그인 / 회원가입</a>
-            <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
-          </div>
+      <div class="header-nav">
+        <div class="header-left">
+          <img src="./assets/images/logo.png" width="180px" class="logo" />
+          <a>글로모여 소개</a>
+          <a>모임 등록하기</a>
+          <a>후기</a>
         </div>
-      </header>
+        <div class="header-right">
+          <a class="login">로그인 / 회원가입</a>
+          <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
+        </div>
+      </div>
+    </header>
 
-      <!--상세페이지 : 짱졔-->
-      <!-- 1. 모임 사진, 모임 이름, 한 줄 소개-->
-      <!-- 2. 모임 기본 규칙 (공통 적용되는)
+    <!--상세페이지 : 짱졔-->
+    <!-- 1. 모임 사진, 모임 이름, 한 줄 소개-->
+    <!-- 2. 모임 기본 규칙 (공통 적용되는)
       3. 모임 소개 (디테일하게)
       4. 호스트 소개
       5. 모임 진행 방식
       6. 신청/참여 기간 (달력 넣기, 금액 기재, 신청기간, 참여기간 표시) - 색으로 구분?
       7. 해시태그 3개  -->
-      <div class="detail-page">
-        <img src="./assets/images/sample1.jpg" alt="group-img" class="g-img">
-        <span class="g-name"> 하루독서모임 『설국』</span>
-        <span class="g-intro"> "데리다의 <그라마톨로지>를 읽습니다."</span>
-        <div class="address-area">
-            <!--위치 아이콘 넣기: 폰트어썸으로-->
-            <span class="g-address"> <i class="fas fa-solid fa-map-pin" style="color:gray"> </i> 서울특별시 강동구 암사동</span>
+    <div class="detail-page">
+      <img src="./assets/images/sample1.jpg" alt="group-img" class="g-img" />
+      <span class="g-name"> 하루독서모임 『설국』</span>
+      <span class="g-intro"> "데리다의 <그라마톨로지>를 읽습니다."</span>
+      <div class="address-area">
+        <!--위치 아이콘 넣기: 폰트어썸으로-->
+        <span class="g-address">
+          <i class="fas fa-solid fa-map-pin" style="color: gray"> </i> 서울특별시 강동구
+          암사동</span
+        >
+      </div>
+      <div class="hashtag">
+        <span># 취미</span>
+        <span># 문학</span>
+        <span># 따뜻한 공감</span>
+      </div>
+      <div class="host-page">
+        <div class="host-left">
+          <a href="#">
+            <img src="./assets/images/host_sample.jpg" alt="host-img" class="host-img" />
+          </a>
         </div>
-        <div class="hashtag">
-            <span># 취미</span>
-            <span># 문학</span>
-            <span># 따뜻한 공감</span>
+        <div class="host-right">
+          <div class="host-name">
+            <span>호스트</span>
+            <span><a href="#">정윤 ></a></span>
+          </div>
+          <div class="host-intro">
+            안녕하세요. 그림책을 알리는 일을 하고 있는 그림책 에반젤리스트 정윤입니다. <br />
+            그림책 3권과 에세이 2권을 낸 작가이자, 그림책테라피를 진행하는 강사로 활동하고 있습니다.
+          </div>
+          <div class="host-sns">
+            <i class="fa fa-brands fa-instagram" style="color: gray"></i>
+            writemore2022
+          </div>
         </div>
-        <div class="host-page">
-            <div class="host-left">
-                <a href="#">
-                    <img src="./assets/images/host_sample.jpg" alt="host-img" class="host-img">
-                </a>
-            </div>
-            <div class="host-right">
-                <div class="host-name">
-                    <span>호스트</span>
-                    <span><a href="#">정윤 ></a></span>
-                </div>
-                <div class="host-intro">
-                    안녕하세요. 그림책을 알리는 일을 하고 있는 그림책 에반젤리스트 정윤입니다. <br>
-                    그림책 3권과 에세이 2권을 낸 작가이자, 그림책테라피를 진행하는 강사로 활동하고 있습니다.
-                </div>
-                <div class="host-sns">
-                    <i class="fa fa-brands fa-instagram" style="color:gray"></i>
-                    writemore2022
-                </div>
-            </div>
-        </div>
-        <div class="rule">
-            <!-- <div>모임 규칙</div>
+      </div>
+      <div class="rule">
+        <!-- <div>모임 규칙</div>
             <div>
                 <i class="fas fa-solid fa-bullhorn" style="color: gray"></i>
                 1. 서로의 글을 비난하지 말아요.<br>
                 2. 서로의 글에 주의를 기울이고 존중해요.<br>
                 3. 진실된 글을 쓰기 위해 노력해요.
             </div> -->
-            <!--달력-->
-            <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
-            <br><br>
-            <!--달력-->
-            <div class="res">방문 일정</div>
-            <div class="calendar_page">
-                <div id="cal_left">
-                    <div class="cal">
-                        <div class="sec_cal">
-                            <div class="cal_nav">
-                              <a href="javascript:;" class="nav-btn go-prev">prev</a>
-                              <div class="year-month"></div>
-                              <a href="javascript:;" class="nav-btn go-next">next</a>
-                            </div>
-                            <div class="cal_wrap">
-                              <div class="days">
-                                <div class="day">SUN</div>
-                                <div class="day">MON</div>
-                                <div class="day">TUE</div>
-                                <div class="day">WED</div>
-                                <div class="day">THU</div>
-                                <div class="day">FRI</div>
-                                <div class="day">SAT</div>
-                              </div>
-                              <div class="dates"></div>
-                            </div>
-                          </div>
-                    </div>
-                    <!-- <div class="cal_request">
+        <!--달력-->
+        <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
+        <br /><br />
+        <!--달력-->
+        <div class="res">방문 일정</div>
+        <div class="calendar_page">
+          <div id="cal_left">
+            <div class="cal">
+              <div class="sec_cal">
+                <div class="cal_nav">
+                  <a href="javascript:;" class="nav-btn go-prev">prev</a>
+                  <div class="year-month"></div>
+                  <a href="javascript:;" class="nav-btn go-next">next</a>
+                </div>
+                <div class="cal_wrap">
+                  <div class="days">
+                    <div class="day">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day">FRI</div>
+                    <div class="day">SAT</div>
+                  </div>
+                  <div class="dates"></div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="cal_request">
                         <button>희망 일정 요청하기</button>
                     </div> -->
-                    <div class="cal_state">
-                        <ul id="gnb">
-                            <li>💖 선택 가능</li>
-                            <li>🤍 종료된 모임</li>
-                            <li>🖤 선택 불가</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="cal_right"> <!--예약 디테일 창-->
-                    <div class="cal_grid">
-                        <div class="cal_notice">
-                            📢 <b>모임 참여 시, 기본 사항을 준수해주세요.</b><br>
-                            1. 의견을 존중하고 귀 기울여주세요. 비난하지 않아요.<br>
-                            2. 시간 약속을 꼭 지켜주세요. 다른 사람의 시간도 내 시간만큼 소중해요.
-                        </div>
-                        <div class="cal_plan">
-                            <div class="plan_detail">
-                                <span> <b>오후 6시</b> </span>
-                                <span> 49000원 </span>
-                                <span> | </span>
-                                <span> 10명 초대 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cal_btn">
-                        <button id="cal_btn" onclick="cal_btn()">신청 예약하기</button>
-                    </div>
-                </div>
+            <div class="cal_state">
+              <ul id="gnb">
+                <li>💖 선택 가능</li>
+                <li>🤍 종료된 모임</li>
+                <li>🖤 선택 불가</li>
+              </ul>
             </div>
+          </div>
+          <div id="cal_right">
+            <!--예약 디테일 창-->
+            <div class="cal_grid">
+              <div class="cal_notice">
+                📢 <b>모임 참여 시, 기본 사항을 준수해주세요.</b><br />
+                1. 의견을 존중하고 귀 기울여주세요. 비난하지 않아요.<br />
+                2. 시간 약속을 꼭 지켜주세요. 다른 사람의 시간도 내 시간만큼 소중해요.
+              </div>
+              <div class="cal_plan">
+                <div class="plan_detail">
+                  <span> <b>오후 6시</b> </span>
+                  <span> 49000원 </span>
+                  <span> | </span>
+                  <span> 10명 초대 </span>
+                </div>
+              </div>
+            </div>
+            <div class="cal_btn">
+              <button id="cal_btn" onclick="cal_btn()">신청 예약하기</button>
+            </div>
+          </div>
         </div>
-        <br>
-        <div class="group-contents">
-            <!-- <ul id="g-list">
+      </div>
+      <br />
+      <div class="group-contents">
+        <!-- <ul id="g-list">
                 <li id="list1">모임 소개</li>
                 <li id="list2">진행 안내</li>
                 <li id="list3">공간 소개</li>
             </ul> -->
-            <div class="g-story intro">
-                <h2 id="g-intro">모임 소개</h2>
-                <div id="g-intro-contents">
-                    일본 최초 노벨문학상 수상작인 '설국' 하루독서모임을 모집합니다.<br><br>
-                    우리는 늘 문학작품에서 특정한 줄거리, 서사에 주의하며 책을 읽곤 했습니다. <br>
-                    그러나 설국은 인물과 풍경에 대한 묘사는 탁월하지만 반면에 그렇다할 줄거리는 없다는 것이 특징이기도 한데요. <br>
-                    그러고 보면 우리네 삶도 항상 정해진 서사대로 흘러가는게 아니라 일상이 마치 풍경을 보는듯한 장면으로 남을때가 있을텝니다. <br>
-                    설국은 12년에 걸친 기간동안 섬세하게 다듬어진 눈 지방의 자연 풍경과 풍습, 사람들의 살아가는 모습이 정교하게 아로새겨져 있습니다. <br><br>
-                </div>
-            </div>
-            <div class="g-story detail">
-                <h2 id="g-detail">모임 세부 사항</h2>
-                <div id="g-detail-contents">
-                    <ul id="gnb">
-                        <li>
-                            <h3>모임 인원</h3>
-                            <div>최소 2~8명 (책방지기 포함)</div>
-                        </li>
-                        <br>
-                        <li>
-                            <h3>모임 형태</h3>
-                            <div>1. 격주 1회 진행</div>
-                            <div>2. 2달마다 새 시즌 시작 (정기모임) </div>
-                            <div>3. 나머지 모임은 유동적</div>
-                        </li>
-                        <br>
-                        <li>
-                            <h3>참가비</h3>
-                            <div>시즌당 10만원, 회당 2만원</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="g-story intro">
+          <h2 id="g-intro">모임 소개</h2>
+          <div id="g-intro-contents">
+            일본 최초 노벨문학상 수상작인 '설국' 하루독서모임을 모집합니다.<br /><br />
+            우리는 늘 문학작품에서 특정한 줄거리, 서사에 주의하며 책을 읽곤 했습니다. <br />
+            그러나 설국은 인물과 풍경에 대한 묘사는 탁월하지만 반면에 그렇다할 줄거리는 없다는 것이
+            특징이기도 한데요. <br />
+            그러고 보면 우리네 삶도 항상 정해진 서사대로 흘러가는게 아니라 일상이 마치 풍경을
+            보는듯한 장면으로 남을때가 있을텝니다. <br />
+            설국은 12년에 걸친 기간동안 섬세하게 다듬어진 눈 지방의 자연 풍경과 풍습, 사람들의
+            살아가는 모습이 정교하게 아로새겨져 있습니다. <br /><br />
+          </div>
+        </div>
+        <div class="g-story detail">
+          <h2 id="g-detail">모임 세부 사항</h2>
+          <div id="g-detail-contents">
+            <ul id="gnb">
+              <li>
+                <h3>모임 인원</h3>
+                <div>최소 2~8명 (책방지기 포함)</div>
+              </li>
+              <br />
+              <li>
+                <h3>모임 형태</h3>
+                <div>1. 격주 1회 진행</div>
+                <div>2. 2달마다 새 시즌 시작 (정기모임)</div>
+                <div>3. 나머지 모임은 유동적</div>
+              </li>
+              <br />
+              <li>
+                <h3>참가비</h3>
+                <div>시즌당 10만원, 회당 2만원</div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <!-- <script src="./js/detailGroupInfo.js"></script> -->
-      <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
-      <script>
-        function cal_btn() {
-            alert("예약하기, 준비 중입니다.");
-        }
-      </script>
-</body>
+    </div>
+    <!-- <script src="./js/detailGroupInfo.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
+    <script type="module" src="./js/detail.js"></script>
+    <script>
+      function cal_btn() {
+        alert('예약하기, 준비 중입니다.');
+      }
+    </script>
+  </body>
+</html>
