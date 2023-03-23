@@ -84,6 +84,8 @@ import {
   query,
   where,
   collection,
+  doc,
+  getDoc,
 } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js';
 
 const goodGroup = [];
@@ -250,21 +252,21 @@ favorGroupIntro4.innerHTML = favorGroup[3].intro;
 favorGroupLocation4.innerHTML = '장소: ' + favorGroup[3].location;
 favorGroupCost4.innerHTML = favorGroup[3].cost;
 
-// 모임 상세페이지 이동 및 해당 모임 이름 데이터 localStorage에 저장
+// 모임 상세페이지 이동 및 해당 모임 데이터 localStorage에 저장
 
 const groupCard = document.querySelectorAll('.group-info');
-console.log(groupCard);
 
 for (let i = 0; i < groupCard.length; i++) {
-  groupCard[i].addEventListener('click', () => {
+  groupCard[i].addEventListener('click', async () => {
     const targetGroupTitle = groupCard[i].childNodes[5].childNodes[1].textContent;
 
-    try {
-      localStorage.setItem('targetGroupTitle', JSON.stringify(targetGroupTitle));
+    const targetGroup = query(collection(db, 'group'), where('title', '==', targetGroupTitle));
+    const targetSnap = await getDocs(targetGroup);
+
+    targetSnap.forEach((doc) => {
+      localStorage.setItem('targetGroupInfo', JSON.stringify(doc.data()));
+      console.log(doc.id, ' => ', doc.data());
       document.location.href = './detail1.html';
-      console.log(targetGroupTitle + '\n로컬 저장소에 저장되었습니다.');
-    } catch (error) {
-      console.log('잠시만요~');
-    }
+    });
   });
 }
