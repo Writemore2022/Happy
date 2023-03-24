@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/detail1.css">
     <link rel="stylesheet" href="./css/header.css">
     <!--달력-->
-    <link rel="stylesheet" href="./css/calendar.css">
+    <!-- <link rel="stylesheet" href="./css/calendar.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/calendar.js"></script>
     <script src="https://kit.fontawesome.com/0bc54cb32d.js" crossorigin="anonymous"></script>
@@ -82,10 +82,10 @@
             </div> -->
             <!--달력-->
             <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
-            <br><br>
             <!--달력-->
-            <div class="res">방문 일정</div>
-            <div class="calendar_page">
+            <!-- <div class="res">방문 일정</div> -->
+
+            <!-- <div class="calendar_page">
                 <div id="cal_left">
                     <div class="cal">
                         <div class="sec_cal">
@@ -107,11 +107,12 @@
                               <div class="dates"></div>
                             </div>
                           </div>
-                    </div>
+                    </div> -->
+                    
                     <!-- <div class="cal_request">
                         <button>희망 일정 요청하기</button>
                     </div> -->
-                    <div class="cal_state">
+                    <!-- <div class="cal_state">
                         <ul id="gnb">
                             <li>💖 선택 가능</li>
                             <li>🤍 종료된 모임</li>
@@ -119,9 +120,9 @@
                         </ul>
                     </div>
                 </div>
-                <div id="cal_right"> <!--예약 디테일 창-->
+                <div id="cal_right"> 
                     <div class="cal_grid">
-                        <div class="cal_notice">
+                        <div class="cal_notice"> 예약 디테일 창
                             📢 <b>모임 참여 시, 기본 사항을 준수해주세요.</b><br>
                             1. 의견을 존중하고 귀 기울여주세요. 비난하지 않아요.<br>
                             2. 시간 약속을 꼭 지켜주세요. 다른 사람의 시간도 내 시간만큼 소중해요.
@@ -140,7 +141,35 @@
                     </div>
                 </div>
             </div>
+        </div> -->
         </div>
+
+        <div class="res-table">
+            <h2>모임 일정</h2>
+            <div class="res-day">
+                <div class="day">월</div>
+                <div class="day" style="color: orange;">화</div>
+                <div class="day">수</div>
+                <div class="day">목</div>
+                <div class="day" style="color: orange;">금</div>
+                <div class="day">토</div>
+                <div class="day">일</div>
+            </div>
+            <div class="res-time">
+                 <div class="ap"> <!--am/pm-->
+                    <span style="color: orange;">오전</span>
+                    <span> / </span>
+                    <span>오후</span>
+                 </div>
+                 <div class="time">
+                    <span style="color: orange;">8</span>
+                    <span>시 ~ </span>
+                    <span style="color: orange;">10</span>
+                    <span>시</span>
+                 </div>
+            </div>
+        </div>
+
         <br>
         <div class="group-contents">
             <!-- <ul id="g-list">
