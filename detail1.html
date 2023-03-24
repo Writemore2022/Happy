@@ -92,68 +92,96 @@
                 2. 서로의 글에 주의를 기울이고 존중해요.<br>
                 3. 진실된 글을 쓰기 위해 노력해요.
             </div> -->
-        <!--달력-->
-        <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
-        <br /><br />
-        <!--달력-->
-        <div class="res">방문 일정</div>
-        <div class="calendar_page">
-          <div id="cal_left">
-            <div class="cal">
-              <div class="sec_cal">
-                <div class="cal_nav">
-                  <a href="javascript:;" class="nav-btn go-prev">prev</a>
-                  <div class="year-month"></div>
-                  <a href="javascript:;" class="nav-btn go-next">next</a>
-                </div>
-                <div class="cal_wrap">
-                  <div class="days">
-                    <div class="day">SUN</div>
-                    <div class="day">MON</div>
-                    <div class="day">TUE</div>
-                    <div class="day">WED</div>
-                    <div class="day">THU</div>
-                    <div class="day">FRI</div>
-                    <div class="day">SAT</div>
-                  </div>
-                  <div class="dates"></div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="cal_request">
+
+            <!--달력-->
+            <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
+            <!--달력-->
+            <!-- <div class="res">방문 일정</div> -->
+
+            <!-- <div class="calendar_page">
+                <div id="cal_left">
+                    <div class="cal">
+                        <div class="sec_cal">
+                            <div class="cal_nav">
+                              <a href="javascript:;" class="nav-btn go-prev">prev</a>
+                              <div class="year-month"></div>
+                              <a href="javascript:;" class="nav-btn go-next">next</a>
+                            </div>
+                            <div class="cal_wrap">
+                              <div class="days">
+                                <div class="day">SUN</div>
+                                <div class="day">MON</div>
+                                <div class="day">TUE</div>
+                                <div class="day">WED</div>
+                                <div class="day">THU</div>
+                                <div class="day">FRI</div>
+                                <div class="day">SAT</div>
+                              </div>
+                              <div class="dates"></div>
+                            </div>
+                          </div>
+                    </div> -->
+                    
+                    <!-- <div class="cal_request">
                         <button>희망 일정 요청하기</button>
                     </div> -->
-            <div class="cal_state">
-              <ul id="gnb">
-                <li>💖 선택 가능</li>
-                <li>🤍 종료된 모임</li>
-                <li>🖤 선택 불가</li>
-              </ul>
-            </div>
-          </div>
-          <div id="cal_right">
-            <!--예약 디테일 창-->
-            <div class="cal_grid">
-              <div class="cal_notice">
-                📢 <b>모임 참여 시, 기본 사항을 준수해주세요.</b><br />
-                1. 의견을 존중하고 귀 기울여주세요. 비난하지 않아요.<br />
-                2. 시간 약속을 꼭 지켜주세요. 다른 사람의 시간도 내 시간만큼 소중해요.
-              </div>
-              <div class="cal_plan">
-                <div class="plan_detail">
-                  <span> <b>오후 6시</b> </span>
-                  <span> 49000원 </span>
-                  <span> | </span>
-                  <span> 10명 초대 </span>
+                    <!-- <div class="cal_state">
+                        <ul id="gnb">
+                            <li>💖 선택 가능</li>
+                            <li>🤍 종료된 모임</li>
+                            <li>🖤 선택 불가</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
+                <div id="cal_right"> 
+                    <div class="cal_grid">
+                        <div class="cal_notice"> 예약 디테일 창
+                            📢 <b>모임 참여 시, 기본 사항을 준수해주세요.</b><br>
+                            1. 의견을 존중하고 귀 기울여주세요. 비난하지 않아요.<br>
+                            2. 시간 약속을 꼭 지켜주세요. 다른 사람의 시간도 내 시간만큼 소중해요.
+                        </div>
+                        <div class="cal_plan">
+                            <div class="plan_detail">
+                                <span> <b>오후 6시</b> </span>
+                                <span> 49000원 </span>
+                                <span> | </span>
+                                <span> 10명 초대 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cal_btn">
+                        <button id="cal_btn" onclick="cal_btn()">신청 예약하기</button>
+                    </div>
+                </div>
             </div>
-            <div class="cal_btn">
-              <button id="cal_btn" onclick="cal_btn()">신청 예약하기</button>
-            </div>
-          </div>
+        </div> -->
         </div>
-      </div>
+
+        <div class="res-table">
+            <h2>모임 일정</h2>
+            <div class="res-day">
+                <div class="day">월</div>
+                <div class="day" style="color: orange;">화</div>
+                <div class="day">수</div>
+                <div class="day">목</div>
+                <div class="day" style="color: orange;">금</div>
+                <div class="day">토</div>
+                <div class="day">일</div>
+            </div>
+            <div class="res-time">
+                 <div class="ap"> <!--am/pm-->
+                    <span style="color: orange;">오전</span>
+                    <span> / </span>
+                    <span>오후</span>
+                 </div>
+                 <div class="time">
+                    <span style="color: orange;">8</span>
+                    <span>시 ~ </span>
+                    <span style="color: orange;">10</span>
+                    <span>시</span>
+                 </div>
+            </div>
+        </div>
       <br />
       <div class="group-contents">
         <!-- <ul id="g-list">
