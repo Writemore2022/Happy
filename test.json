@@ -237,7 +237,7 @@
     {
       "class": "글쓰기",
       "location": "미네르바의 부엉이",
-      "title": "수요모임",
+      "title": "미네르바의 부엉이 - 수요모임",
       "peopleMin": 3,
       "peopleMax": 6,
       "purpose": "친목",
@@ -246,6 +246,19 @@
       "cost": "4회모임 5만원 (음료수 포함)",
       "intro": "글을 쓰고 싶으 이들의 상호협력",
       "content": "자신의 성장을 목적으로 함"
+    },
+    {
+      "class": "글쓰기",
+      "location": "글로모여",
+      "title": "그믐",
+      "peopleMin": null,
+      "peopleMax": 4,
+      "purpose": "친목",
+      "ganre": "문학",
+      "mood": "따뜻한 공감",
+      "cost": "회당 1만원\n(이후에 편집비)",
+      "intro": "한 줄 소개",
+      "content": "모임 설명"
     }
   ]
 }

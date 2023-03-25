@@ -53,6 +53,8 @@
 }
 
 .category-list {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: 'row';
   padding: 2rem;
 }
@@ -94,7 +96,8 @@
 .group-wrap > div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  cursor: pointer;
 }
 
 .group-wrap > div > p {

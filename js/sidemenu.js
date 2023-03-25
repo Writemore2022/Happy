@@ -3,8 +3,6 @@ const nav = document.querySelector('nav');
 const link = document.querySelector('.nav-links');
 const menuClose = document.querySelector('#menuClose');
 
-console.log(nav.style.display);
-
 menuIcon.addEventListener('click', () => {
   if (nav.style.display == '') {
     nav.style.display = 'block';

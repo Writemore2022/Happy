@@ -6,11 +6,9 @@ const testDB = require('../test.json');
 const groupDB = testDB.group;
 
 // 새로운 모임 등록하기
-function a() {
+function allGroupResister() {
   groupDB.forEach((e) => {
-    console.log(e.class);
-
-    addDoc(collection(db, 'test'), {
+    addDoc(collection(db, 'group'), {
       class: e.class,
       content: e.content,
       cost: e.cost,
@@ -24,10 +22,10 @@ function a() {
       title: e.title,
     });
 
-    console.log('ID: ', e.title);
+    console.log('모임명: ' + e.title + ' 등록 완료');
   });
 
   return false;
 }
 
-a();
+allGroupResister();
