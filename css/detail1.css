@@ -27,6 +27,12 @@
     }
   }
 
+  @media (max-width: 923px) {
+    .day{
+      display: none;
+    }
+  }
+
   @font-face {
     font-family: 'JejuMyoungjo';
     src: url('../assets/fonts/JejuMyeongjo.ttf');
@@ -290,7 +296,7 @@
   } */
 
   .res-table{
-    width: 80%;
+    width: 100%;
     height: auto;
     padding: 10px;
     box-sizing: border-box;
@@ -318,7 +324,7 @@
     /* background-color: red; */
   }
 
-  .day{
+  .day, .r-day{
     width: 35px;
     height: 35px;
     background-color:  rgb(243, 241, 241);
@@ -361,6 +367,9 @@
 
   .time{
     float: left;
+    width: 70%;
+    height: 100%;
+    text-align: center;
     /* width: 150px;
     height: 100%;
     background-color: green; */
