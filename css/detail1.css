@@ -31,6 +31,9 @@
     .day{
       display: none;
     }
+    .host-sns{
+      display: none;
+    }
   }
 
   @font-face {
@@ -67,10 +70,11 @@
   .g-name{
     display: block;
     width: 80%;
-    height: 70px;
+    height: auto;
 
     padding-top: 30px;
     box-sizing: border-box;
+    margin-bottom: 10px;
     
     font-size: 1.6em;
     font-weight: 600;
@@ -81,7 +85,9 @@
   .g-intro{
     display: block;
     width: 80%;
-    height: 50px;
+    height: auto;
+
+    margin-bottom: 10px;
 
     font-size: 1.1em;
     /* background-color: rgb(141, 216, 141); */
@@ -124,7 +130,7 @@
 
   .host-page{
     width: 80%;
-    height: 170px;
+    height: 200px;
     background-color: rgb(243, 241, 241);
     margin-top: 40px;
     padding-top: 10px;
@@ -193,17 +199,19 @@
   }
 
   .host-intro{
-    height: 45%;
+    height: auto;
     /* background-color: lightgoldenrodyellow; */
 
     font-size: 0.9rem;
     color: gray;
+    padding-bottom: 5px;
+    box-sizing: border-box;
 
     line-height: 150%;
   }
 
   .host-sns{
-    height: 25%;
+    height: auto;
     color: gray;
     /* background-color: aliceblue; */
   }
