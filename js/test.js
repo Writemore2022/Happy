@@ -1,5 +1,5 @@
 const db = require('./firebase-copy');
-const { collection, doc, addDoc } = require('firebase/firestore');
+const { collection, doc, addDoc, updateDoc, deleteField } = require('firebase/firestore');
 
 const testDB = require('../test.json');
 
@@ -28,4 +28,8 @@ function allGroupResister() {
   return false;
 }
 
-allGroupResister();
+function allGroupDelete() {
+  const groupRef = doc(db, 'group', '');
+}
+
+// allGroupResister();

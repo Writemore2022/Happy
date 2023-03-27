@@ -18,19 +18,23 @@
     <nav>
       <div class="nav-links">
         <a href="./introduce.html" class="link">글로모여 소개</a>
-        <a href="./collectGroup.html" class="link">모임 전체보기</a>
-        <a href="" class="link">후기</a>
-        <a href="./admin.html" class="link">로그인</a>
+        <!-- <a href="" class="link">후기</a> -->
+        <a href="#" class="link">로그인</a>
         <a class="link" id="menuClose">뒤로가기</a>
       </div>
     </nav>
     <header>
       <div class="header-nav">
         <div class="header-left">
-          <img src="./assets/images/logo.png" width="180px" class="logo" />
+          <img
+            src="./assets/images/logo.png"
+            width="180px"
+            class="logo"
+            onclick="location.href='/main.html'"
+          />
           <a>글로모여 소개</a>
-          <a>모임 등록하기</a>
-          <a>후기</a>
+          <!-- <a>모임 등록하기</a> -->
+          <!-- <a>후기</a> -->
         </div>
         <div class="header-right">
           <a class="login">로그인</a>
@@ -50,12 +54,15 @@
     <div class="detail-page">
       <img src="./assets/images/sample1.jpg" alt="group-img" class="g-img" />
       <span class="g-name">미네르바의 부엉이 - 토요모임</span>
-      <span class="g-intro"> 소통과 이해, 수용을 위한 구체적 작업을 하기 위해 도서를 읽거나 롤플레이 </span>
+      <span class="g-intro">
+        소통과 이해, 수용을 위한 구체적 작업을 하기 위해 도서를 읽거나 롤플레이
+      </span>
       <div class="address-area">
         <!--위치 아이콘 넣기: 폰트어썸으로-->
         <span class="g-address">
           <i class="fas fa-solid fa-map-pin" style="color: gray"> </i> 서울특별시 강동구
-          암사동</span>
+          암사동</span
+        >
       </div>
       <div class="hashtag">
         <span id="g-purpose"></span>
@@ -92,12 +99,12 @@
                 3. 진실된 글을 쓰기 위해 노력해요.
             </div> -->
 
-            <!--달력-->
-            <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
-            <!--달력-->
-            <!-- <div class="res">방문 일정</div> -->
+        <!--달력-->
+        <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
+        <!--달력-->
+        <!-- <div class="res">방문 일정</div> -->
 
-            <!-- <div class="calendar_page">
+        <!-- <div class="calendar_page">
                 <div id="cal_left">
                     <div class="cal">
                         <div class="sec_cal">
@@ -120,11 +127,11 @@
                             </div>
                           </div>
                     </div> -->
-                    
-                    <!-- <div class="cal_request">
+
+        <!-- <div class="cal_request">
                         <button>희망 일정 요청하기</button>
                     </div> -->
-                    <!-- <div class="cal_state">
+        <!-- <div class="cal_state">
                         <ul id="gnb">
                             <li>💖 선택 가능</li>
                             <li>🤍 종료된 모임</li>
@@ -154,36 +161,37 @@
                 </div>
             </div>
         </div> -->
-        </div>
+      </div>
 
-        <div class="res-table">
-            <h2>모임 일정</h2>
-            <div class="res-day">
-                <h3>요일</h3>
-                <div class="day">월</div>
-                <div class="r-day" style="background-color: orange; color:ivory;">화</div>
-                <div class="day">수</div>
-                <div class="day">목</div>
-                <div class="r-day" style="background-color: orange; color:ivory;">금</div>
-                <div class="day">토</div>
-                <div class="day">일</div>
-            </div>
-            <div class="res-time">
-                <h3>시간</h3>
-                <div class="time-block">
-                  <div class="ap"> <!--am/pm-->
-                    <span>오전</span>
-                    <span>오후</span>
-                 </div>
-                 <div class="time">
-                    <span>8</span>
-                    <span>시 ~ </span>
-                    <span>10</span>
-                    <span>시</span>
-                 </div>
-                </div>
-            </div>
+      <div class="res-table">
+        <h2>모임 일정</h2>
+        <div class="res-day">
+          <h3>요일</h3>
+          <div class="day">월</div>
+          <div class="r-day" style="background-color: orange; color: ivory">화</div>
+          <div class="day">수</div>
+          <div class="day">목</div>
+          <div class="r-day" style="background-color: orange; color: ivory">금</div>
+          <div class="day">토</div>
+          <div class="day">일</div>
         </div>
+        <div class="res-time">
+          <h3>시간</h3>
+          <div class="time-block">
+            <div class="ap">
+              <!--am/pm-->
+              <span>오전</span>
+              <span>오후</span>
+            </div>
+            <div class="time">
+              <span>8</span>
+              <span>시 ~ </span>
+              <span>10</span>
+              <span>시</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="group-contents">
         <!-- <ul id="g-list">
                 <li id="list1">모임 소개</li>
