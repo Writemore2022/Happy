@@ -78,7 +78,7 @@ const favorGroupIntro4 = document.getElementById('favor-group-intro4');
 const favorGroupLocation4 = document.getElementById('favor-group-location4');
 const favorGroupCost4 = document.getElementById('favor-group-cost4');
 
-import { db } from './firebase.js';
+import db from './firebase.js';
 import {
   getDocs,
   query,
