@@ -52,6 +52,8 @@
   /* 임시 */
   body {
     height: auto;
+    padding-bottom: 80px;
+    box-sizing: border-box;
   }
 
   /* 상세페이지 */
