@@ -69,7 +69,7 @@ function createGroupCard(data) {
 
   const groupImg = document.createElement('img');
   groupInfo.appendChild(groupImg);
-  groupImg.src = '/assets/images/sample1.jpg';
+  groupImg.src = './assets/images/sample1.jpg';
   groupImg.className = 'group-img';
 
   const groupDetails = document.createElement('div');

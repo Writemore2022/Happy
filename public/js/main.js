@@ -84,8 +84,6 @@ import {
   query,
   where,
   collection,
-  doc,
-  getDoc,
 } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js';
 
 const goodGroup = [];

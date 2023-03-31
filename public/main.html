@@ -4,7 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <meta name="author" content="글로모여" />
+    <meta name="keywords" content="글로모여" />
+    <meta name="description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
+
+    <!-- sns share -->
+    <meta property="og:url" content="https://writemore-f6e18.web.app/" />
+    <meta property="og:title" content="글로모여" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/images/landingimage2.png" />
+    <meta property="og:description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon-precomposed" href="./assets/images/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>글로모여</title>
+
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -49,23 +68,23 @@
       <div class="category">
         <div class="category-title">어떤 <span style="color: orange">목적</span>인가요?</div>
         <div class="category-list">
-          <a href="/category.html?purpose=등단">등단</a>
-          <a href="/category.html?purpose=친목">친목</a>
-          <a href="/category.html?purpose=취미">취미</a>
+          <a href="./category.html?purpose=등단">등단</a>
+          <a href="./category.html?purpose=친목">친목</a>
+          <a href="./category.html?purpose=취미">취미</a>
         </div>
         <div class="category-title">이런 <span style="color: orange">장르</span>는 어때요?</div>
         <div class="category-list">
-          <a href="/category.html?ganre=문학">문학</a>
-          <a href="/category.html?ganre=논픽션">논픽션</a>
-          <a href="/category.html?ganre=자기계발">자기계발</a>
-          <a href="/category.html?ganre=경영경제">경영경제</a>
-          <a href="/category.html?ganre=기타">기타</a>
+          <a href="./category.html?ganre=문학">문학</a>
+          <a href="./category.html?ganre=논픽션">논픽션</a>
+          <a href="./category.html?ganre=자기계발">자기계발</a>
+          <a href="./category.html?ganre=경영경제">경영경제</a>
+          <a href="./category.html?ganre=기타">기타</a>
         </div>
         <div class="category-title">어떤 <span style="color: orange">분위기</span>가 좋아요?</div>
         <div class="category-list">
-          <a href="/category.html?mood=따뜻한 공감">따뜻한 공감</a>
-          <a href="/category.html?mood=유쾌한 토크">유쾌한 토크</a>
-          <a href="/category.html?mood=치열한 토론">치열한 토론</a>
+          <a href="./category.html?mood=따뜻한 공감">따뜻한 공감</a>
+          <a href="./category.html?mood=유쾌한 토크">유쾌한 토크</a>
+          <a href="./category.html?mood=치열한 토론">치열한 토론</a>
         </div>
       </div>
 
@@ -285,6 +304,9 @@
       </div>
     </main>
   </body>
+  <script>
+    history.replaceState({}, null, location.pathname);
+  </script>
   <script src="./js/sidemenu.js"></script>
-  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </html>

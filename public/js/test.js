@@ -1,4 +1,4 @@
-const db = require('./firebase-copy');
+const db = require('./firebase').default;
 const { collection, doc, addDoc, updateDoc, deleteField } = require('firebase/firestore');
 
 const testDB = require('../test.json');
