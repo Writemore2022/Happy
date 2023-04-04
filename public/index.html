@@ -23,7 +23,6 @@
     <meta name="theme-color" content="#ffffff" />
 
     <title>글로모여</title>
-
     <style rel="stylesheet" href="../css/index.css"></style>
     <style rel="stylesheet" href="../css/landing.css"></style>
     <style>
@@ -63,6 +62,12 @@
         .landing-box-reverse {
           flex-direction: column-reverse;
         }
+        /* .dadok::before{
+          display: block;
+          background-color: red;
+          width: 1px;
+          height: 1px;
+        } */
       }
 
       * {
@@ -133,6 +138,14 @@
       .host-info {
         width: 100%;
       }
+
+      .dadok::before {
+        background-color: ffffff;
+        content: '';
+        display: inline-block;
+        width: 130px;
+        height: 10px;
+      }
     </style>
   </head>
   <body>
@@ -162,7 +175,7 @@
             </p>
           </div>
           <div class="host-text">
-            <p>
+            <p class="dadok">
               <span style="color: orange">지성</span>의 즐거움,
               <span style="color: orange">실천</span>의 기쁨
             </p>
