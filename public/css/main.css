@@ -12,6 +12,9 @@
   .group-info {
     width: 45%;
   }
+  .group-container {
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 1140px) {
@@ -23,6 +26,9 @@
   }
   .header {
     width: 100%;
+  }
+  .group-container {
+    justify-content: space-between;
   }
 }
 
@@ -188,7 +194,6 @@
 .group-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   /* background-color: gray; */
   margin-top: 20px;
   box-sizing: border-box;
