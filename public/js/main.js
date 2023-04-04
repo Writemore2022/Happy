@@ -257,7 +257,7 @@ for (let i = 0; i < groupCard.length; i++) {
     const targetSnap = await getDocs(targetGroup);
 
     targetSnap.forEach((doc) => {
-      localStorage.setItem('targetGroupInfo', JSON.stringify(doc(data)));
+      localStorage.setItem('targetGroupInfo', JSON.stringify(doc.data()));
       document.location.href = './detail1.html';
     });
   });
