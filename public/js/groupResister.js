@@ -1,9 +1,8 @@
-const db = require('./firebase').default;
-const { collection, doc, addDoc, updateDoc, deleteField } = require('firebase/firestore');
+import { db } from './firebase.js';
+import { collection, doc, addDoc } from 'firebase/firestore';
+import group from '../groupsInfo.json' assert { type: 'json' };
 
-const testDB = require('../test.json');
-
-const groupDB = testDB.group;
+const groupDB = group.group;
 
 // 새로운 모임 등록하기
 function allGroupResister() {
@@ -20,6 +19,13 @@ function allGroupResister() {
       peopleMin: e.peopleMin,
       purpose: e.purpose,
       title: e.title,
+      type: e.type,
+      week: e.week,
+      startTime: e.startTime,
+      endTime: e.endTime,
+      address: e.address,
+      hostNmae: e.hostName,
+      hostContent: e.hostContent,
     });
 
     console.log('모임명: ' + e.title + ' 등록 완료');
@@ -32,4 +38,4 @@ function allGroupDelete() {
   const groupRef = doc(db, 'group', '');
 }
 
-// allGroupResister();
+allGroupResister();

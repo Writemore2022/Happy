@@ -7,5 +7,10 @@
   },
   "author": "writemore",
   "license": "ISC",
-  "description": ""
+  "keywords": [],
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "firebase": "^9.17.2"
+  }
 }
