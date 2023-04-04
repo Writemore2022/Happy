@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    body{
-        font-family: 제주명조;
+  </head>
+  <style>
+    body {
+      font-family: 제주명조;
     }
 
-    h1{
-        color:#FFAA40;
+    h1 {
+      color: #ffaa40;
     }
 
-    input{
-        width : 400px;
-        height : 400px;
-        border-radius : 70px;
-        border: 3px solid antiquewhite;
-        padding: 50px;
+    input {
+      width: 400px;
+      height: 400px;
+      border-radius: 70px;
+      border: 3px solid antiquewhite;
+      padding: 50px;
     }
 
     button {
-        margin-left: 220px;
-        margin-top: 30px;
-        border: 0;
-        outline: none;
-        width: 70px;
-        height: 70px;
-        border-radius: 100px;
-        font-size: 15px;
-        box-shadow: 3px 3px 3px khaki, -3px -3px 3px #FFAA40;;
-        transition: 0.3s;
-        font-family: 제주명조;
+      margin-left: 220px;
+      margin-top: 30px;
+      border: 0;
+      outline: none;
+      width: 70px;
+      height: 70px;
+      border-radius: 100px;
+      font-size: 15px;
+      box-shadow: 3px 3px 3px khaki, -3px -3px 3px #ffaa40;
+      transition: 0.3s;
+      font-family: 제주명조;
     }
 
     button:hover {
@@ -42,82 +42,82 @@
       transition: 0.3s;
       cursor: pointer;
     }
-
-</style>
-<body>
+  </style>
+  <body>
     <form>
-        <h1>여러분의 의견을 들려주세요!</h1>
-        <div> <input type="email" id="signInEmail"> </div>
-        <button type="submit" id="signInButton" >의견<br>보내기</button>
-
+      <h1>여러분의 의견을 들려주세요!</h1>
+      <div><input type="email" id="signInEmail" /></div>
+      <button type="submit" id="signInButton">의견<br />보내기</button>
     </form>
     <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyAS3moYnfYdXsrIY14VxSOXAyhDjZiA-i8",
-            authDomain: "glomoyo-fd090.firebaseapp.com",
-            databaseURL: "https://glomoyo-fd090-default-rtdb.firebaseio.com",
-            projectId: "glomoyo-fd090",
-            storageBucket: "glomoyo-fd090.appspot.com",
-            messagingSenderId: "1021323619317",
-            appId: "1:1021323619317:web:e7738ffe80f0693b694ebc",
-            measurementId: "G-V7CJZDDRN0"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js';
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js';
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: 'AIzaSyAS3moYnfYdXsrIY14VxSOXAyhDjZiA-i8',
+        authDomain: 'glomoyo-fd090.firebaseapp.com',
+        databaseURL: 'https://glomoyo-fd090-default-rtdb.firebaseio.com',
+        projectId: 'glomoyo-fd090',
+        storageBucket: 'glomoyo-fd090.appspot.com',
+        messagingSenderId: '1021323619317',
+        appId: '1:1021323619317:web:e7738ffe80f0693b694ebc',
+        measurementId: 'G-V7CJZDDRN0',
+      };
 
-        const auth = getAuth();
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
 
-        document.getElementById('signUpButton').addEventListener('click', (event) => {
-            event.preventDefault()
-            const signUpEmail = document.getElementById('signUpEmail').value
-            const signUpPassword = document.getElementById('signUpPassword').value
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+      } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js';
 
-            createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
-                .then((userCredential) => {
-                    console.log(userCredential)
-                    // Signed in
-                    const user = userCredential.user;
-                    // ...
-                })
-                .catch((error) => {
-                    console.log('error')
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-                    // ..
-                });
+      const auth = getAuth();
 
-        })
+      document.getElementById('signUpButton').addEventListener('click', (event) => {
+        event.preventDefault();
+        const signUpEmail = document.getElementById('signUpEmail').value;
+        const signUpPassword = document.getElementById('signUpPassword').value;
 
-        document.getElementById('signInButton').addEventListener('click', (event) => {
-            event.preventDefault()
-            const signInEmail = document.getElementById('signInEmail').value
-            const signInPassword = document.getElementById('signInPassword').value
-            signInWithEmailAndPassword(auth, signInEmail, signInPassword)
-                .then((userCredential) => {
-                    // Signed in
-                    console.log(userCredential)
-                    const user = userCredential.user;
-                    // ...
-                })
-                .catch((error) => {
-                    console.log('로그인 실패')
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-                });
+        createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+          .then((userCredential) => {
+            console.log(userCredential);
+            // Signed in
+            const user = userCredential.user;
+            // ...
+          })
+          .catch((error) => {
+            console.log('error');
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // ..
+          });
+      });
 
-        })
-      </script>
-</body>
+      document.getElementById('signInButton').addEventListener('click', (event) => {
+        event.preventDefault();
+        const signInEmail = document.getElementById('signInEmail').value;
+        const signInPassword = document.getElementById('signInPassword').value;
+        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+          .then((userCredential) => {
+            // Signed in
+            console.log(userCredential);
+            const user = userCredential.user;
+            // ...
+          })
+          .catch((error) => {
+            console.log('로그인 실패');
+            const errorCode = error.code;
+            const errorMessage = error.message;
+          });
+      });
+    </script>
+  </body>
 </html>
