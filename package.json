@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=development"
   },
   "author": "writemore",
   "license": "ISC",
   "keywords": [],
   "description": "",
-  "type": "module",
   "dependencies": {
-    "firebase": "^9.17.2"
+    "firebase": "^9.19.1",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
   }
 }

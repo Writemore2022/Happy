@@ -79,12 +79,7 @@ const favorGroupLocation4 = document.getElementById('favor-group-location4');
 const favorGroupCost4 = document.getElementById('favor-group-cost4');
 
 import { db } from './firebase.js';
-import {
-  getDocs,
-  query,
-  where,
-  collection,
-} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js';
+import { getDocs, query, where, collection } from 'firebase/firestore';
 
 const goodGroup = [];
 const deadlineGroup = [];
@@ -262,7 +257,7 @@ for (let i = 0; i < groupCard.length; i++) {
     const targetSnap = await getDocs(targetGroup);
 
     targetSnap.forEach((doc) => {
-      localStorage.setItem('targetGroupInfo', JSON.stringify(doc.data()));
+      localStorage.setItem('targetGroupInfo', JSON.stringify(doc(data)));
       console.log(doc.id, ' => ', doc.data());
       document.location.href = './detail1.html';
     });
