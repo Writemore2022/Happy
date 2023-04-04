@@ -7,14 +7,19 @@ const submitBtn = document.querySelector("#submitFeedback");
 submitBtn.addEventListener("click", () => {
   const now = new Date();
 
-  const feedbackText = JSON.stringify(feedback.value)
+  const feedbackText = JSON.stringify(feedback.value);
 
-  storeFeedback(now, feedbackText);
-  console.log(now + feedbackText);
+  try {
+    storeFeedback(now, feedbackText);
+  } catch (error) {
+    console.error(error);
+  }
+
+  feedback.value = ''
 });
 
 function storeFeedback(now, data) {
-  set(ref(database, 'feedback/' + now), {
+  set(ref(database, "feedback/" + now), {
     time: now,
     feedback: data,
   });
