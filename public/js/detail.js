@@ -13,7 +13,6 @@ const hostName = document.querySelector('#host-name');
 const hostContent = document.querySelector('#host-content');
 
 const receiveGroupInfo = JSON.parse(localStorage.getItem('targetGroupInfo'));
-console.log(receiveGroupInfo);
 
 groupTitle.innerHTML = receiveGroupInfo.title;
 groupIntro.innerHTML = receiveGroupInfo.intro;

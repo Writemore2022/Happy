@@ -258,7 +258,6 @@ for (let i = 0; i < groupCard.length; i++) {
 
     targetSnap.forEach((doc) => {
       localStorage.setItem('targetGroupInfo', JSON.stringify(doc(data)));
-      console.log(doc.id, ' => ', doc.data());
       document.location.href = './detail1.html';
     });
   });
