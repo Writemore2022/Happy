@@ -7,32 +7,18 @@
 
     <meta name="author" content="글로모여" />
     <meta name="keywords" content="글로모여" />
-    <meta
-      name="description"
-      content="대구 글쓰기, 독서 모임 한 눈에 둘러보기"
-    />
+    <meta name="description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
 
     <!-- sns share -->
     <meta property="og:url" content="https://writemore-f6e18.web.app/" />
     <meta property="og:title" content="글로모여" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./assets/images/landingimage2" />
-    <meta
-      property="og:description"
-      content="대구 글쓰기, 독서 모임 한 눈에 둘러보기"
-    />
+    <meta property="og:description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
 
     <!-- favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="./assets/images/favicon-16x16.png"
-    />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon-precomposed" href="./assets/images/favicon-16x16.png" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -44,10 +30,7 @@
     <link rel="stylesheet" href="./css/calendar.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/calendar.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0bc54cb32d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/0bc54cb32d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- 헤더 : 준수 -->
@@ -74,11 +57,7 @@
         </div>
         <div class="header-right">
           <a class="login" href="./signup.html">로그인</a>
-          <img
-            src="./assets/images/free-icon-menu-1828859.png"
-            width="20px"
-            class="menu-icon"
-          />
+          <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
         </div>
       </div>
     </header>
@@ -111,11 +90,7 @@
       <div class="host-page">
         <div class="host-left">
           <a href="#">
-            <img
-              src="./assets/images/host_image.jpg"
-              alt="host-img"
-              class="host-img"
-            />
+            <img id="host-img" alt="host-img" class="host-img" />
           </a>
         </div>
         <div class="host-right">
@@ -124,7 +99,7 @@
             <span><a href="#" id="host-name"></a></span>
           </div>
           <div class="host-intro" id="host-content"></div>
-          <div class="host-sns">
+          <div class="host-sns" id="host-sns">
             <i class="fa fa-brands fa-instagram" style="color: gray"></i>
           </div>
         </div>
@@ -207,14 +182,10 @@
         <div class="res-day">
           <h3>요일</h3>
           <div class="day">월</div>
-          <div class="r-day" style="background-color: orange; color: ivory">
-            화
-          </div>
+          <div class="day">화</div>
           <div class="day">수</div>
           <div class="day">목</div>
-          <div class="r-day" style="background-color: orange; color: ivory">
-            금
-          </div>
+          <div class="day">금</div>
           <div class="day">토</div>
           <div class="day">일</div>
         </div>
@@ -223,14 +194,12 @@
           <div class="time-block">
             <div class="ap">
               <!--am/pm-->
-              <span>오전</span>
               <span>오후</span>
+              <span>오전</span>
             </div>
             <div class="time">
-              <span>8</span>
-              <span>시 ~ </span>
-              <span>10</span>
-              <span>시</span>
+              <span id="start-time">8</span>
+              <span id="end-time"></span>
             </div>
           </div>
         </div>
@@ -243,18 +212,18 @@
             </ul> -->
         <div class="g-story intro">
           <h2>모임 소개</h2>
-          <div id="g-content">처음 글을 쓰려고 마음먹는 순간의 막막함을 이해합니다. <br>
-            즐거운 막막함으로 다가올 수 있게끔 다양한 재료를 사용하여 모임을 열어요. <br>
-            필사를 함께 하기도 하고,<br>
-            특정 주제 하나를 모임 내내 진행하기도 하고,<br>
-            매주 다양한 소재를 제시하여 글을 쓰기도 합니다. <br><br>
-            
-            "당신의 취미에 글쓰기도 포함되길 바랍니다."<br><br>
+          <div id="g-content">
+            처음 글을 쓰려고 마음먹는 순간의 막막함을 이해합니다. <br />
+            즐거운 막막함으로 다가올 수 있게끔 다양한 재료를 사용하여 모임을 열어요. <br />
+            필사를 함께 하기도 하고,<br />
+            특정 주제 하나를 모임 내내 진행하기도 하고,<br />
+            매주 다양한 소재를 제시하여 글을 쓰기도 합니다. <br /><br />
 
-            <대상> <br>
-            글을 쓰려는 욕망이 시작되고 있는 사람<br>
-            내 글을 쓰다보니 다른 사람의 생각도 궁금해진 사람<br>
+            "당신의 취미에 글쓰기도 포함되길 바랍니다."<br /><br />
 
+            <대상> <br />
+            글을 쓰려는 욕망이 시작되고 있는 사람<br />
+            내 글을 쓰다보니 다른 사람의 생각도 궁금해진 사람<br />
           </div>
         </div>
         <div class="g-story detail">
@@ -288,7 +257,7 @@
     <script src="./js/sidemenu.js"></script>
     <script>
       function cal_btn() {
-        alert("예약하기, 준비 중입니다.");
+        alert('예약하기, 준비 중입니다.');
       }
     </script>
   </body>

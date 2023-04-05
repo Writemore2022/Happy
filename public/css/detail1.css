@@ -1,281 +1,280 @@
 /* 반응형 css */
 @media (max-width: 880px) {
-    body {
-      margin: 0 20px;
-    }
-  }
-  
-  @media (min-width: 880px) {
-    body {
-      margin: 0 5%;
-    }
-  }
-  
-  @media (min-width: 1140px) {
-    body {
-      margin: 0 10%;
-    }
-  
-    .header {
-      width: 100%;
-    }
-  }
-  
-  @media (min-width: 1440px) {
-    body {
-      margin: 0 10%;
-    }
-  }
-
-  @media (max-width: 923px) {
-    .day{
-      display: none;
-    }
-    .host-sns{
-      display: none;
-    }
-  }
-
-  @font-face {
-    font-family: 'JejuMyoungjo';
-    src: url('../assets/fonts/JejuMyeongjo.ttf');
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: 'JejuMyoungjo';
-    list-style: none;
-    text-decoration: none;
-  }
-
-  /* 임시 */
   body {
-    height: auto;
-    padding-bottom: 80px;
-    box-sizing: border-box;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 880px) {
+  body {
+    margin: 0 5%;
+  }
+}
+
+@media (min-width: 1140px) {
+  body {
+    margin: 0 10%;
   }
 
-  /* 상세페이지 */
-  .detail-page{
-    text-align: left;
-    margin-left: 17%;
-    box-sizing: border-box;
-  }
-
-  .g-img{
-    width: 80%;
-    height: 350px;
-    /* margin-left: 10%; */
-  }
-
-  .g-name{
-    display: block;
-    width: 80%;
-    height: auto;
-
-    padding-top: 30px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    
-    font-size: 1.6em;
-    font-weight: 600;
-    /* background-color: yellow; */
-
-  }
-
-  .g-intro{
-    display: block;
-    width: 80%;
-    height: auto;
-
-    margin-bottom: 10px;
-
-    font-size: 1.1em;
-    /* background-color: rgb(141, 216, 141); */
-  }
-
-  .g-address{
-    display: block;
-    width: 80%;
-    height: 50px;
-
-    padding-top: 10px;
-    box-sizing: border-box;
-    
-    /* background-color: aqua; */
-    border-top: 0.5px solid gray;
-  }
-
-  .hashtag{
-    width: 80%;
-    height: 30px;
-    /* background-color: aquamarine; */
-  }
-
-  .hashtag>span{
-    display: block;
-    float: left;
-    width: auto;
-    height: 25px;
-
-    color: orange;
-    /* font-weight: 600; */
-    /* background-color: orange; */
-    border-radius: 50px;
-    box-shadow: 0 0 1.5px gray;
-
-    padding: 5px;
-    margin-right: 10px;
-    box-sizing: border-box;
-  }
-
-  .host-page{
-    width: 80%;
-    height: 220px;
-    background-color: rgb(243, 241, 241);
-    margin-top: 40px;
-    padding-top: 10px;
-    box-sizing: border-box;
-  }
-
-  .host-left{
-    width: 20%;
-    height: 100%;
-    /* background-color: lightcoral; */
-    float: left;
-  }
-
-  .host-left>a{
-    display: block;
-    width: 90%;
-    height: 95%;
-    /* background-color: aliceblue; */
-    margin-left: 10%;
-    box-sizing: border-box;
-  }
-
-  .host-img{
-    width: 80%;
-    /* height: 100%; */
-    border-radius: 100%;
-    border: solid 2px ivory;
-    box-shadow: 0 0 4px gray;
-
-    aspect-ratio: 1/1; /* 화면 작아져도 고정 비율 유지 (1:1)*/
-  }
-
-  .host-right{
-    width: 80%;
-    height: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-    /* background-color: lightgray; */
-    float: left;
-  }
-
-  .host-name{
-    height: 30%;
-    /* background-color: lightskyblue; */
-  }
-
-  .host-name>span:first-child{
-    display: block;
-    height: 50%;
-    padding-top: 7px;
-    box-sizing: border-box;
-
-    font-size: 0.8em;
-    color: gray;
-    /* background-color: thistle; */
-  }
-
-  .host-name>span:last-child>a{
-    display: block;
-    height: 50%;
-
-    font-size: 1em;
-    font-weight: 600;
-    color: black;
-    /* background-color: violet; */
-  }
-
-  .host-intro{
-    height: auto;
-    /* background-color: lightgoldenrodyellow; */
-
-    font-size: 0.9rem;
-    color: gray;
-    padding-bottom: 5px;
-    box-sizing: border-box;
-
-    line-height: 150%;
-  }
-
-  .host-sns{
-    height: auto;
-    color: gray;
-    /* background-color: aliceblue; */
-  }
-
-  .rule::before{
-    color: gray;
-  }
-
-  .rule{
-    width: 80%;
-    height: auto;
-
-    margin-top: 50px;
-    /* background-color: lightcyan; */
-  }
-
-  .rule>div:first-child{
-    height: 50px;
-    font-weight: bold;
-    font-size: 1.5em;
-
-    padding-top: 12px;
-    box-sizing: border-box;
-    /* background-color: lightseagreen; */
-  }
-
-  .rule>div:nth-child(2){
-    height: auto;
-    line-height: 150%;
-    font-size: 0.9em;
-
-    padding: 15px 7px;
-    box-sizing: border-box;
-    background-color: rgb(243, 241, 241);
-    /* background-color: violet; */
-  }
-
-  .reservation_btn{
-    display: block;
+  .header {
     width: 100%;
-    height: 30px;
-    margin-top: 10px;
-    box-sizing: border-box;
-    border: none;
   }
+}
 
-  .reservation_btn:hover{
-    background-color: gray;
-    color: ivory;
+@media (min-width: 1440px) {
+  body {
+    margin: 0 10%;
   }
+}
 
-  .group-contents{
-    width: 80%;
-    height: auto;
-
-    margin-top: 50px;
-    box-sizing: border-box;
-    /* background-color: rgb(243, 241, 241); */
+@media (max-width: 923px) {
+  .day {
+    display: none;
   }
+  .host-sns {
+    display: none;
+  }
+}
 
-  /* #g-list{
+@font-face {
+  font-family: 'JejuMyoungjo';
+  src: url('../assets/fonts/JejuMyeongjo.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'JejuMyoungjo';
+  list-style: none;
+  text-decoration: none;
+}
+
+/* 임시 */
+body {
+  height: auto;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+/* 상세페이지 */
+.detail-page {
+  text-align: left;
+  margin-left: 17%;
+  box-sizing: border-box;
+}
+
+.g-img {
+  width: 80%;
+  height: 350px;
+  /* margin-left: 10%; */
+}
+
+.g-name {
+  display: block;
+  width: 80%;
+  height: auto;
+
+  padding-top: 30px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+
+  font-size: 1.6em;
+  font-weight: 600;
+  /* background-color: yellow; */
+}
+
+.g-intro {
+  display: block;
+  width: 80%;
+  height: auto;
+
+  margin-bottom: 10px;
+
+  font-size: 1.1em;
+  /* background-color: rgb(141, 216, 141); */
+}
+
+.g-address {
+  display: block;
+  width: 80%;
+  height: 50px;
+
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  /* background-color: aqua; */
+  border-top: 0.5px solid gray;
+}
+
+.hashtag {
+  width: 80%;
+  height: 30px;
+  /* background-color: aquamarine; */
+}
+
+.hashtag > span {
+  display: block;
+  float: left;
+  width: auto;
+  height: 25px;
+
+  color: orange;
+  /* font-weight: 600; */
+  /* background-color: orange; */
+  border-radius: 50px;
+  box-shadow: 0 0 1.5px gray;
+
+  padding: 5px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.host-page {
+  width: 80%;
+  height: 220px;
+  background-color: rgb(243, 241, 241);
+  margin-top: 40px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.host-left {
+  width: 20%;
+  height: 100%;
+  /* background-color: lightcoral; */
+  float: left;
+}
+
+.host-left > a {
+  display: block;
+  width: 90%;
+  height: 95%;
+  /* background-color: aliceblue; */
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+
+.host-img {
+  width: 80%;
+  /* height: 100%; */
+  border-radius: 100%;
+  border: solid 2px ivory;
+  box-shadow: 0 0 4px gray;
+
+  aspect-ratio: 1/1; /* 화면 작아져도 고정 비율 유지 (1:1)*/
+}
+
+.host-right {
+  width: 80%;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  /* background-color: lightgray; */
+  float: left;
+}
+
+.host-name {
+  height: 30%;
+  /* background-color: lightskyblue; */
+}
+
+.host-name > span:first-child {
+  display: block;
+  height: 50%;
+  padding-top: 7px;
+  box-sizing: border-box;
+
+  font-size: 0.8em;
+  color: gray;
+  /* background-color: thistle; */
+}
+
+.host-name > span:last-child > a {
+  display: block;
+  height: 50%;
+
+  font-size: 1em;
+  font-weight: 600;
+  color: black;
+  /* background-color: violet; */
+}
+
+.host-intro {
+  height: auto;
+  /* background-color: lightgoldenrodyellow; */
+
+  font-size: 0.9rem;
+  color: gray;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+
+  line-height: 150%;
+}
+
+.host-sns {
+  height: auto;
+  color: gray;
+  /* background-color: aliceblue; */
+}
+
+.rule::before {
+  color: gray;
+}
+
+.rule {
+  width: 80%;
+  height: auto;
+
+  margin-top: 50px;
+  /* background-color: lightcyan; */
+}
+
+.rule > div:first-child {
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  padding-top: 12px;
+  box-sizing: border-box;
+  /* background-color: lightseagreen; */
+}
+
+.rule > div:nth-child(2) {
+  height: auto;
+  line-height: 150%;
+  font-size: 0.9em;
+
+  padding: 15px 7px;
+  box-sizing: border-box;
+  background-color: rgb(243, 241, 241);
+  /* background-color: violet; */
+}
+
+.reservation_btn {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.reservation_btn:hover {
+  background-color: gray;
+  color: ivory;
+}
+
+.group-contents {
+  width: 80%;
+  height: auto;
+
+  margin-top: 50px;
+  box-sizing: border-box;
+  /* background-color: rgb(243, 241, 241); */
+}
+
+/* #g-list{
     width: 100%;
     height: 50px;
 
@@ -306,113 +305,117 @@
     border-bottom: 2px solid black;
   } */
 
-  .res-table{
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    box-sizing: border-box;
-    line-height: 200%;
+.res-table {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 200%;
 
-    /* background-color: antiquewhite; */
-  }
+  /* background-color: antiquewhite; */
+}
 
-  .res-table>h2{
-    padding: 5px;
-    padding-left: 0px;
-    padding-bottom: 15px;
-    box-sizing: border-box;
-    color: orange;
-    /* color: #000000; */
-  }
+.res-table > h2 {
+  padding: 5px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  color: orange;
+  /* color: #000000; */
+}
 
-  .res-table h3{
-    /* color: rgb(199, 130, 4); */
-    color: #000000;
-    /* color: orange; */
-    padding-bottom: 10px;
-  }
+.res-table h3 {
+  /* color: rgb(199, 130, 4); */
+  color: #000000;
+  /* color: orange; */
+  padding-bottom: 10px;
+}
 
-  .res-day{
-    width: 48%;
-    height: 100px;
-    /* background-color: red; */
-  }
+.res-day {
+  width: 48%;
+  height: 100px;
+  /* background-color: red; */
+}
 
-  .day, .r-day{
-    width: 35px;
-    height: 35px;
-    background-color:  rgb(243, 241, 241);
-    float: left;
-    /* box-shadow: 0 0 4px gray; */
+.day,
+.r-day {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(243, 241, 241);
+  float: left;
+  /* box-shadow: 0 0 4px gray; */
 
-    padding-top: 2px;
-    margin-right: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
+  padding-top: 2px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-  .res-time{
-    /* float: left; */
-    width: 48%;
-    height: 50px;
-    /* background-color: yellow; */
-  }
+.res-time {
+  /* float: left; */
+  width: 48%;
+  height: 50px;
+  /* background-color: yellow; */
+}
 
-  .time-block{
-    width: 200px;
-    height: 35px;
-    background-color:  rgb(243, 241, 241);
-    border-radius: 10px;
-    /* text-align: center; */
-  }
+.time-block {
+  width: 200px;
+  height: 35px;
+  background-color: rgb(243, 241, 241);
+  border-radius: 10px;
+  /* text-align: center; */
+}
 
-  .ap{
-    float: left;
-    width: 30%;
-    height: 100%;
-    /* background-color: lightblue; */
-    text-align: center;
-  }
+.ap {
+  float: left;
+  width: 30%;
+  height: 100%;
+  /* background-color: lightblue; */
+  text-align: center;
+}
 
-  .ap>span:last-child{
-    display: none;
-  }
+.ap > span:last-child {
+  display: none;
+}
 
-  .time{
-    float: left;
-    width: 70%;
-    height: 100%;
-    text-align: center;
-    /* width: 150px;
+.time {
+  float: left;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  /* width: 150px;
     height: 100%;
     background-color: green; */
-  }
+}
 
-  .g-story{
-    padding: 10px;
-    box-sizing: border-box;
-    line-height: 200%;
-  }
+.g-story {
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 200%;
+}
 
-  .g-story>h2{
-    padding: 5px;
-    padding-left: 0px;
-    padding-bottom: 15px;
-    box-sizing: border-box;
-    color: orange;
-    /* color: #000000; */
-  }
+.g-story > h2 {
+  padding: 5px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  color: orange;
+  /* color: #000000; */
+}
 
-  #g-detail-contents>#gnb>li{
-    /* color: rgb(199, 130, 4); */
-    color: #000000;
-    /* color: orange; */
-  }
+#g-detail-contents > #gnb > li {
+  /* color: rgb(199, 130, 4); */
+  color: #000000;
+  /* color: orange; */
+}
 
-  #g-detail-contents>#gnb>li>div{
-    color: black;
-    line-height: 200%;
-  }
+#g-detail-contents > #gnb > li > div {
+  color: black;
+  line-height: 200%;
+}
 
-
+.r-day {
+  background-color: orange;
+  color: ivory;
+}
