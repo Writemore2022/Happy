@@ -322,10 +322,13 @@
     padding-bottom: 15px;
     box-sizing: border-box;
     color: orange;
+    /* color: #000000; */
   }
 
   .res-table h3{
-    color: rgb(199, 130, 4);
+    /* color: rgb(199, 130, 4); */
+    color: #000000;
+    /* color: orange; */
     padding-bottom: 10px;
   }
 
@@ -398,10 +401,13 @@
     padding-bottom: 15px;
     box-sizing: border-box;
     color: orange;
+    /* color: #000000; */
   }
 
   #g-detail-contents>#gnb>li{
-    color: rgb(199, 130, 4);
+    /* color: rgb(199, 130, 4); */
+    color: #000000;
+    /* color: orange; */
   }
 
   #g-detail-contents>#gnb>li>div{
