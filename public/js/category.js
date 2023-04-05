@@ -57,8 +57,6 @@ async function categorySearch(parent, child) {
 }
 
 function createGroupCard(data) {
-  console.log(data);
-
   const groupInfo = document.createElement('div');
   groupInfo.className = 'group-info';
 
