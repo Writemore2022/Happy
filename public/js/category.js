@@ -57,6 +57,8 @@ async function categorySearch(parent, child) {
 }
 
 function createGroupCard(data) {
+  console.log(data);
+
   const groupInfo = document.createElement('div');
   groupInfo.className = 'group-info';
 
@@ -64,8 +66,8 @@ function createGroupCard(data) {
 
   const groupImg = document.createElement('img');
   groupInfo.appendChild(groupImg);
-  groupImg.src = './assets/images/sample1.jpg';
   groupImg.className = 'group-img';
+  groupImg.src = data.groupImage;
 
   const groupDetails = document.createElement('div');
   groupInfo.appendChild(groupDetails);
