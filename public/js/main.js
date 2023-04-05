@@ -263,6 +263,8 @@ for (let i = 0; i < groupCard.length; i++) {
   });
 }
 
+// feedback
+
 import { database } from './firebase';
 import { ref, set } from 'firebase/database';
 
@@ -274,13 +276,15 @@ submitBtn.addEventListener('click', () => {
 
   const feedbackText = JSON.stringify(feedback.value);
 
-  try {
-    storeFeedback(now, feedbackText);
-  } catch (error) {
-    console.error(error);
-  }
+  if (feedback.value != '') {
+    try {
+      storeFeedback(now, feedbackText);
+    } catch (error) {
+      console.error(error);
+    }
 
-  feedback.value = '';
+    feedback.value = '';
+  }
 });
 
 function storeFeedback(now, data) {
