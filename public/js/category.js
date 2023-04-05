@@ -1,10 +1,5 @@
 import { db } from './firebase.js';
-import {
-  getDocs,
-  query,
-  where,
-  collection,
-} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js';
+import { getDocs, query, where, collection } from 'firebase/firestore';
 
 const groupWrap = document.querySelector('.group-wrap');
 const groupContainer = document.querySelector('.group-container');

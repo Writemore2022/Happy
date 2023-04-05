@@ -9,6 +9,11 @@
     <meta name="keywords" content="글로모여" />
     <meta name="description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
 
+    <!-- webpack setting -->
+    <meta http-equiv="“Pragma”" content="”no-cache”" />
+    <meta http-equiv="“Expires”" content="”-1″" />
+    <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”" />
+
     <!-- sns share -->
     <meta property="og:url" content="https://writemore-f6e18.web.app/" />
     <meta property="og:title" content="글로모여" />
@@ -34,7 +39,7 @@
       <div class="nav-links">
         <a href="./introduce.html" class="link">글로모여 소개</a>
         <!-- <a href="" class="link">후기</a> -->
-        <a href="#" class="link">로그인</a>
+        <a href="./signup.html" class="link">로그인</a>
         <a class="link" id="menuClose">뒤로가기</a>
       </div>
     </nav>
@@ -52,7 +57,7 @@
           <!-- <a>후기</a> -->
         </div>
         <div class="header-right">
-          <a class="login">로그인</a>
+          <a class="login" href="./signup.html">로그인</a>
           <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
         </div>
       </div>
@@ -65,5 +70,5 @@
     </main>
   </body>
   <script src="./js/sidemenu.js"></script>
-  <script type="module" src="./js/category.js"></script>
+  <script src="./dist/bundle.js"></script>
 </html>

@@ -2,10 +2,20 @@
   "name": "glomoyo",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": ".",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=development",
+    "product": "webpack --mode=production"
   },
   "author": "writemore",
   "license": "ISC",
-  "description": ""
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "firebase": "^9.19.1",
+    "firebase-cli": "^1.2.0",
+    "firebase-tools": "^11.25.2",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  }
 }

@@ -79,12 +79,7 @@ const favorGroupLocation4 = document.getElementById('favor-group-location4');
 const favorGroupCost4 = document.getElementById('favor-group-cost4');
 
 import { db } from './firebase.js';
-import {
-  getDocs,
-  query,
-  where,
-  collection,
-} from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js';
+import { getDocs, query, where, collection } from 'firebase/firestore';
 
 const goodGroup = [];
 const deadlineGroup = [];
@@ -263,8 +258,38 @@ for (let i = 0; i < groupCard.length; i++) {
 
     targetSnap.forEach((doc) => {
       localStorage.setItem('targetGroupInfo', JSON.stringify(doc.data()));
-      console.log(doc.id, ' => ', doc.data());
       document.location.href = './detail1.html';
     });
+  });
+}
+
+// feedback
+
+import { database } from './firebase';
+import { ref, set } from 'firebase/database';
+
+const feedback = document.querySelector('#feedback');
+const submitBtn = document.querySelector('#submitFeedback');
+
+submitBtn.addEventListener('click', () => {
+  const now = new Date();
+
+  const feedbackText = JSON.stringify(feedback.value);
+
+  if (feedback.value != '') {
+    try {
+      storeFeedback(now, feedbackText);
+    } catch (error) {
+      console.error(error);
+    }
+
+    feedback.value = '';
+  }
+});
+
+function storeFeedback(now, data) {
+  set(ref(database, 'feedback/' + now), {
+    time: now,
+    feedback: data,
   });
 }

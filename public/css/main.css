@@ -1,10 +1,19 @@
 /* 반응형 css */
+@media (max-width: 720px) {
+  .main-top {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 1140px) {
   body {
     margin: 0 1rem;
   }
   .group-info {
     width: 45%;
+  }
+  .group-container {
+    justify-content: space-around;
   }
 }
 
@@ -17,6 +26,9 @@
   }
   .header {
     width: 100%;
+  }
+  .group-container {
+    justify-content: space-between;
   }
 }
 
@@ -35,9 +47,9 @@
 /* 상단 배너 */
 .top-banner {
   width: 100%;
-  height: 300px;
+  height: 360px;
   /* margin-top: 20px; */
-  object-fit: fill;
+  object-fit: cover;
 }
 
 /* 카테고리 */
@@ -134,7 +146,6 @@
 .group-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   /* background-color: gray; */
   margin-top: 20px;
   box-sizing: border-box;
