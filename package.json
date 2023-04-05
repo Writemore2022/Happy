@@ -4,7 +4,8 @@
   "main": "index.js",
   "homepage": ".",
   "scripts": {
-    "build": "webpack --mode=development"
+    "build": "webpack --mode=development",
+    "product": "webpack --mode=production"
   },
   "author": "writemore",
   "license": "ISC",

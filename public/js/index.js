@@ -1,9 +1,8 @@
 // webpack 사용을 위한 index.js
 
-import './main';
-import './feedback';
+import './firebase';
 import './category';
+import './main';
 import './detail';
 import './sidemenu';
-import './firebase';
 import './calendar';
