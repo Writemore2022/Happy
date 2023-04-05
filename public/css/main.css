@@ -35,9 +35,9 @@
 /* 상단 배너 */
 .top-banner {
   width: 100%;
-  height: 360px;
+  height: 300px;
   /* margin-top: 20px; */
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* 카테고리 */
