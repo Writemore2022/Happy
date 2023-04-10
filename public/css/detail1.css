@@ -66,6 +66,7 @@ body {
 .g-img {
   width: 80%;
   height: 350px;
+  object-fit: cover;
   /* margin-left: 10%; */
 }
 

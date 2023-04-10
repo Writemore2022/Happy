@@ -1,3 +1,4 @@
+const groupImg = document.querySelector('.g-img');
 const groupTitle = document.querySelector('.g-name');
 const groupIntro = document.querySelector('.g-intro');
 const groupAddress = document.querySelector('.g-address');
@@ -18,6 +19,12 @@ const startTime = document.querySelector('#start-time');
 const endTime = document.querySelector('#end-time');
 
 const receiveGroupInfo = JSON.parse(localStorage.getItem('targetGroupInfo'));
+
+if (receiveGroupInfo.groupImage == undefined) {
+  groupImg.src = './assets/images/groupImages/group_test5.jpg';
+} else {
+  groupImg.src = receiveGroupInfo.groupImage;
+}
 
 groupTitle.innerHTML = receiveGroupInfo.title;
 groupIntro.innerHTML = receiveGroupInfo.intro;
