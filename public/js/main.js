@@ -296,6 +296,7 @@ favorGroupCost4.innerHTML = favorGroup[3].cost;
 // 모임 상세페이지 이동 및 해당 모임 데이터 localStorage에 저장
 
 const groupCard = document.querySelectorAll('.group-info');
+console.log(groupCard[0].childNodes[5]);
 
 for (let i = 0; i < groupCard.length; i++) {
   groupCard[i].addEventListener('click', async () => {
