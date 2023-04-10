@@ -7,6 +7,7 @@ const groupPurpose = document.querySelector('#g-purpose');
 const groupGanre = document.querySelector('#g-ganre');
 const groupMood = document.querySelector('#g-mood');
 const groupContent = document.querySelector('#g-content');
+const groupTarget = document.querySelector('.g-target');
 const groupPeople = document.querySelector('#g-people');
 const groupCost = document.querySelector('#g-cost');
 
@@ -33,6 +34,19 @@ groupGanre.innerHTML = '#' + receiveGroupInfo.ganre;
 groupMood.innerHTML = '#' + receiveGroupInfo.mood;
 groupContent.innerHTML = receiveGroupInfo.content;
 groupCost.innerHTML = receiveGroupInfo.cost;
+
+const groupTargetTitle = document.createElement('h2');
+const groupTargetContent = document.createElement('div');
+groupTargetTitle.innerHTML = '모임 대상';
+
+if (receiveGroupInfo.target == undefined) {
+  groupTarget.innerHTML = '';
+} else {
+  console.log(receiveGroupInfo.target);
+  groupTarget.appendChild(groupTargetTitle);
+  groupTargetContent.innerHTML = receiveGroupInfo.target;
+  groupTarget.appendChild(groupTargetContent);
+}
 
 groupAddress.innerHTML =
   '<i class="fas fa-solid fa-map-pin" style="color: gray"></i> ' + receiveGroupInfo.address;

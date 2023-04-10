@@ -405,6 +405,21 @@ body {
   /* color: #000000; */
 }
 
+.g-target {
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 200%;
+}
+
+.g-target > h2 {
+  padding: 5px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  color: orange;
+  /* color: #000000; */
+}
+
 #g-detail-contents > #gnb > li {
   /* color: rgb(199, 130, 4); */
   color: #000000;

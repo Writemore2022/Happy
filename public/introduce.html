@@ -31,6 +31,51 @@
 
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/header.css" />
+
+    <style>
+      @font-face {
+        font-family: 'JejuMyoungjo';
+        src: url('./assets/fonts/JejuMyeongjo.ttf');
+      }
+
+      @media (max-width: 1140px) {
+        body {
+          margin: 0 1rem;
+        }
+      }
+
+      @media (min-width: 1140px) {
+        body {
+          margin: 0 10%;
+        }
+
+        .header {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 1600px) {
+        body {
+          margin: 0 15%;
+        }
+      }
+
+      @media (min-width: 1920px) {
+        body {
+          margin: 0 20%;
+        }
+      }
+
+      .introduceBox {
+        display: flex;
+        justify-content: center;
+      }
+
+      .introduceImg {
+        width: 100%;
+        object-fit: contain;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -60,5 +105,11 @@
         </div>
       </div>
     </header>
+    <main>
+      <div class="introduceBox">
+        <img src="./assets/images/introduce.png" class="introduceImg" />
+      </div>
+    </main>
   </body>
+  <script src="./js/sidemenu.js"></script>
 </html>
