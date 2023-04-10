@@ -30,7 +30,7 @@ if (receiveGroupInfo.groupImage == undefined) {
 groupTitle.innerHTML = receiveGroupInfo.title;
 groupIntro.innerHTML = receiveGroupInfo.intro;
 groupPurpose.innerHTML = '#' + receiveGroupInfo.purpose;
-groupGanre.innerHTML = '#' + receiveGroupInfo.ganre;
+groupGanre.innerHTML = '#' + receiveGroupInfo.genre;
 groupMood.innerHTML = '#' + receiveGroupInfo.mood;
 groupContent.innerHTML = receiveGroupInfo.content;
 groupCost.innerHTML = receiveGroupInfo.cost;

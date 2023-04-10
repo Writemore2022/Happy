@@ -103,7 +103,7 @@ const locationGroup = [];
 const favorGroup = [];
 
 async function groupTitleSearch(option) {
-  const targetGroup = await query(collection(db, 'group'), where('option', '==', option));
+  const targetGroup = await query(collection(db, 'group'), where('title', '==', option));
   const targetSnap = await getDocs(targetGroup);
 
   switch (option) {
