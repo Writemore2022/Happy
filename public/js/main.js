@@ -158,7 +158,7 @@ async function groupClassSearch(option) {
   switch (option) {
     case '글쓰기':
       targetSnap.forEach((doc) => {
-        deadlineGroup.push(doc.data());
+        favorGroup.push(doc.data());
       });
 
       break;
