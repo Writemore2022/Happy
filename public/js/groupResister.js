@@ -1,8 +1,8 @@
 import { db } from './firebase.js';
-import DB from './groupsInfo.json' assert { type: 'json' };
-import { addDoc, collection } from 'firebase/firestore';
+import { collection, doc, addDoc } from 'firebase/firestore';
+import group from '../groupsInfo.json' assert { type: 'json' };
 
-const groupDB = DB.group;
+const groupDB = group.group;
 
 // 새로운 모임 등록하기
 function allGroupResister() {
@@ -11,7 +11,7 @@ function allGroupResister() {
       class: e.class,
       content: e.content,
       cost: e.cost,
-      genre: e.genre,
+      ganre: e.ganre,
       intro: e.intro,
       location: e.location,
       mood: e.mood,
@@ -24,16 +24,18 @@ function allGroupResister() {
       startTime: e.startTime,
       endTime: e.endTime,
       address: e.address,
-      hostName: e.hostName,
+      hostNmae: e.hostName,
       hostContent: e.hostContent,
-      hostImage: e.hostImage,
-      groupImage: e.groupImage,
-      target: e.target,
-      instagram: e.instagram,
     });
 
     console.log('모임명: ' + e.title + ' 등록 완료');
   });
+
+  return false;
+}
+
+function allGroupDelete() {
+  const groupRef = doc(db, 'group', '');
 }
 
 allGroupResister();

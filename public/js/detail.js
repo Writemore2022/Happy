@@ -7,11 +7,10 @@ const groupPurpose = document.querySelector('#g-purpose');
 const groupGanre = document.querySelector('#g-ganre');
 const groupMood = document.querySelector('#g-mood');
 const groupContent = document.querySelector('#g-content');
-const groupTarget = document.querySelector('#g-target');
+const groupTarget = document.querySelector('.g-target');
 const groupPeople = document.querySelector('#g-people');
 const groupCost = document.querySelector('#g-cost');
 
-const hostPage = document.querySelector('.host-page');
 const hostImg = document.querySelector('#host-img');
 const hostName = document.querySelector('#host-name');
 const hostContent = document.querySelector('#host-content');
@@ -31,7 +30,7 @@ if (receiveGroupInfo.groupImage == undefined) {
 groupTitle.innerHTML = receiveGroupInfo.title;
 groupIntro.innerHTML = receiveGroupInfo.intro;
 groupPurpose.innerHTML = '#' + receiveGroupInfo.purpose;
-groupGanre.innerHTML = '#' + receiveGroupInfo.genre;
+groupGanre.innerHTML = '#' + receiveGroupInfo.ganre;
 groupMood.innerHTML = '#' + receiveGroupInfo.mood;
 groupContent.innerHTML = receiveGroupInfo.content;
 groupCost.innerHTML = receiveGroupInfo.cost;
@@ -59,6 +58,27 @@ if (receiveGroupInfo.peopleMin == null) {
     '최소 ' + receiveGroupInfo.peopleMin + ' ~ ' + receiveGroupInfo.peopleMax + '명';
 }
 
+if (receiveGroupInfo.hostContent) {
+  hostImg.src = receiveGroupInfo.hostImage;
+} else {
+  hostImg.alt = '';
+}
+
+if (receiveGroupInfo.hostNmae == undefined) {
+  hostName.innerHTML = '';
+} else {
+  hostName.innerHTML = receiveGroupInfo.hostNmae + ' >';
+}
+
+hostContent.innerHTML = receiveGroupInfo.hostContent;
+
+if (receiveGroupInfo.instagram == undefined) {
+  hostSNS.innerHTML = '';
+} else {
+  hostSNS.innerHTML =
+    '<i class="fa fa-brands fa-instagram" style="color: gray"></i> ' + receiveGroupInfo.instagram;
+}
+
 const groupWeek = document.querySelector('.res-day');
 
 for (let i = 0; i < groupWeek.childNodes.length; i++) {
@@ -77,51 +97,4 @@ if (receiveGroupInfo.startTime != undefined) {
   } else {
     startTime.innerHTML = start + ' 시 ~';
   }
-}
-
-{
-  /* 
-    <div class="host-page">
-      <div class="host-left">
-        <a href="#">
-          <img id="host-img" alt="host-img" class="host-img" />
-        </a>
-      </div>
-      <div class="host-right">
-        <div class="host-name">
-          <span>호스트</span>
-          <span><a href="#" id="host-name"></a></span>
-        </div>
-        <div class="host-intro" id="host-content"></div>
-        <div class="host-sns" id="host-sns">
-          <i class="fa fa-brands fa-instagram" style="color: gray"></i>
-        </div>
-      </div>
-    </div>
-  */
-}
-
-if (receiveGroupInfo.hostNmae == undefined) {
-  hostPage.innerHTML = '준비 중입니다.';
-  hostPage.style.display = 'flex';
-  hostPage.style.justifyContent = 'center';
-  hostPage.style.alignItems = 'center';
-  hostName.innerHTML = '';
-} else {
-  hostName.innerHTML = receiveGroupInfo.hostNmae + ' >';
-}
-
-if (receiveGroupInfo.hostContent) {
-  hostImg.src = receiveGroupInfo.hostImage;
-} else {
-  hostImg.alt = '';
-}
-
-hostContent.innerHTML = receiveGroupInfo.hostContent;
-
-if (receiveGroupInfo.instagram == undefined) {
-  hostSNS.innerHTML = '';
-} else {
-  hostSNS.innerHTML =
-    '<i class="fa fa-brands fa-instagram" style="color: gray"></i> ' + receiveGroupInfo.instagram;
 }

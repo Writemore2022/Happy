@@ -102,33 +102,19 @@ const deadlineGroup = [];
 const locationGroup = [];
 const favorGroup = [];
 
-async function groupTitleSearch(option) {
-  const targetGroup = await query(collection(db, 'group'), where('title', '==', option));
+async function groupSearch(option) {
+  const targetGroup = await query(collection(db, 'group'), where('option', '==', option));
   const targetSnap = await getDocs(targetGroup);
 
   switch (option) {
-    case '글바람':
+    case 'good':
       targetSnap.forEach((doc) => {
-        deadlineGroup.push(doc.data());
+        goodGroup.push(doc.data());
       });
 
       break;
 
-    case '정규모임 START':
-      targetSnap.forEach((doc) => {
-        deadlineGroup.push(doc.data());
-      });
-
-      break;
-
-    case '미네르바의 부엉이 - 시낭독모임':
-      targetSnap.forEach((doc) => {
-        deadlineGroup.push(doc.data());
-      });
-
-      break;
-
-    case '여우네 독서모임':
+    case 'deadline':
       targetSnap.forEach((doc) => {
         deadlineGroup.push(doc.data());
       });
@@ -212,10 +198,7 @@ goodGroupIntro4.innerHTML = goodGroup[3].intro;
 goodGroupLocation4.innerHTML = '장소: ' + goodGroup[3].location;
 goodGroupCost4.innerHTML = goodGroup[3].cost;
 
-await groupTitleSearch('글바람');
-await groupTitleSearch('정규모임 START');
-await groupTitleSearch('미네르바의 부엉이 - 시낭독모임');
-await groupTitleSearch('여우네 독서모임');
+await groupClassSearch('글쓰기');
 
 deadlineGroupImg1.src = deadlineGroup[0].groupImage;
 deadlineGroupTitle1.innerHTML = deadlineGroup[0].title;
