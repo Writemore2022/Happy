@@ -26,14 +26,13 @@ async function explainPage(parent, child) {
   categoryTitle.appendChild(categoryTitleText);
   categoryTitleText.innerHTML = parent;
 
-  if (parent == "purpose") {
-    categoryTitleText.innerHTML = "목적";
-  } else if(parent == "genre") {
-    categoryTitleText.innerHTML = "장르";
-  } else if(parent == "mood") {
-    categoryTitleText.innerHTML = "분위기";
-  } 
-  
+  if (parent == 'purpose') {
+    categoryTitleText.innerHTML = '목적';
+  } else if (parent == 'genre') {
+    categoryTitleText.innerHTML = '장르';
+  } else if (parent == 'mood') {
+    categoryTitleText.innerHTML = '분위기';
+  }
 }
 
 async function categorySearch(parent, child) {
