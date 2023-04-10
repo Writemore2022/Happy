@@ -214,7 +214,7 @@ goodGroupCost4.innerHTML = goodGroup[3].cost;
 
 await groupTitleSearch('글바람');
 await groupTitleSearch('정규모임 START');
-await groupTitleSearch('미네르바의 부엉이');
+await groupTitleSearch('미네르바의 부엉이 - 시낭독모임');
 await groupTitleSearch('여우네 독서모임');
 
 deadlineGroupImg1.src = deadlineGroup[0].groupImage;
