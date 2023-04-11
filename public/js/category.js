@@ -26,7 +26,6 @@ async function explainPage(parent, child) {
   categoryTitle.appendChild(categoryTitleText);
   categoryTitleText.innerHTML = parent;
 
-<<<<<<< HEAD
   if (parent == "purpose") {
     categoryTitleText.innerHTML = "목적";
   } else if(parent == "genre") {
@@ -34,16 +33,6 @@ async function explainPage(parent, child) {
   } else if(parent == "mood") {
     categoryTitleText.innerHTML = "분위기";
   } 
-  
-=======
-  if (parent == 'purpose') {
-    categoryTitleText.innerHTML = '목적';
-  } else if (parent == 'genre') {
-    categoryTitleText.innerHTML = '장르';
-  } else if (parent == 'mood') {
-    categoryTitleText.innerHTML = '분위기';
-  }
->>>>>>> 5c4c733fd84ff48fb0be961611b8626ffd1f8426
 }
 
 async function categorySearch(parent, child) {
@@ -71,7 +60,7 @@ async function categorySearch(parent, child) {
   }
 
   if (groupCard.length == 0) {
-    groupContainer.innerHTML = '선택하신 카테고리에 해당하는 모임이 아직 없습니다 ㅠㅠ';
+    groupContainer.innerHTML = '선택하신 카테고리에 해당하는 모임이 아직 없습니다.';
   }
 }
 
