@@ -102,6 +102,41 @@ const deadlineGroup = [];
 const locationGroup = [];
 const favorGroup = [];
 
+async function groupFirstSearch(option) {
+  const targetGroup = await query(collection(db, 'group'), where('title', '==', option));
+  const targetSnap = await getDocs(targetGroup);
+
+  switch (option) {
+    case '글바람':
+      targetSnap.forEach((doc) => {
+        goodGroup.push(doc.data());
+      });
+
+      break;
+
+    case '정규모임 START':
+      targetSnap.forEach((doc) => {
+        goodGroup.push(doc.data());
+      });
+
+      break;
+
+    case '미네르바의 부엉이 - 시낭독모임':
+      targetSnap.forEach((doc) => {
+        goodGroup.push(doc.data());
+      });
+
+      break;
+
+    case '여우네 독서모임':
+      targetSnap.forEach((doc) => {
+        goodGroup.push(doc.data());
+      });
+
+      break;
+  }
+}
+
 async function groupTitleSearch(option) {
   const targetGroup = await query(collection(db, 'group'), where('title', '==', option));
   const targetSnap = await getDocs(targetGroup);
