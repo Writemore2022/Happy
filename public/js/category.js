@@ -26,6 +26,7 @@ async function explainPage(parent, child) {
   categoryTitle.appendChild(categoryTitleText);
   categoryTitleText.innerHTML = parent;
 
+<<<<<<< HEAD
   if (parent == "purpose") {
     categoryTitleText.innerHTML = "목적";
   } else if(parent == "genre") {
@@ -34,6 +35,15 @@ async function explainPage(parent, child) {
     categoryTitleText.innerHTML = "분위기";
   } 
   
+=======
+  if (parent == 'purpose') {
+    categoryTitleText.innerHTML = '목적';
+  } else if (parent == 'genre') {
+    categoryTitleText.innerHTML = '장르';
+  } else if (parent == 'mood') {
+    categoryTitleText.innerHTML = '분위기';
+  }
+>>>>>>> 5c4c733fd84ff48fb0be961611b8626ffd1f8426
 }
 
 async function categorySearch(parent, child) {

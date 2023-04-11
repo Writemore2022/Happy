@@ -11,6 +11,7 @@ const groupTarget = document.querySelector('.g-target');
 const groupPeople = document.querySelector('#g-people');
 const groupCost = document.querySelector('#g-cost');
 
+const hostPage = document.querySelector('.host-page');
 const hostImg = document.querySelector('#host-img');
 const hostName = document.querySelector('#host-name');
 const hostContent = document.querySelector('#host-content');
@@ -30,7 +31,7 @@ if (receiveGroupInfo.groupImage == undefined) {
 groupTitle.innerHTML = receiveGroupInfo.title;
 groupIntro.innerHTML = receiveGroupInfo.intro;
 groupPurpose.innerHTML = '#' + receiveGroupInfo.purpose;
-groupGanre.innerHTML = '#' + receiveGroupInfo.ganre;
+groupGanre.innerHTML = '#' + receiveGroupInfo.genre;
 groupMood.innerHTML = '#' + receiveGroupInfo.mood;
 groupContent.innerHTML = receiveGroupInfo.content;
 groupCost.innerHTML = receiveGroupInfo.cost;
@@ -68,6 +69,13 @@ if (receiveGroupInfo.hostNmae == undefined) {
   hostName.innerHTML = '';
 } else {
   hostName.innerHTML = receiveGroupInfo.hostNmae + ' >';
+}
+
+if (receiveGroupInfo.hostName == undefined) {
+  hostPage.innerHTML = '준비 중입니다.';
+  hostPage.style.display = 'flex';
+  hostPage.style.justifyContent = 'center';
+  hostPage.style.alignItems = 'center';
 }
 
 hostContent.innerHTML = receiveGroupInfo.hostContent;
