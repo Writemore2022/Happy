@@ -1,13 +1,17 @@
+// 모임 등록 js/ 김준수
+
 import { db } from './firebase.js';
 import { collection, doc, addDoc } from 'firebase/firestore';
 import group from '../groupsInfo.json' assert { type: 'json' };
 
+/*모임 정보가 담긴 json 파일의 group 요소*/
+/* groupsInfo.js파일과 함께 보기! */
 const groupDB = group.group;
 
 // 새로운 모임 등록하기
 function allGroupResister() {
-  groupDB.forEach((e) => {
-    addDoc(collection(db, 'group'), {
+  groupDB.forEach((e) => { /* groupDB 각각의 event에 대해서*/
+    addDoc(collection(db, 'group'), { /*data 추가*/
       class: e.class,
       content: e.content,
       cost: e.cost,
@@ -34,8 +38,8 @@ function allGroupResister() {
   return false;
 }
 
-function allGroupDelete() {
+function allGroupDelete() { 
   const groupRef = doc(db, 'group', '');
 }
 
-allGroupResister();
+allGroupResister(); // 모임 등록 함수 실행
