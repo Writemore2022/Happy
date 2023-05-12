@@ -12,10 +12,10 @@
   "keywords": [],
   "description": "",
   "dependencies": {
-    "firebase": "^9.19.1",
+    "firebase": "^9.21.0",
     "firebase-cli": "^1.2.0",
     "firebase-tools": "^11.25.2",
-    "webpack": "^5.77.0",
+    "webpack": "^5.82.1",
     "webpack-cli": "^5.0.1"
   }
 }
