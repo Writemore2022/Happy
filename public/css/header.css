@@ -19,6 +19,10 @@
   } 
 }
 
+a {
+  color: black;
+}
+
 header {
   z-index: 2; /*요소의 깊이 설정 (양수: 위로 떠오르게, 음수: 밑으로 가라앉게)*/
   max-width: 1440px;
