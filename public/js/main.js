@@ -1,3 +1,8 @@
+/* main에 나오는 모임 정보 db/김준수 */
+/*글모 추천 모임, 자체 공간 보유 모임의 "변수명" 수정 필요!*/
+/*why? 목적을 명시적으로 나타내지 못함. */
+
+/*글로모여 추천 모임 정보*/
 const goodGroupImg1 = document.getElementById('good-group-img1');
 const goodGroupTitle1 = document.getElementById('good-group-title1');
 const goodGroupIntro1 = document.getElementById('good-group-intro1');
@@ -22,6 +27,7 @@ const goodGroupIntro4 = document.getElementById('good-group-intro4');
 const goodGroupLocation4 = document.getElementById('good-group-location4');
 const goodGroupCost4 = document.getElementById('good-group-cost4');
 
+/*자체 공간 보유 모임 정보*/
 const deadlineGroupImg1 = document.getElementById('deadline-group-img1');
 const deadlineGroupTitle1 = document.getElementById('deadline-group-title1');
 const deadlineGroupIntro1 = document.getElementById('deadline-group-intro1');
@@ -46,6 +52,7 @@ const deadlineGroupIntro4 = document.getElementById('deadline-group-intro4');
 const deadlineGroupLocation4 = document.getElementById('deadline-group-location4');
 const deadlineGroupCost4 = document.getElementById('deadline-group-cost4');
 
+/*지역 맞춤 모임 정보*/
 const locationGroupImg1 = document.getElementById('location-group-img1');
 const locationGroupTitle1 = document.getElementById('location-group-title1');
 const locationGroupIntro1 = document.getElementById('location-group-intro1');
@@ -70,6 +77,7 @@ const locationGroupIntro4 = document.getElementById('location-group-intro4');
 const locationGroupLocation4 = document.getElementById('location-group-location4');
 const locationGroupCost4 = document.getElementById('location-group-cost4');
 
+/*취향 맞춤 모임 정보*/
 const favorGroupImg1 = document.getElementById('favor-group-img1');
 const favorGroupTitle1 = document.getElementById('favor-group-title1');
 const favorGroupIntro1 = document.getElementById('favor-group-intro1');
@@ -97,16 +105,18 @@ const favorGroupCost4 = document.getElementById('favor-group-cost4');
 import { db } from './firebase.js';
 import { getDocs, query, where, collection } from 'firebase/firestore';
 
-const goodGroup = [];
-const deadlineGroup = [];
-const locationGroup = [];
-const favorGroup = [];
+const goodGroup = []; /*글로모여 추천 모임 배열*/
+const deadlineGroup = []; /*자체 공간 보유 모임 배열*/
+const locationGroup = []; /*지역 맞춤 모임 배열*/
+const favorGroup = []; /*취향 맞춤 모임 배열*/
 
-async function groupFirstSearch(option) {
+async function groupFirstSearch(option) { /* gFS 함수 */
   const targetGroup = await query(collection(db, 'group'), where('title', '==', option));
+  /* tG: title == option 조건을 충족하는 모임 db의 집합*/
   const targetSnap = await getDocs(targetGroup);
+  /* tS: tG의 db 가져오기 */
 
-  switch (option) {
+  switch (option) { /*option 조건에 속하는 모임 db 정보를 goodGroup에 넣기*/
     case '글바람':
       targetSnap.forEach((doc) => {
         goodGroup.push(doc.data());
@@ -137,11 +147,14 @@ async function groupFirstSearch(option) {
   }
 }
 
-async function groupTitleSearch(option) {
-  const targetGroup = await query(collection(db, 'group'), where('title', '==', option));
-  const targetSnap = await getDocs(targetGroup);
 
-  switch (option) {
+async function groupTitleSearch(option) { /* gTS 함수 */
+  const targetGroup = await query(collection(db, 'group'), where('title', '==', option));
+  /* tG: title == option 조건을 충족하는 모임 db의 집합*/
+  const targetSnap = await getDocs(targetGroup);
+  /* tS: tG의 db 가져오기 */
+
+  switch (option) { /*option 조건에 속하는 모임 db 정보를 dG에 넣기*/
     case '글바람':
       targetSnap.forEach((doc) => {
         deadlineGroup.push(doc.data());
@@ -172,28 +185,31 @@ async function groupTitleSearch(option) {
   }
 }
 
-async function groupLocationSearch(option) {
+async function groupLocationSearch(option) { /*gLS 함수*/
   const targetGroup = await query(collection(db, 'group'), where('location', '==', option));
+  /* tG: location == option 조건을 충족하는 모임 db의 집합*/
   const targetSnap = await getDocs(targetGroup);
+  /* tS: tG의 db 가져오기 */
 
-  switch (option) {
+
+  switch (option) { /*option 조건에 속하는 모임 db 정보 넣기*/
     case '미네르바의 부엉이':
       targetSnap.forEach((doc) => {
-        goodGroup.push(doc.data());
+        goodGroup.push(doc.data()); // goodGroup에 넣기
       });
 
       break;
 
     case '책방일지':
       targetSnap.forEach((doc) => {
-        favorGroup.push(doc.data());
+        favorGroup.push(doc.data()); // favorGroup에 넣기
       });
 
       break;
 
     case '책방다독':
       targetSnap.forEach((doc) => {
-        favorGroup.push(doc.data());
+        favorGroup.push(doc.data()); // favorGroup에 넣기
       });
 
       break;
@@ -202,19 +218,21 @@ async function groupLocationSearch(option) {
 
 async function groupClassSearch(option) {
   const targetGroup = await query(collection(db, 'group'), where('class', '==', option));
+   /* tG: class == option 조건을 충족하는 모임 db의 집합*/
   const targetSnap = await getDocs(targetGroup);
+  /* tS: tG의 db 가져오기 */
 
-  switch (option) {
+  switch (option) { /*option 조건에 속하는 모임 db 정보 넣기*/
     case '글쓰기':
       targetSnap.forEach((doc) => {
-        favorGroup.push(doc.data());
+        favorGroup.push(doc.data());  // favorGroup에 넣기
       });
 
       break;
 
     case '독서':
       targetSnap.forEach((doc) => {
-        locationGroup.push(doc.data());
+        locationGroup.push(doc.data()); // locationGroup에 넣기
       });
 
       break;
@@ -222,6 +240,9 @@ async function groupClassSearch(option) {
 }
 
 await groupLocationSearch('미네르바의 부엉이');
+/* "미네르바의 부엉이"에 해당하는 db 전부 가져오기 */
+/* 이를 바탕으로 한 배열 생성! -> 그 중 4개 보여주기 */
+/* 모임 사진, 제목, 소개, 장소, 비용 */
 
 goodGroupImg1.src = goodGroup[0].groupImage;
 goodGroupTitle1.innerHTML = goodGroup[0].title;
@@ -247,11 +268,13 @@ goodGroupIntro4.innerHTML = goodGroup[3].intro;
 goodGroupLocation4.innerHTML = '장소: ' + goodGroup[3].location;
 goodGroupCost4.innerHTML = goodGroup[3].cost;
 
+/* gTS 함수 실행 */
 await groupTitleSearch('글바람');
 await groupTitleSearch('정규모임 START');
 await groupTitleSearch('미네르바의 부엉이 - 시낭독모임');
 await groupTitleSearch('여우네 독서모임');
 
+/* 모임 사진, 제목, 소개, 장소, 비용 */
 deadlineGroupImg1.src = deadlineGroup[0].groupImage;
 deadlineGroupTitle1.innerHTML = deadlineGroup[0].title;
 deadlineGroupIntro1.innerHTML = deadlineGroup[0].intro;
@@ -276,8 +299,10 @@ deadlineGroupIntro4.innerHTML = deadlineGroup[3].intro;
 deadlineGroupLocation4.innerHTML = '장소: ' + deadlineGroup[3].location;
 deadlineGroupCost4.innerHTML = deadlineGroup[3].cost;
 
+// gCS 함수 실행 ~ 독서 class에 해당하는 db 넣기
 await groupClassSearch('독서');
 
+/* 모임 사진, 제목, 소개, 장소, 비용 */
 locationGroupImg1.src = locationGroup[0].groupImage;
 locationGroupTitle1.innerHTML = locationGroup[0].title;
 locationGroupIntro1.innerHTML = locationGroup[0].intro;
@@ -302,8 +327,10 @@ locationGroupIntro4.innerHTML = locationGroup[3].intro;
 locationGroupLocation4.innerHTML = '장소: ' + locationGroup[3].location;
 locationGroupCost4.innerHTML = locationGroup[3].cost;
 
-await groupClassSearch('글쓰기');
+/* gCS 함수 ~ 글쓰기 class에 해당하는 db 넣기*/
+await groupClassSearch('글쓰기'); 
 
+/* 모임 사진, 제목, 소개, 장소, 비용 */
 favorGroupImg1.src = favorGroup[0].groupImage;
 favorGroupTitle1.innerHTML = favorGroup[0].title;
 favorGroupIntro1.innerHTML = favorGroup[0].intro;
@@ -330,12 +357,16 @@ favorGroupCost4.innerHTML = favorGroup[3].cost;
 
 // 모임 상세페이지 이동 및 해당 모임 데이터 localStorage에 저장
 
-const groupCard = document.querySelectorAll('.group-info');
-console.log(groupCard[0].childNodes[5]);
+const groupCard = document.querySelectorAll('.group-info'); 
+// group-info 클래스에 해당하는 요소
+// category.js 요소와 함꼐 보기 (groupCard 존재)
+console.log(groupCard[0].childNodes[5]); 
+// groupCard 1st 요소의 6th 자식 요소
 
 for (let i = 0; i < groupCard.length; i++) {
-  groupCard[i].addEventListener('click', async () => {
+  groupCard[i].addEventListener('click', async () => { /* 클릭 */
     const targetGroupTitle = groupCard[i].childNodes[5].childNodes[1].textContent;
+    /* tGT: 해당 그룹카드 > 5번째 자식 노드 > 2번째 자식 요소 */
 
     const targetGroup = query(collection(db, 'group'), where('title', '==', targetGroupTitle));
     const targetSnap = await getDocs(targetGroup);
@@ -348,26 +379,25 @@ for (let i = 0; i < groupCard.length; i++) {
 }
 
 // feedback
-
 import { database } from './firebase';
 import { ref, set } from 'firebase/database';
 
-const feedback = document.querySelector('#feedback');
-const submitBtn = document.querySelector('#submitFeedback');
+const feedback = document.querySelector('#feedback'); // id == feedback 요소 선택
+const submitBtn = document.querySelector('#submitFeedback'); // id == submitFeedback 요소 선택
 
 submitBtn.addEventListener('click', () => {
   const now = new Date();
 
-  const feedbackText = JSON.stringify(feedback.value);
+  const feedbackText = JSON.stringify(feedback.value); // feedback 값을 문자열로 바꾸기
 
-  if (feedback.value != '') {
+  if (feedback.value != '') {  // feedback 값이 공백이 아닐 때
     try {
-      storeFeedback(now, feedbackText);
+      storeFeedback(now, feedbackText); // db에 feedback 콘텐츠 저장
     } catch (error) {
       console.error(error);
     }
 
-    feedback.value = '';
+    feedback.value = ''; // feedback 값이 공백
     alert('소중한 의견 감사합니다!');
   }
 });
