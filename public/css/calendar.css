@@ -1,4 +1,7 @@
-@media (max-width: 930px) { /*0~930*/
+/* 현재 사용하지 않는 css 파일입니다.
+추후 사용하게 된다면 수정, 주석 처리 할 파일입니다.*/
+
+@media (max-width: 930px) { /* 0 ~ 930px 일 경우*/
 
   .calendar_page{
     position: relative;

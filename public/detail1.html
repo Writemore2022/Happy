@@ -1,3 +1,5 @@
+<!-- 상세페이지/장지혜 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,28 +25,21 @@
     <meta name="theme-color" content="#ffffff" />
 
     <title>글로모여</title>
-
     <link rel="stylesheet" href="./css/detail1.css" />
     <link rel="stylesheet" href="./css/header.css" />
-    <!--달력-->
-    <link rel="stylesheet" href="./css/calendar.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/calendar.js"></script>
-    <script src="https://kit.fontawesome.com/0bc54cb32d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- 헤더 : 준수 -->
+    <!-- 헤더 / 준수 -->
     <nav>
-      <div class="nav-links">
+      <div class="nav-links"> <!--더보기 버튼-->
         <a href="./introduce.html" class="link">글로모여 소개</a>
-        <!-- <a href="" class="link">후기</a> -->
         <a href="./signup.html" class="link">로그인</a>
         <a class="link" id="menuClose">뒤로가기</a>
       </div>
     </nav>
     <header>
-      <div class="header-nav">
-        <div class="header-left">
+      <div class="header-nav"> <!--헤더-->
+        <div class="header-left"> <!--헤더 왼쪽 (로고, 글로모여 소개 페이지 이동)-->
           <img
             src="./assets/images/logo.png"
             width="180px"
@@ -52,48 +47,45 @@
             onclick="location.href='./main.html'"
           />
           <a href="./introduce.html">글로모여 소개</a>
-          <!-- <a>모임 등록하기</a> -->
-          <!-- <a>후기</a> -->
         </div>
-        <div class="header-right">
+        <div class="header-right"> <!--헤더 오른쪽(로그인)-->
           <a class="login" href="./signup.html">로그인</a>
           <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
         </div>
       </div>
     </header>
-    <!--상세페이지 : 짱졔-->
+    <!--상세페이지 / 짱졔-->
     <!-- 1. 모임 사진, 모임 이름, 한 줄 소개-->
-    <!-- 2. 모임 기본 규칙 (공통 적용되는)
-      3. 모임 소개 (디테일하게)
-      4. 호스트 소개
-      5. 모임 진행 방식
-      6. 신청/참여 기간 (달력 넣기, 금액 기재, 신청기간, 참여기간 표시) - 색으로 구분?
-      7. 해시태그 3개  -->
-    <div class="detail-page">
-      <img src="./assets/images/groupImages/group_test5.jpg" alt="group-img" class="g-img" />
-      <span class="g-name">미네르바의 부엉이 - 토요모임</span>
-      <span class="g-intro">
+    <!-- 2. 해시태그 3개
+      3. 호스트 소개 ( 호스트 이름, 사진, 소개)
+      4. 모임 일정
+      5. 모임 소개
+      6. 모임 세부사항 (모임 인원, 모임 형태, 참가비)
+      7. 신청/참여 기간(달력 넣기, 금액 기재, 신청기간, 참여기간 표시) - 색으로 구분 (구현 아직 안 됨)-->
+    <div class="detail-page"> <!--헤더를 제외한 상세페이지-->
+      <img src="./assets/images/groupImages/group_test5.jpg" alt="group-img" class="g-img" /> <!--모임 사진-->
+      <span class="g-name">미네르바의 부엉이 - 토요모임</span> <!--모임 이름/제목-->
+      <span class="g-intro"> <!--모임 소개-->
         소통과 이해, 수용을 위한 구체적 작업을 하기 위해 도서를 읽거나 롤플레이
       </span>
       <div class="address-area">
-        <!--위치 아이콘 넣기: 폰트어썸으로-->
-        <span class="g-address">
-          <i class="fas fa-solid fa-map-pin" style="color: gray"> </i>
+        <span class="g-address"> <!--모임 장소-->
+          <i class="fas fa-solid fa-map-pin" style="color: gray"> </i> <!--마킹 아이콘-->
           서울특별시 강동구 암사동
         </span>
       </div>
-      <div class="hashtag">
-        <span id="g-purpose">#취미</span>
-        <span id="g-ganre">#문학</span>
-        <span id="g-mood">#자기계발</span>
+      <div class="hashtag"> <!--해시태그-->
+        <span id="g-purpose">#취미</span> <!--목적-->
+        <span id="g-ganre">#문학</span> <!--장르-->
+       <span id="g-mood">#자기계발</span> <!--분위기-->
       </div>
-      <div class="host-page">
-        <div class="host-left">
+      <div class="host-page"> <!--모임장 소개 페이지-->
+        <div class="host-left"> <!--모임장 왼쪽(모임장 프로필사진 ~ 클릭 시 모임장 페이지 이동)-->
           <a href="#">
             <img id="host-img" alt="host-img" class="host-img" />
           </a>
         </div>
-        <div class="host-right">
+        <div class="host-right"> <!--모임장 오른쪽 (이름(닉네임), 소개, sns)-->
           <div class="host-name">
             <span>호스트</span>
             <span><a href="#" id="host-name"></a></span>
@@ -104,80 +96,8 @@
           </div>
         </div>
       </div>
-      <div class="rule">
-        <!-- <div>모임 규칙</div>
-            <div>
-                <i class="fas fa-solid fa-bullhorn" style="color: gray"></i>
-                1. 서로의 글을 비난하지 말아요.<br>
-                2. 서로의 글에 주의를 기울이고 존중해요.<br>
-                3. 진실된 글을 쓰기 위해 노력해요.
-            </div> -->
 
-        <!--달력-->
-        <!-- <a href="calendar.html"><button class="reservation_btn">예약하기</button></a> 달력 넘어가기 -->
-        <!--달력-->
-        <!-- <div class="res">방문 일정</div> -->
-
-        <!-- <div class="calendar_page">
-                <div id="cal_left">
-                    <div class="cal">
-                        <div class="sec_cal">
-                            <div class="cal_nav">
-                              <a href="javascript:;" class="nav-btn go-prev">prev</a>
-                              <div class="year-month"></div>
-                              <a href="javascript:;" class="nav-btn go-next">next</a>
-                            </div>
-                            <div class="cal_wrap">
-                              <div class="days">
-                                <div class="day">SUN</div>
-                                <div class="day">MON</div>
-                                <div class="day">TUE</div>
-                                <div class="day">WED</div>
-                                <div class="day">THU</div>
-                                <div class="day">FRI</div>
-                                <div class="day">SAT</div>
-                              </div>
-                              <div class="dates"></div>
-                            </div>
-                          </div>
-                    </div> -->
-
-        <!-- <div class="cal_request">
-                        <button>희망 일정 요청하기</button>
-                    </div> -->
-        <!-- <div class="cal_state">
-                        <ul id="gnb">
-                            <li>💖 선택 가능</li>
-                            <li>🤍 종료된 모임</li>
-                            <li>🖤 선택 불가</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="cal_right"> 
-                    <div class="cal_grid">
-                        <div class="cal_notice"> 예약 디테일 창
-                            📢 <b>모임 참여 시, 기본 사항을 준수해주세요.</b><br>
-                            1. 의견을 존중하고 귀 기울여주세요. 비난하지 않아요.<br>
-                            2. 시간 약속을 꼭 지켜주세요. 다른 사람의 시간도 내 시간만큼 소중해요.
-                        </div>
-                        <div class="cal_plan">
-                            <div class="plan_detail">
-                                <span> <b>오후 6시</b> </span>
-                                <span> 49000원 </span>
-                                <span> | </span>
-                                <span> 10명 초대 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cal_btn">
-                        <button id="cal_btn" onclick="cal_btn()">신청 예약하기</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-      </div>
-
-      <div class="res-table">
+      <div class="res-table"> <!--모임 일정-->
         <h2>모임 일정</h2>
         <div class="res-day">
           <h3>요일</h3>
@@ -193,23 +113,17 @@
           <h3>시간</h3>
           <div class="time-block">
             <div class="ap">
-              <!--am/pm-->
               <span>오후</span>
               <span>오전</span>
             </div>
-            <div class="time">
+            <div class="time"> <!--모임 시간-->
               <span id="start-time"></span>
               <span id="end-time"></span>
             </div>
           </div>
         </div>
       </div>
-      <div class="group-contents">
-        <!-- <ul id="g-list">
-                <li id="list1">모임 소개</li>
-                <li id="list2">진행 안내</li>
-                <li id="list3">공간 소개</li>
-            </ul> -->
+      <div class="group-contents"> <!--모임 전반 소개-->
         <div class="g-story intro">
           <h2>모임 소개</h2>
           <div id="g-content">
@@ -226,8 +140,8 @@
             내 글을 쓰다보니 다른 사람의 생각도 궁금해진 사람<br />
           </div>
         </div>
-        <div class="g-target"></div>
-        <div class="g-story detail">
+        <div class="g-target"></div> <!--대상-->
+        <div class="g-story detail"> <!--모임 세부 사항-->
           <h2 id="g-detail">모임 세부 사항</h2>
           <div id="g-detail-contents">
             <ul id="gnb">
@@ -252,14 +166,5 @@
         </div>
       </div>
     </div>
-    <!-- <script src="./js/detailGroupInfo.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js"></script>
-    <script type="module" src="./js/detail.js"></script>
-    <script src="./js/sidemenu.js"></script>
-    <script>
-      function cal_btn() {
-        alert('예약하기, 준비 중입니다.');
-      }
-    </script>
   </body>
 </html>

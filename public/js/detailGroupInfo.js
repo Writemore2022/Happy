@@ -1,3 +1,6 @@
+/* 모임정보 DB/장지혜 */
+/* TestFile입니다. (구버전) */
+
 let li_1 = document.getElementById("list1");
 let li_2 = document.getElementById("list2");
 // let li_3 = document.getElementById("list3");

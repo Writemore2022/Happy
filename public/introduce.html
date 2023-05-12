@@ -33,11 +33,13 @@
     <link rel="stylesheet" href="./css/header.css" />
 
     <style>
+      /*글씨체: 제주명조*/
       @font-face {
         font-family: 'JejuMyoungjo';
         src: url('./assets/fonts/JejuMyeongjo.ttf');
       }
 
+      /*미디어쿼리: 반응형 웹 제작 ~ 디바이스에 따라 다르게 보이도록 설정*/
       @media (max-width: 1140px) {
         body {
           margin: 0 1rem;
@@ -79,14 +81,13 @@
   </head>
   <body>
     <nav>
-      <div class="nav-links">
+      <div class="nav-links"> <!--더보기 버튼-->
         <a href="./introduce.html" class="link">글로모여 소개</a>
-        <!-- <a href="" class="link">후기</a> -->
         <a href="./login.html" class="link">로그인</a>
         <a class="link" id="menuClose">뒤로가기</a>
       </div>
     </nav>
-    <header>
+    <header> <!--헤더-->
       <div class="header-nav">
         <div class="header-left">
           <img
@@ -96,8 +97,6 @@
             onclick="location.href='./main.html'"
           />
           <a>글로모여 소개</a>
-          <!-- <a>모임 등록하기</a> -->
-          <!-- <a>후기</a> -->
         </div>
         <div class="header-right">
           <a class="login" href="./login.html">로그인</a>
@@ -106,7 +105,7 @@
       </div>
     </header>
     <main>
-      <div class="introduceBox">
+      <div class="introduceBox"> <!--이미지로 글로모여 소개 게시-->
         <img src="./assets/images/introduce.png" class="introduceImg" />
       </div>
     </main>

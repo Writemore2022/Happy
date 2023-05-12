@@ -1,3 +1,5 @@
+// Webpack 설치로 인한 자동 bundle 파일입니다.
+
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.

@@ -1,3 +1,5 @@
+/* detail.css/장지혜 */
+
 /* 반응형 css */
 @media (max-width: 880px) {
   body {
@@ -45,7 +47,7 @@
   margin: 0;
   padding: 0;
   font-family: 'JejuMyoungjo';
-  list-style: none;
+  list-style: none; 
   text-decoration: none;
 }
 
@@ -53,7 +55,8 @@
 body {
   height: auto;
   padding-bottom: 80px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 /* 상세페이지 */
@@ -61,13 +64,14 @@ body {
   text-align: left;
   margin-left: 17%;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 .g-img {
   width: 80%;
   height: 350px;
   object-fit: cover;
-  /* margin-left: 10%; */
+  /* 이미지의 가로/세로 비 유지, 요소 콘텐츠 박스 가득 채움 */
 }
 
 .g-name {
@@ -79,9 +83,8 @@ body {
   box-sizing: border-box;
   margin-bottom: 10px;
 
-  font-size: 1.6em;
+  font-size: 1.6em; /* em: 해당 요소의 font-size에 대한 상대적 크기 */
   font-weight: 600;
-  /* background-color: yellow; */
 }
 
 .g-intro {
@@ -90,9 +93,7 @@ body {
   height: auto;
 
   margin-bottom: 10px;
-
-  font-size: 1.1em;
-  /* background-color: rgb(141, 216, 141); */
+  font-size: 1.1em;/* em: 해당 요소의 font-size에 대한 상대적 크기 */
 }
 
 .g-address {
@@ -102,15 +103,13 @@ body {
 
   padding-top: 10px;
   box-sizing: border-box;
-
-  /* background-color: aqua; */
+  /*padding값이 존재해도 원래 크기 고정*/
   border-top: 0.5px solid gray;
 }
 
 .hashtag {
   width: 80%;
   height: 30px;
-  /* background-color: aquamarine; */
 }
 
 .hashtag > span {
@@ -120,14 +119,13 @@ body {
   height: 25px;
 
   color: orange;
-  /* font-weight: 600; */
-  /* background-color: orange; */
   border-radius: 50px;
   box-shadow: 0 0 1.5px gray;
 
   padding: 5px;
   margin-right: 10px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 .host-page {
@@ -142,7 +140,6 @@ body {
 .host-left {
   width: 20%;
   height: 100%;
-  /* background-color: lightcoral; */
   float: left;
 }
 
@@ -150,17 +147,16 @@ body {
   display: block;
   width: 90%;
   height: 95%;
-  /* background-color: aliceblue; */
   margin-left: 10%;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 .host-img {
   width: 80%;
-  /* height: 100%; */
   border-radius: 100%;
   border: solid 2px ivory;
-  box-shadow: 0 0 4px gray;
+  box-shadow: 0 0 4px gray; /* 그림자 설정 */
 
   aspect-ratio: 1/1; /* 화면 작아져도 고정 비율 유지 (1:1)*/
 }
@@ -170,14 +166,13 @@ body {
   height: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  box-sizing: border-box;
-  /* background-color: lightgray; */
+  box-sizing: border-box; 
+ /*padding값이 존재해도 원래 크기 고정*/
   float: left;
 }
 
 .host-name {
   height: 30%;
-  /* background-color: lightskyblue; */
 }
 
 .host-name > span:first-child {
@@ -185,41 +180,35 @@ body {
   height: 50%;
   padding-top: 7px;
   box-sizing: border-box;
-
-  font-size: 0.8em;
+  /*padding값이 존재해도 원래 크기 고정*/
+  font-size: 0.8em; /* em: 해당 요소의 font-size에 대한 상대적 크기 */
   color: gray;
-  /* background-color: thistle; */
 }
 
 .host-name > span:last-child > a {
   display: block;
   height: 50%;
-
-  font-size: 1em;
+  font-size: 1em; /* em: 해당 요소의 font-size에 대한 상대적 크기 */
   font-weight: 600;
   color: black;
-  /* background-color: violet; */
 }
 
 .host-intro {
   height: auto;
-  /* background-color: lightgoldenrodyellow; */
-
-  font-size: 0.9rem;
+  font-size: 0.9rem; /* rem: html 전체에 지정한 font-size에 대한 상대적 크기 */
   color: gray;
   padding-bottom: 5px;
   box-sizing: border-box;
-
+  /*padding값이 존재해도 원래 크기 고정*/
   line-height: 150%;
 }
 
 .host-sns {
   height: auto;
   color: gray;
-  /* background-color: aliceblue; */
 }
 
-.rule::before {
+.rule::before { /* before: 요소 앞(전)에 가상요소 삽입 */
   color: gray;
 }
 
@@ -228,28 +217,26 @@ body {
   height: auto;
 
   margin-top: 50px;
-  /* background-color: lightcyan; */
 }
 
 .rule > div:first-child {
   height: 50px;
   font-weight: bold;
-  font-size: 1.5em;
-
+  font-size: 1.5em; /* em: 해당 요소의 font-size에 대한 상대적 크기 */
   padding-top: 12px;
   box-sizing: border-box;
-  /* background-color: lightseagreen; */
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 .rule > div:nth-child(2) {
   height: auto;
   line-height: 150%;
-  font-size: 0.9em;
+  font-size: 0.9em; /* em: 해당 요소의 font-size에 대한 상대적 크기 */
 
   padding: 15px 7px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
   background-color: rgb(243, 241, 241);
-  /* background-color: violet; */
 }
 
 .reservation_btn {
@@ -258,6 +245,7 @@ body {
   height: 30px;
   margin-top: 10px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
   border: none;
 }
 
@@ -272,48 +260,16 @@ body {
 
   margin-top: 50px;
   box-sizing: border-box;
-  /* background-color: rgb(243, 241, 241); */
+  /*padding값이 존재해도 원래 크기 고정*/
 }
-
-/* #g-list{
-    width: 100%;
-    height: 50px;
-
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: red;
-    border-bottom: 1px solid gray;
-  }
-
-  #g-list>li{ 
-    display: block;
-    width: 80px;
-    height: 39px;
-
-    float: left;
-    margin-right: 20px;
-    padding-top: 7px;
-    padding-left: 10px;
-    box-sizing: border-box;
-
-    font-size: 1.1em;
-
-    background-color: lightcyan;
-  }
-
-  #g-list>li:hover{
-    font-weight: bold;
-    border-bottom: 2px solid black;
-  } */
 
 .res-table {
   width: 100%;
   height: auto;
   padding: 10px;
   box-sizing: border-box;
-  line-height: 200%;
-
-  /* background-color: antiquewhite; */
+  /*padding값이 존재해도 원래 크기 고정*/
+  line-height: 200%; /* 줄 높이 */
 }
 
 .res-table > h2 {
@@ -321,21 +277,18 @@ body {
   padding-left: 0px;
   padding-bottom: 15px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
   color: orange;
-  /* color: #000000; */
 }
 
 .res-table h3 {
-  /* color: rgb(199, 130, 4); */
   color: #000000;
-  /* color: orange; */
   padding-bottom: 10px;
 }
 
 .res-day {
   width: 48%;
   height: 100px;
-  /* background-color: red; */
 }
 
 .day,
@@ -344,7 +297,6 @@ body {
   height: 35px;
   background-color: rgb(243, 241, 241);
   float: left;
-  /* box-shadow: 0 0 4px gray; */
 
   padding-top: 2px;
   margin-right: 10px;
@@ -354,10 +306,8 @@ body {
 }
 
 .res-time {
-  /* float: left; */
   width: 48%;
   height: 50px;
-  /* background-color: yellow; */
 }
 
 .time-block {
@@ -365,14 +315,12 @@ body {
   height: 35px;
   background-color: rgb(243, 241, 241);
   border-radius: 10px;
-  /* text-align: center; */
 }
 
 .ap {
   float: left;
   width: 30%;
   height: 100%;
-  /* background-color: lightblue; */
   text-align: center;
 }
 
@@ -385,14 +333,12 @@ body {
   width: 70%;
   height: 100%;
   text-align: center;
-  /* width: 150px;
-    height: 100%;
-    background-color: green; */
 }
 
 .g-story {
   padding: 10px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
   line-height: 200%;
 }
 
@@ -401,13 +347,14 @@ body {
   padding-left: 0px;
   padding-bottom: 15px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
   color: orange;
-  /* color: #000000; */
 }
 
 .g-target {
   padding: 10px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
   line-height: 200%;
 }
 
@@ -416,19 +363,17 @@ body {
   padding-left: 0px;
   padding-bottom: 15px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
   color: orange;
-  /* color: #000000; */
 }
 
 #g-detail-contents > #gnb > li {
-  /* color: rgb(199, 130, 4); */
   color: #000000;
-  /* color: orange; */
 }
 
 #g-detail-contents > #gnb > li > div {
   color: black;
-  line-height: 200%;
+  line-height: 200%; /* 줄 높이*/
 }
 
 .r-day {

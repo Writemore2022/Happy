@@ -1,3 +1,6 @@
+/* 달력/장지혜 */
+/* 현재 페이지엔 없는 부분입니다. 추후 필요할 시, 사용할 예정입니다. */
+
 $(document).ready(function () {
   calendarInit();
 });

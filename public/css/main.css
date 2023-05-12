@@ -1,24 +1,26 @@
-<<<<<<< HEAD
+/* main.css/김준수, 장지혜 */
+
 /* 반응형 css */
-@media (max-width: 720px) {
+@media (max-width: 720px) { /* 0~720px */
   .main-top {
-    flex-direction: column;
+    flex-direction: column; /*아이템을 열(세로)방향으로 배치*/
   }
 }
 
 @media (max-width: 1140px) {
   body {
-    margin: 0 1rem;
+    margin: 0 1rem; /* rem: html 전체에 지정한 font-size에 대한 상대적 크기 */
   }
   .group-info {
     width: 45%;
   }
   .group-container {
-    justify-content: space-around;
+    justify-content: space-around; 
+    /* 아이템들의 "둘레(around)"에 균일한 간격 제공*/
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1140px) { /* 0~1140px */
   body {
     margin: 0 10%;
   }
@@ -29,7 +31,8 @@
     width: 100%;
   }
   .group-container {
-    justify-content: space-between;
+    justify-content: space-between; 
+    /* 아이템들의 "사이(between)" 균일한 간격 제공*/
   }
 }
 
@@ -50,20 +53,21 @@
   width: 100%;
   height: 250px;
   object-fit: contain;
+  /*콘텐츠의 가로/세로 비 유지, 요소의 콘텐츠 박스 내부에 들어가도록 크기 조정*/
 }
 
 .main-top {
   display: flex;
   justify-content: space-between;
+  /* 아이템들의 "사이(between)" 균일한 간격 제공*/
 }
 
 /* 피드백 폼 */
-
 .feedback-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /*수직 축 정렬*/
+  justify-content: center; /*수평 축 정렬*/
   text-align: center;
   margin-top: 20px;
   padding: 20px;
@@ -80,7 +84,7 @@
   margin: 20px;
   width: 75%;
   height: 50%;
-  border-radius: 70px;
+  border-radius: 70px; /*모서리 둥근 정도*/
   border: 3px solid antiquewhite;
   padding: 40px;
 }
@@ -94,13 +98,13 @@
   font-size: 15px;
   box-shadow: 3px 3px 3px khaki, -3px -3px 3px #ffaa40;
   background-color: white;
-  transition: 0.3s;
+  transition: 0.3s; /*애니메이션 효과*/
   font-size: 14px;
 }
 
-.submit-btn:hover {
+.submit-btn:hover { /*hover: 마우스 올렸을 때*/
   box-shadow: -3px -3px 3px white, 3px 3px 3px white;
-  transition: 0.3s;
+  transition: 0.3s; /*애니메이션 효과*/
   cursor: pointer;
 }
 
@@ -118,12 +122,13 @@
 
 .category-list {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: wrap; /* 컨테이너가 더 이상 아이템을 한 줄에 못 담을 때, 아이템 줄바꿈 */
+  flex-direction: row; /* 아이템 가로 배치 (->) */
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  /* rem: html 전체에 지정한 font-size에 대한 상대적 크기 */
 }
 
 .category-list > a,
@@ -132,16 +137,15 @@
   padding: 0.6rem;
   font-weight: bold;
   color: grey;
-  cursor: pointer;
+  cursor: pointer; /*커서: 포인터 모양*/
 }
 
-.category-list > a:hover {
+.category-list > a:hover { /*hover: 마우스 올렸을 때*/
   color: orange;
 }
 
 /*모임 정보 : 짱졔*/
 .group-wrap {
-  /* background-color: beige; */
   margin-top: 90px;
   box-sizing: border-box;
 }
@@ -157,13 +161,13 @@
 
   padding-left: 10px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 .group-wrap > div {
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  cursor: pointer;
+  flex-direction: row; /* 아이템 가로 배치 (->) */
+  cursor: pointer; /*커서: 포인터 모양*/
 }
 
 .group-wrap > div > p {
@@ -171,7 +175,7 @@
 
   font-size: 14px;
   font-weight: 600;
-  font-stretch: normal;
+  font-stretch: normal; /*글자 폭 설정*/
   font-style: normal;
   line-height: 1.5;
   text-align: left;
@@ -180,6 +184,7 @@
   margin-top: 10px;
   padding-left: 10px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 .group-wrap > div > a {
@@ -187,7 +192,7 @@
 
   font-size: 14px;
   font-weight: 600;
-  font-stretch: normal;
+  font-stretch: normal; /*글자 폭 설정*/
   font-style: normal;
   line-height: 1.5;
   text-align: left;
@@ -196,290 +201,48 @@
   margin-top: 10px;
   padding-right: 10px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 .group-container {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: gray; */
   margin-top: 20px;
   box-sizing: border-box;
+  /*padding값이 존재해도 원래 크기 고정*/
 }
 
 .group-img {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  /*콘텐츠의 가로/ㄴ세로비를 유지하면서, 요소 콘텐츠 박스를 가득 채움*/
 }
 
-.group-info {
-  /* background-color: lightpink; */
-}
-
-.group-details > div {
+.group-details > div { /*모임 세부 사항 전체 div*/
   width: 95%;
   height: 30px;
   margin: 5px;
-  box-sizing: border-box;
+  box-sizing: border-box; /*padding값이 존재해도 원래 크기 고정*/
   font-size: 0.8rem;
+  /* rem: html 전체에 지정한 font-size에 대한 상대적 크기 */
 }
 
-.group-details > div:first-child {
+.group-details > div:first-child { /*모임 제목 항목*/
   width: 95%;
   padding-top: 5px;
   height: 50px;
   font-size: 1.2rem;
+  /* rem: html 전체에 지정한 font-size에 대한 상대적 크기 */
 }
 
-.group-details > div:nth-child(2) {
+.group-details > div:nth-child(2) { /*모임 한 줄 소개 항목*/
   border-bottom: 1px gray solid;
   height: 50px;
 }
 
-.group-details > div:nth-child(3) {
+.group-details > div:nth-child(3) { /* 모임 장소 항목 */
   padding-top: 5px;
   box-sizing: border-box;
+  /* rem: html 전체에 지정한 font-size에 대한 상대적 크기 */
 }
-=======
-/* 반응형 css */
-@media (max-width: 720px) {
-  .main-top {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 1140px) {
-  body {
-    margin: 0 1rem;
-  }
-  .group-info {
-    width: 45%;
-  }
-  .group-container {
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: 1140px) {
-  body {
-    margin: 0 10%;
-  }
-  .group-info {
-    width: 24%;
-  }
-  .header {
-    width: 100%;
-  }
-  .group-container {
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
-    margin: 0 15%;
-  }
-}
-
-@media (min-width: 1920px) {
-  body {
-    margin: 0 20%;
-  }
-}
-
-/* 상단 배너 */
-.top-banner {
-  width: 100%;
-  height: 250px;
-  object-fit: contain;
-}
-
-.main-top {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* 피드백 폼 */
-
-.feedback-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20px;
-  padding: 20px;
-}
-
-.form-title {
-  color: #ffaa40;
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.form-input {
-  margin: 20px;
-  width: 75%;
-  height: 50%;
-  border-radius: 70px;
-  border: 3px solid antiquewhite;
-  padding: 40px;
-}
-
-.submit-btn {
-  border: none;
-  outline: none;
-  width: 150px;
-  height: 30px;
-  border-radius: 100px;
-  font-size: 15px;
-  box-shadow: 3px 3px 3px khaki, -3px -3px 3px #ffaa40;
-  background-color: white;
-  transition: 0.3s;
-  font-size: 14px;
-}
-
-.submit-btn:hover {
-  box-shadow: -3px -3px 3px white, 3px 3px 3px white;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-/* 카테고리 */
-.category {
-  margin-top: 20px;
-  padding: 20px;
-  padding-bottom: 0;
-}
-
-.category-title {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.category-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.category-list > a,
-.category-list > div {
-  font-size: 14px;
-  padding: 0.6rem;
-  font-weight: bold;
-  color: grey;
-  cursor: pointer;
-}
-
-.category-list > a:hover {
-  color: orange;
-}
-
-/*모임 정보 : 짱졔*/
-.group-wrap {
-  /* background-color: beige; */
-  margin-top: 90px;
-  box-sizing: border-box;
-}
-
-.group-wrap > h1 > a {
-  display: block;
-  width: 100%;
-
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.46;
-  text-align: left;
-
-  padding-left: 10px;
-  box-sizing: border-box;
-}
-
-.group-wrap > div {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  cursor: pointer;
-}
-
-.group-wrap > div > p {
-  display: block;
-
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  text-align: left;
-  color: #9e9e9e;
-
-  margin-top: 10px;
-  padding-left: 10px;
-  box-sizing: border-box;
-}
-
-.group-wrap > div > a {
-  display: block;
-
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  text-align: left;
-  color: #9e9e9e;
-
-  margin-top: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
-}
-
-.group-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* background-color: gray; */
-  margin-top: 20px;
-  box-sizing: border-box;
-}
-
-.group-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.group-info {
-  /* background-color: lightpink; */
-}
-
-.group-details > div {
-  width: 95%;
-  height: 30px;
-  margin: 5px;
-  box-sizing: border-box;
-  font-size: 0.8rem;
-}
-
-.group-details > div:first-child {
-  width: 95%;
-  padding-top: 5px;
-  height: 50px;
-  font-size: 1.2rem;
-}
-
-.group-details > div:nth-child(2) {
-  border-bottom: 1px gray solid;
-  height: 50px;
-}
-
-.group-details > div:nth-child(3) {
-  padding-top: 5px;
-  box-sizing: border-box;
-}
->>>>>>> 5c4c733fd84ff48fb0be961611b8626ffd1f8426

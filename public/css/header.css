@@ -1,27 +1,30 @@
-@media (max-width: 1140px) {
+/* 헤더 css/김준수 */
+
+/* 반응형 웹 */
+@media (max-width: 1140px) { /* 0~1140px */
   .header-left > a {
-    display: none;
+    display: none; /* 안보이게 만듦.*/
   }
   .header-right > a {
-    display: none;
+    display: none; /* 안보이게 만듦.*/
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1140px) { /* 1140px ~ */
   nav {
-    display: none;
+    display: none; /* 안보이게 만듦.*/
   }
   .menu-icon {
-    display: none;
-  }
+    display: none; /* 안보이게 만듦.*/
+  } 
 }
 
 header {
-  z-index: 2;
+  z-index: 2; /*요소의 깊이 설정 (양수: 위로 떠오르게, 음수: 밑으로 가라앉게)*/
   max-width: 1440px;
-  position: sticky;
+  position: sticky; /*스크롤 위치가 임계점에 이르면 박스를 화면에 고정*/
   display: flex;
-  align-items: center;
+  align-items: center; /*수직 축 정렬*/
   top: 0;
   height: 72px;
   background-color: white;
@@ -32,42 +35,48 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* 아이템들의 "사이(between)" 균일한 간격 제공*/
+  align-items: center; /*수직 축 정렬*/
 }
 
 .header-left {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: row; /* 아이템 가로 배치 (->) */
+  align-items: center; /*수직 축 정렬*/
 }
 
 .header-right {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: row; /* 아이템 가로 배치 (->) */
+  align-items: center; /*수직 축 정렬*/
   margin: 0 20px;
 }
 
 .header-left > a,
 .header-right > a {
   padding: 0 10px;
-  cursor: pointer;
-  font-size: 0.9rem;
+  cursor: pointer; /*커서: 포인터 모양*/
+  font-size: 0.9rem; 
+  /* rem: html 전체에 지정한 font-size에 대한 상대적 크기 */
 }
 
 .logo {
   object-fit: contain;
+   /*콘텐츠의 가로/세로 비 유지, 요소의 콘텐츠 박스 내부에 들어가도록 크기 조정*/
   cursor: pointer;
 }
 
 nav {
   display: none;
-  position: fixed;
+  position: fixed; /*요소 고정*/
   width: 100%;
   height: 100%;
-  align-items: center;
-  overflow: hidden;
+  align-items: center; /* 수직 축 정렬 */
+  overflow: hidden; /*요소를 넘친 콘텐츠는 숨김*/
   transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
+  /*애니메이션 - 베지어 곡선: 부드러운 곡선 모델링
+    파라미터 4개 사용 */
+
 }
 
 .nav-links {
@@ -76,36 +85,41 @@ nav {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
+  flex-direction: column; /* 아이템 세로 배치 */
+  align-items: center; /* 수직 축 정렬 */
+  justify-content: center; /* 수평 축 정렬 */
+  opacity: 0; /*완전 투명*/
   transition: all 500ms cubic-bezier(0.9, 0, 0.33, 1);
+  /*애니메이션 - 베지어 곡선: 부드러운 곡선 모델링
+    파라미터 4개 사용 */
 }
 
 .nav-links.fade-in {
-  opacity: 1;
-  transform: translateX(-10px);
+  opacity: 1; /*투명도: 1(기본값 - 불투명)*/
+  transform: translateX(-10px); /*요소의 표시 위치 이동 (X축 이동)*/
   background-color: white;
 }
 
 .link {
   margin: 20px 0;
-  text-decoration: none;
+  text-decoration: none; /*하이퍼링크 밑줄 없애기*/
   font-family: sans-serif;
   color: rgba(0, 0, 0, 0.9);
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: uppercase; /*텍스트 대문자로 바꾸기*/
   font-size: 1.2rem;
+  /* rem: html 전체에 지정한 font-size에 대한 상대적 크기 */
   transition: all 500ms cubic-bezier(0.9, 0, 0.33, 1);
-  cursor: pointer;
+  /*애니메이션 - 베지어 곡선: 부드러운 곡선 모델링
+    파라미터 4개 사용 */
+  cursor: pointer; /*커서: 포인터 모양*/
 }
 
 .menu-icon {
   padding: 0;
   width: 25px;
-  cursor: pointer;
-  z-index: 2;
+  cursor: pointer; /*커서: 포인터 모양*/
+  z-index: 2; /*요소의 깊이 설정 (양수: 위로 떠오르게, 음수: 밑으로 가라앉게)*/
 }
 
 .login {
