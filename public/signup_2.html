@@ -98,7 +98,7 @@
         import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
 
         const auth = getAuth();
-        <!--예외 처리-->
+        // 예외 처리
         document.getElementById('signUpButton').addEventListener('click', (event) => {
             event.preventDefault()
             const signUpEmail = document.getElementById('signUpEmail').value
