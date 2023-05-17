@@ -366,7 +366,7 @@ console.log(groupCard[0].childNodes[5]);
 for (let i = 0; i < groupCard.length; i++) {
   groupCard[i].addEventListener('click', async () => { /* 클릭 */
     const targetGroupTitle = groupCard[i].childNodes[5].childNodes[1].textContent;
-    /* tGT: 해당 그룹카드 > 5번째 자식 노드 > 2번째 자식 요소 */
+    /* tGT: 해당 그룹카드 > 6번째 자식 노드 > 2번째 자식 요소 */
 
     const targetGroup = query(collection(db, 'group'), where('title', '==', targetGroupTitle));
     const targetSnap = await getDocs(targetGroup);
