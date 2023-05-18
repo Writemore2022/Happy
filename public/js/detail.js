@@ -31,6 +31,8 @@ const receiveGroupInfo = JSON.parse(localStorage.getItem('targetGroupInfo'));
 
 /*모임이미지 X -> test이미지 사용. 모임이미지 O -> 데이터에 존재하는 이미지 받아오기*/
 if (receiveGroupInfo.groupImage == undefined) {
+  // undefined: 값이 지정되지 않은 경우
+  // null: 해당 변수가 어떤 객체도 가리키고 있지 않음
   groupImg.src = './assets/images/groupImages/group_test5.jpg';
 } else {
   groupImg.src = receiveGroupInfo.groupImage;

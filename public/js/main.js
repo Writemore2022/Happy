@@ -361,6 +361,7 @@ const groupCard = document.querySelectorAll('.group-info');
 // group-info 클래스에 해당하는 요소
 // category.js 요소와 함꼐 보기 (groupCard 존재)
 console.log(groupCard[0].childNodes[5]); 
+// 이건 뭘 나타내는거지요...?? 모르겠즘요... ㅠ.ㅠ
 // groupCard 1st 요소의 6th 자식 요소
 
 for (let i = 0; i < groupCard.length; i++) {
@@ -370,7 +371,6 @@ for (let i = 0; i < groupCard.length; i++) {
 
     const targetGroup = query(collection(db, 'group'), where('title', '==', targetGroupTitle));
     const targetSnap = await getDocs(targetGroup);
-
     targetSnap.forEach((doc) => {
       localStorage.setItem('targetGroupInfo', JSON.stringify(doc.data()));
       document.location.href = './detail1.html';
