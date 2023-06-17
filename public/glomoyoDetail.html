@@ -1,0 +1,176 @@
+<!-- 상세페이지/장지혜 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="글로모여" />
+    <meta name="keywords" content="글로모여" />
+    <meta name="description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
+
+    <!-- sns share -->
+    <meta property="og:url" content="https://writemore-f6e18.web.app/" />
+    <meta property="og:title" content="글로모여" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/images/landingimage2" />
+    <meta property="og:description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon-precomposed" href="./assets/images/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>글로모여</title>
+    <link rel="stylesheet" href="./css/detail1.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/glomoyoDetail.css">
+    <script src="./js/detail.js"></script>
+  </head>
+  <body>
+    <!-- 헤더 / 준수 -->
+    <nav>
+      <div class="nav-links"> <!--더보기 버튼-->
+        <a href="./introduce.html" class="link">글로모여 소개</a>
+        <!-- <a href="" class="link">후기</a> -->
+        <!-- <a href="./signup.html" class="link">로그인</a> -->
+        <a class="link" id="menuClose">뒤로가기</a>
+      </div>
+    </nav>
+    <header>
+      <div class="header-nav"> <!--헤더-->
+        <div class="header-left"> <!--헤더 왼쪽 (로고, 글로모여 소개 페이지 이동)-->
+          <img
+            src="./assets/images/logo.png"
+            width="180px"
+            class="logo"
+            onclick="location.href='./main.html'"
+          />
+          <a href="./introduce.html">글로모여 소개</a>
+        </div>
+        <div class="header-right">
+          <!-- <a class="login" href="./signup.html">로그인</a> -->
+          <img src="./assets/images/free-icon-menu-1828859.png" width="20px" class="menu-icon" />
+        </div>
+      </div>
+    </header>
+    <!--상세페이지 / 짱졔-->
+    <!-- 1. 모임 사진, 모임 이름, 한 줄 소개-->
+    <!-- 2. 해시태그 3개
+      3. 호스트 소개 ( 호스트 이름, 사진, 소개)
+      4. 모임 일정
+      5. 모임 소개
+      6. 모임 세부사항 (모임 인원, 모임 형태, 참가비)
+      7. 신청/참여 기간(달력 넣기, 금액 기재, 신청기간, 참여기간 표시) - 색으로 구분 (구현 아직 안 됨)-->
+    <div class="detail-page"> <!--헤더를 제외한 상세페이지-->
+      <img src="./assets/images/groupImages/group_test5.jpg" alt="group-img" class="g-img" /> <!--모임 사진-->
+      <span class="g-name">쓰기클럽, 저문</span> <!--모임 이름/제목-->
+      <span class="g-intro"> <!--모임 소개-->
+        일주일에 한 번 인간적인 따뜻함을 느낄 수 있는 모임
+      </span>
+      <div class="address-area">
+        <span class="g-address"> <!--모임 장소-->
+          <i class="fas fa-solid fa-map-pin" style="color: gray"> </i> <!--마킹 아이콘-->
+          대구광역시 북구 대학로 80
+        </span>
+      </div>
+      <div class="hashtag"> <!--해시태그-->
+        <span id="g-purpose">#취미</span> <!--목적-->
+        <span id="g-ganre">#문학</span> <!--장르-->
+       <span id="g-mood">#따뜻한 공감</span> <!--분위기-->
+      </div>
+      <div class="host-page"> <!--모임장 소개 페이지-->
+        <div class="host-left"> <!--모임장 왼쪽(모임장 프로필사진 ~ 클릭 시 모임장 페이지 이동)-->
+          <a href="#">
+            <img id="host-img" alt="host-img" class="host-img" />
+          </a>
+        </div>
+        <div class="host-right"> <!--모임장 오른쪽 (이름(닉네임), 소개, sns)-->
+          <div class="host-name">
+            <span>호스트</span>
+            <span><a href="#" id="host-name">.윤</a></span>
+          </div>
+          <div class="host-intro" id="host-content">안녕하세요, 흘러가는 시간 한 켠에서 글을 쓰는 .윤입니다. \n같이 하는 글쓰기의 힘을 느낀 후 느리지만 꾸준하게 글모임을 열고 있습니다. \n모든 사람이 한 번이라도 글모임을 경험하는 그 날을 바라며 오늘도 모집글을 올립니다.</div>
+          <div class="host-sns" id="host-sns">
+            <i class="fa fa-brands fa-instagram" style="color: gray"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="res-table"> <!--모임 일정-->
+        <h2>모임 일정</h2>
+        <div class="res-day">
+          <h3>요일</h3>
+          <div class="day">월</div>
+          <div class="day">화</div>
+          <div class="day">수</div>
+          <div class="day">목</div>
+          <div class="day">금</div>
+          <div class="day">토</div>
+          <div class="day">일</div>
+        </div>
+        <div class="res-time">
+          <h3>시간</h3>
+          <div class="time-block">
+            <div class="ap">
+              <span>오후</span>
+              <span>오전</span>
+            </div>
+            <div class="time"> <!--모임 시간-->
+              <span id="start-time"></span>
+              <span id="end-time"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-contents"> <!--모임 전반 소개-->
+        <div class="g-story intro">
+          <h2>모임 소개</h2>
+          <div id="g-content">
+            처음 글을 쓰려고 마음먹는 순간의 막막함을 이해합니다. <br />
+            즐거운 막막함으로 다가올 수 있게끔 다양한 재료를 사용하여 모임을 열어요. <br />
+            필사를 함께 하기도 하고,<br />
+            특정 주제 하나를 모임 내내 진행하기도 하고,<br />
+            매주 다양한 소재를 제시하여 글을 쓰기도 합니다. <br /><br />
+
+            "당신의 취미에 글쓰기도 포함되길 바랍니다."<br /><br />
+
+            <대상> <br />
+            글을 쓰려는 욕망이 시작되고 있는 사람<br />
+            내 글을 쓰다보니 다른 사람의 생각도 궁금해진 사람<br />
+          </div>
+        </div>
+        <div class="g-target"></div> <!--대상-->
+        <div class="g-story detail"> <!--모임 세부 사항-->
+          <h2 id="g-detail">모임 세부 사항</h2>
+          <div id="g-detail-contents">
+            <ul id="gnb">
+              <li>
+                <h3>모임 인원</h3>
+                <div id="g-people">4-6명</div>
+              </li>
+              <br />
+              <li>
+                <h3>모임 형태</h3>
+                <div>1. 격주 1회 진행</div>
+                <div>2. 2달마다 새 시즌 시작 (정기모임)</div>
+                <div>3. 나머지 모임은 유동적</div>
+              </li>
+              <br />
+              <li>
+                <h3>참가비</h3>
+                <div id="g-cost">회당, 1만원</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button>
+        <a href="./main.html">더 많은 모임 알아보기<br>CLICK!</a>
+      </button>
+    </div>
+  </body>
+</html>

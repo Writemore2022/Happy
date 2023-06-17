@@ -78,7 +78,7 @@ if (receiveGroupInfo.peopleMin == null) {
 if (receiveGroupInfo.hostContent) {
   hostImg.src = receiveGroupInfo.hostImage;
 } else {
-  hostImg.alt = '';
+  hostImg.src = '';
 }
 
 // 모임장 이름
