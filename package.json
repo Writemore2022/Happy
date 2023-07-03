@@ -2,7 +2,7 @@
   "name": "glomoyo",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://writemore2022.github.io/Happy/",
+  "homepage": "https://writemore2022.github.io/Happy",
   "scripts": {
     "build": "webpack --mode=development",
     "product": "webpack --mode=production",
