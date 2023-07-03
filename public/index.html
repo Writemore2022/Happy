@@ -1,211 +1,42 @@
-<!--랜딩페이지-->
-
+<!--new 랜딩 / 장지혜-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="author" content="글로모여" />
-    <meta name="keywords" content="글로모여" />
-    <meta name="description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
-
-    <!-- webpack setting -->
-    <meta http-equiv="“Pragma”" content="”no-cache”" />
-    <meta http-equiv="“Expires”" content="”-1″" />
-    <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”" />
-
-    <!-- sns share -->
-    <meta property="og:url" content="https://writemore-f6e18.web.app/" />
-    <meta property="og:title" content="글로모여" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/images/landingimage2.png" />
-    <meta property="og:description" content="대구 글쓰기, 독서 모임 한 눈에 둘러보기" />
-
-    <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
-    <link rel="apple-touch-icon-precomposed" href="./assets/images/favicon-16x16.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
-
-    <title>글로모여</title>
-    <style rel="stylesheet" href="../css/index.css"></style>
-    <style rel="stylesheet" href="../css/landing.css"></style>
-    <style>
-      @font-face { /*글씨체: 제주 명조*/
-        font-family: 'JejuMyoungjo';
-        src: url('./assets/fonts/JejuMyeongjo.ttf');
-      }
-
-      @media (max-width: 540px) { /* 0 ~ 540px */
-        main {
-          margin: 10%;
-          margin-bottom: 0;
-          flex-direction: column;
-        }
-        .landing-explain { /*모임 소개 (3개의 모임)*/
-          padding: 0;
-          margin-bottom: 40px;
-        }
-        .landing-explain-title { /* 랜딩 페이지 제목 */
-          display: none;
-        }
-        .landing-box,
-        .landing-box-reverse {
-          margin-bottom: 40px;
-        }
-      }
-
-      @media (max-width: 1140px) { /* 0 ~ 1140px */
-        main {
-          margin: 10%;
-        }
-        .host-image { /* 모임 사진 */
-          width: 100%;
-        }
-        .landing-box { /* 각 모임 정보 틀 */
-          flex-direction: column;
-        }
-        .landing-box-reverse {
-          flex-direction: column-reverse;
-        }
-      }
-
-      * {
-        margin: 0 auto;
-        padding: 0;
-        font-family: 'JejuMyoungjo';
-      }
-
-      main {
-        max-width: 1140px;
-        display: flex;
-        margin-top: 80px;
-        margin-bottom: 80px;
-      }
-
-      .landing-explain { /*모임 소개 (3개의 모임)*/
-        width: 30%;
-        padding: 40px;
-      }
-
-      .landing-box { /* 각 모임 정보 틀 */
-        display: flex;
-        justify-content: space-between;
-        /* 아이템들의 "사이(between)" 균일한 간격 제공*/
-        align-items: center; /*수직 축 정렬*/
-      }
-
-      .landing-box-reverse {
-        display: flex;
-        justify-content: space-between;
-        /* 아이템들의 "사이(between)" 균일한 간격 제공*/
-        align-items: center; /*수직 축 정렬*/
-      }
-
-      .host-box { /*모임 정보*/
-        display: flex;
-        width: 100%;
-        flex-direction: column; /* 아이템 세로 배치 */
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
-
-      .host-image { /* 모임 사진 */
-        margin-bottom: 10px;
-        width: 100%;
-        max-width: 270px;
-        max-height: 180px;
-        object-fit: contain;
-        /*콘텐츠의 가로/세로 비 유지, 요소의 콘텐츠 박스 내부에 들어가도록 크기 조정*/
-      }
-
-      .host-text { /* 모임장 */
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center; /*수평 축 정렬*/
-        align-items: center; /*수직 축 정렬*/
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
-
-      .host-text > p {
-        font-weight: '750';
-      }
-
-      .main-btn { /* 글로모여 더 알아보기 버튼 (메인페이지 이동 버튼) */
-        padding: 10px;
-        border: 2px solid black;
-        border-radius: 20px; /*모서리 둥근 정도*/
-        background-color: white;
-        cursor: pointer; /*커서: 포인터 모양*/
-        color: black;
-      }
-
-    </style>
-  </head>
-  <body>
-    <base href="/" />
-    <img class="landing-image" width="100%" height="auto" src="./assets/images/landingimage2.png" />
-    <main>
-      <div class="landing-explain"> <!--랜딩 텍스트 페이지-->
-        <div
-          style="font-size: 24px; font-weight: bold; margin-bottom: 200px"
-          class="landing-explain-title"
-        > <!--랜딩 페이지 제목 / 왼쪽 부분 -->
-          모임장의<br />
-          한 마디
-        </div>
-        <div style="margin-bottom: 50px; font-size: 16px">
-          글로모여는 "모임장"의 스토리를 소개합니다.
-        </div>
-        <a href="./main.html">
-          <button class="main-btn">글로모여 더 알아보기</button> <!--메인페이지 이동 버튼-->
-        </a>
-      </div>
-      <div style="width: 70%">
-        <div class="landing-box"> <!-- 왼쪽 -> 오른쪽 순 -->
-          <div class="host-box"> <!--모임 사진, 모임장 이름-->
-            <img class="host-image" src="./assets/images/sample1.jpg" />
-            <p class="host-info" style="font-size: 0.8rem">
-              <다정한 독서모임 다독: 친애하는 나에게> 책방다독
-            </p>
-          </div>
-          <div class="host-text"> <!--모임 한 줄 소개-->
-            <p>
-              <span style="color: orange">지성</span>의 즐거움,
-              <span style="color: orange">실천</span>의 기쁨
-            </p>
-          </div>
-        </div>
-        <div class="landing-box-reverse"> <!-- 오른쪽 -> 왼쪽 순 -->
-          <div class="host-text"> <!--모임 한 줄 소개-->
-            <p>
-              <span style="color: orange">함께</span> 모여 원하는
-              <span style="color: orange">책</span>을 읽습니다.
-            </p>
-          </div>
-          <div class="host-box"> <!--모임 사진, 모임장 이름-->
-            <img class="host-image" src="./assets/images/sample2.jpg" />
-            <p class="host-info" style="text-align: right"><영빈의 읽는 모임> 책샘</p>
-          </div>
-        </div>
-        <div class="landing-box"> <!-- 왼쪽 -> 오른쪽 순 -->
-          <div class="host-box"> <!--모임 사진, 모임장 이름-->
-            <img class="host-image" src="./assets/images/sample3.jpg" />
-            <p class="host-info"><여우네 독서모임> 그림책방 여우네</p>
-          </div>
-          <div class="host-text"> <!--모임 한 줄 소개-->
-            <p> 
-              <span style="color: orange">책</span>이 좋아서 오시는 분은
-              <span style="color: orange">누구나</span> 환영합니다.
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/landing2.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="group-container">
+            <!--그룹 정보가 다 담긴 칸-->
+            <img src="./assets/images/logo.png" alt="logo" id="logo">
+            <a href="./glomoyoDetail.html">
+                <div class="group-info">
+                    <!-- 각 그룹 정보-->
+                    <img class="group-img" src="./assets/images/groupImages/group_test5.jpg"/>
+                    <div class="group-details"> 
+                      <div id="group-title">
+                          쓰기 클럽, 저문
+                      </div>
+                      <div id="group-intro">
+                          일주일에 한 번 인간적인 따뜻함을 느낄 수 있는 모임
+                      </div>
+                      <div id="group-location">
+                          장소: 경북대학교 
+                      </div>
+                      <div id="group-day">
+                          일시: 매주 화요일, 오후 7시
+                      </div>
+                      <div id="group-cost">
+                          참가비: 회 당, 만원
+                      </div>
+                    </div>
+                  </div>
+            </a>
+    </div>
+</body>
 </html>
