@@ -2,10 +2,12 @@
   "name": "glomoyo",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": ".",
+  "homepage": "https://writemore2022.github.io/Happy/",
   "scripts": {
     "build": "webpack --mode=development",
-    "product": "webpack --mode=production"
+    "product": "webpack --mode=production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "writemore",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "firebase-tools": "^11.25.2"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.1"
   }
